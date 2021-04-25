@@ -1,0 +1,56 @@
+@use '../../../helpers/functions' as *;
+
+// Thanks discord!
+.theme-light
+.root-1gCeng {
+  box-shadow: none;
+  background-color: var(--background-secondary-alt);
+
+  .colorHeaderPrimary-26Jzh- {
+    color: get-colour('category-name');
+  }
+
+  // Template buttons
+  .container-UC8Ug1 {
+    border-color: black;
+    background-color: get-colour('message-hover');
+
+    &:hover {
+      background-color: var(--background-modifier-selected);
+    }
+  }
+
+  .sampleLink-2NLvZg {
+    color: deeppink;
+  }
+
+  .footer-2gL1pp {
+    box-shadow: none; // Thanks Harley! 
+    border-top: 1.5px solid black;
+    background-color: inherit;
+
+    .footerTitle-2CYZch {
+      color: get-colour('almost-cyan');
+      margin-bottom: 16px; // Fixes blurriness and eases cramp
+    }
+
+    .sizeMin-1mJd1x {
+      color: get-colour('number');
+    }
+
+    .footerButton-ayFTfX.lookFilled-1Gx00P {
+      box-shadow: 0 0 0 1px black;
+      background-color: get-colour('message-hover');
+
+      &:hover {
+        color: get-colour('mango-yellow');
+        background-color: var(--toast-box-shadow);
+
+        &:after,
+        &:before {
+          content: 'bruh';
+        }
+      }
+    }
+  }
+}

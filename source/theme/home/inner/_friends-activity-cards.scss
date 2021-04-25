@@ -1,0 +1,28 @@
+.peopleColumn-29fq28 {
+  background-color: var(--background-accent);
+}
+
+#app-mount
+.itemCard-v9viV7 {
+  .body-1ld4H7 {
+    background-color: inherit;
+  }
+
+  .section-2gLsgF {
+    margin-top: 7.5px;
+    background-color: var(--background-secondary);
+  }
+
+  .separator-XqIyoz {
+    display: none;
+  }
+
+  &.interactive-3B9GmY:not(.active-1xchHY):hover {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  &.active-1xchHY {
+    // As much as I hate this I can't see another way of doing it
+    background-color: var(--background-tertiary);
+  }
+}

@@ -1,0 +1,64 @@
+@use '../../../helpers/mixins' as *;
+@use '../../../helpers/functions' as *;
+
+$-nitro-icon: url(
+  'https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg'
+);
+
+.paymentHistory-2FXzro {
+  .paymentPane-3bwJ6A {
+    border: 1px solid black;
+  }
+
+  .paginator-166-09,
+  .paymentRow-2e7VM6 {
+    border: none;
+    background-color: var(--background-secondary);
+  }
+
+  .scrollerBase-289Jih {
+    @include border(
+      $width: 1px,
+      $color: black,
+      $style: solid none solid
+    );
+    width: 665px;
+  }
+
+  .gameIcon-gg34Dz {
+    background-image: $-nitro-icon !important;
+  }
+
+  .summaryInfo-2QFKUg {
+    > .date-2Qr15l {
+      color: get-colour('mango-yellow');
+    }
+
+    > .description-RQzS-K {
+      font-weight: bold;
+      color: get-colour('settings-smaller-header');
+    }
+
+    > .amount-ukM6w- {
+      color: deeppink;
+      font-weight: bold;
+    }
+  }
+
+  .hoverablePayment-Yc6mK7:hover {
+    background-color: var(--background-tertiary);
+  }
+
+  .expandedInfo-3kfShd {
+    background-color: var(--background-secondary-alt);
+
+    .paymentText-2vaF7U {
+      color: var(--text-normal);
+    }
+  }
+
+  .paymentHeader-3QlZQi,
+  .refundSubHeader-3hp-GM {
+    color: get-colour('category-name');
+  }
+}

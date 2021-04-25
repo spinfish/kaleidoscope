@@ -1,0 +1,16 @@
+@use '../../../helpers/functions' as *;
+
+.slider-1PF9SW {
+  .grabber-3mFHz2 {
+    border-color: get-colour('mango-yellow');
+    background-color: get-colour('mango-yellow');
+  }
+
+  .bar-2Qqk5Z {
+    background-color: get-colour('reply-content');
+
+    .barFill-23-gu- {
+      background-color: get-colour('category-name');
+    }
+  }
+}

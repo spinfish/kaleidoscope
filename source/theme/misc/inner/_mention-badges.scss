@@ -1,0 +1,6 @@
+@use '../../../helpers/functions' as *;
+
+.mention-1f5kbO,
+.numberBadge-2s8kKX {
+  background-color: get-colour('bright-orange-red') !important;
+}

@@ -1,0 +1,24 @@
+@use '../../../helpers/functions' as *;
+
+.userPopout-3XzG_A {
+  width: 255px;
+  box-shadow: 0 0 0px 1px var(--background-tertiary);
+
+  .headerNormal-T_seeN {
+    background-color: get-colour('dark-blue-popout-normal');
+  }
+
+  > [class^='header']:not(.headerNormal-T_seeN) {
+    background-color: get-colour('dark-blue-popout-playing');
+  }
+
+  > .footer-1fjuF6,
+  > .scrollerBase-289Jih {
+    background-color: var(--background-secondary);
+  }
+}
+
+// Shhh (thanks Luckfire)
+.botTag-2WPJ74 {
+  background-color: deeppink;
+}

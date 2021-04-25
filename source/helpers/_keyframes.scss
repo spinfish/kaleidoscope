@@ -1,0 +1,17 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes imagine-using-light-mode {
+  0% {
+    border-color: red;
+  } 50% {
+    border-color: yellow;
+  } 100% {
+    border-color: red;
+  }
+}

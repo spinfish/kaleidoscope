@@ -1,0 +1,25 @@
+@use '../../../helpers/functions' as *;
+
+.button-1ZiXG9.dangerous-2r8KxV {
+  &,
+  &:hover {
+    color: get-colour('bright-orange-red');
+  }
+}
+
+.colorDanger-2qLCe1 {
+  color: get-colour('bright-orange-red');
+
+  // Taken directly from discord
+  &:active:not(.hideInteraction-1iHO1O) {
+    background-color: get-shade('darker-orange-red');
+  }
+
+  &.focused-3afm-j {
+    background-color: get-colour('bright-orange-red')
+  }
+}
+
+.colorDefault-2K3EoJ:not([class*='Danger']).focused-3afm-j {
+  background-color: var(--background-modifier-hover);
+}

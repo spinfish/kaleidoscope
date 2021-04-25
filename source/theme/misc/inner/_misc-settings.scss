@@ -1,0 +1,43 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount {
+  .button-2CgfFz {
+    box-shadow: 0 0 0 1px black;
+    background-color: var(--background-tertiary);
+  }
+
+  .header-2RyJ0Y {
+    color: get-colour('settings-smaller-header');
+  }
+
+  .card-3Qj_Yx {
+    border-color: var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+  }
+
+  .css-gvi9bl-control {
+    border-color: black;
+  }
+
+  .css-3vaxre-menu {
+    border-color: var(--background-tertiary);
+    background-color: var(--background-secondary);
+  }
+
+  .card-FDVird {
+    box-shadow: none;
+
+    &::before {
+      border-color: black;
+      background-color: var(--background-secondary-alt);
+    }
+  }
+
+  .h2-2gWE-o.defaultColor-1_ajX0 {
+    color: get-colour('settings-larger-header');
+  }
+
+  .divider-3wNib3 {
+    border-color: black !important;
+  }
+}

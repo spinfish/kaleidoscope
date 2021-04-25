@@ -1,0 +1,31 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount {
+  .videoControls-2kcYic {
+    .buffer-26XPkd {
+      &,
+      &::before {
+        background: transparent;
+      }
+    }
+
+    .mediaBarProgress-1xaPtl {
+      &,
+      &::before,
+      &::after {
+        background-color: get-colour('almost-cyan');
+      }
+    }
+
+    .mediaBarGrabber-1FqnbN {
+      background-color: var(--interactive-hover);
+    }
+
+    .mediaBarWrapper-3D7r67 {
+      &,
+      &::after {
+        background-color: deeppink;
+      }
+    }
+  }
+}

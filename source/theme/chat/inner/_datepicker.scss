@@ -1,0 +1,88 @@
+@use '../../../helpers/functions' as *;
+
+%-reactpicker-day-hover {
+  background-color: var(--background-secondary-alt);
+  color: get-colour('mango-yellow');
+  font-weight: 800;
+}
+
+// I have no idea why I had to use ``app-mount``, but if I didn't,
+// I would have had to use a whole bunch of !importants. (ty Luckfire :)
+// This code really needs some improvement.
+
+#app-mount {
+  .searchAnswer-3Dz2-q,
+  .searchFilter-2ESiM3 {
+    color: var(--text-normal);
+    background-color: var(--background-secondary);
+  }
+
+  .datePicker--XZbmJ {
+    background-color: var(--background-secondary-alt);
+
+    .datePickerHint-3Q1Udw > .hintValue-29ny8Z {
+      background-color: get-shade('darker-reply-content');
+    }
+  }
+
+  .calendarPicker-2yf6Ci .react-datepicker {
+    background-color: inherit;
+
+    &__header {
+      background-color: inherit;
+    }
+
+    &__current-month {
+      color: deeppink;
+      border: none;
+      text-transform: bold;
+      font-size: 20px;
+    }
+
+    .react-datepicker__navigation {
+      &--next,
+      &--previous {
+        border-color: var(--background-tertiary);
+      }
+    }
+
+    &__day {
+      border-color: black;
+      filter: brightness(150%);
+      color: get-colour('category-name');
+      background-color: var(--background-secondary);
+
+      &:hover {
+        @extend %-reactpicker-day-hover;
+      }
+
+      &.react-datepicker__day--selected {
+        &:hover {
+          @extend %-reactpicker-day-hover;
+        }
+
+        &::after {
+          background-color: get-shade('darker-reply-content');
+        }
+      }
+
+      &--outside-month {
+        opacity: 0.5;
+
+        &:hover {
+          opacity: initial;
+        }
+      }
+
+      &--disabled,
+      &--disabled:hover {
+        opacity: 0.2;
+      }
+
+      &-name {
+        color: var(--interactive-active);
+        font-weight: 700;
+      }
+    }
+  }
+}

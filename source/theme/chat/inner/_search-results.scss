@@ -1,0 +1,70 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount
+#search-results {
+  background-color: var(--background-secondary);
+  box-shadow: 0 0 0 1px var(--background-tertiary),
+              0 2px 10px 0 rgba(0, 0, 0, 0.2);
+
+  strong,
+  .searchResultChannelIcon-1DnTme {
+    color: get-colour('category-name');
+  }
+
+  .resultsGroup-r_nuzN {
+    .header-2N-gMV {
+      font-weight: 625;
+      color: get-colour('settings-smaller-header') !important;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .queryText-3xoOY7 {
+    font-weight: bold;
+    color: var(--interactive-active);
+
+    strong {
+      color: rgba(185, 187, 190, 1);
+    }
+  }
+
+  .keybindShortcut-1BD6Z1 span {
+    box-shadow: none;
+    margin: none;
+    color: var(--text-normal);
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-tertiary);
+  }
+
+  > .focused-2bY0OD {
+    background-color: var(--background-secondary-alt);
+
+    // No WET code xd
+    [class*='keybind'] span {
+      color: var(--interactive-hover);
+      background-color: var(--background-modifier-selected);
+    }
+  }
+
+  .option-96V44q {
+    &::after {
+      background: transparent;
+    }
+
+    &.selected-rZcOL- {
+      background-color: var(--background-secondary-alt);
+
+      &::before {
+        padding-left: 10px;
+        background-color: var(--background-secondary-alt);
+      }
+    }
+
+    .displayedNick-3xxvzU {
+      color: var(--text-normal);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount .message-2qnXI6 {
+  &:hover {
+    // Setting --background-message-hover doesn't work
+    background-color: get-colour('message-hover');
+  }
+
+  // --background-mentioned, however, does
+  &.mentioned-xhSam7::before {
+    background-color: get-colour('mango-yellow');
+  }
+
+  // Clyde messages and message you're replying to
+  &.ephemeral-1PsL1r,
+  &.replying-1x3H0T {
+    background-color: get-colour('number', 0.075);
+
+    &::before {
+      background-color: get-colour('number');
+    }
+  }
+
+  .edited-3sfAzf,
+  .timestamp-3ZCmNB {
+    color: get-colour('mango-yellow');
+  }
+
+  .repliedMessage-VokQwo {
+    .replyBadge-r1su3o {
+      background: transparent;
+    }
+
+    .replyIcon-1b4Xjp {
+      width: 20px;
+      height: 10px;
+
+      path {
+        fill: white;
+      }
+    }
+
+    .repliedTextPreview-2NBljf {
+      color: get-colour('reply-content');
+
+      &:hover {
+        color: var(--interactive-active);
+      }
+    }
+  }
+
+  .wrapper-2aW0bm {
+    background-color: transparent;
+    box-shadow: none;
+
+    .button-1ZiXG9 {
+      margin: 0 2px;
+      border-radius: 5px;
+      background-color: var(--background-tertiary);
+
+      &:hover {
+        background-color: var(--background-modifier-selected);
+      }
+    }
+  }
+}

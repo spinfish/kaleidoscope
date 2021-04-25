@@ -1,0 +1,35 @@
+@use '../../../helpers/mixins' as *;
+@use '../../../helpers/functions' as *;
+
+.barButtonBase-2uLO1z {
+  color: get-colour('almost-cyan');
+}
+
+.newMessagesBar-265mhP {
+  @include growing-dark-message-bar($target: top);
+}
+
+.jumpToPresentBar-G1R9s6 {
+  @include growing-dark-message-bar($target: bottom);
+}
+
+.isUnread-3Ef-o9 {
+  @include border(
+    $width: 3px,
+    $color: rebeccapurple,
+    $top-left-radius: 3px
+  );
+
+  top: 8px;
+  padding: 7px;
+
+  > .unreadPill-2HyYtt {
+    top: -8px;
+    background-color: rebeccapurple;
+
+    path {
+      fill: rebeccapurple;
+      color: rebeccapurple;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../../helpers/functions' as *;
+
+.selectedBrand-1UKrSX {
+  background-color: get-shade('darker-reply-content');
+
+  &:hover {
+    background-color: get-colour('reply-content', 0.65);
+  }
+}

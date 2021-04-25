@@ -1,0 +1,59 @@
+@use '../../../helpers/mixins' as *;
+@use '../../../helpers/functions' as *;
+
+.topic-TCb_qw {
+  color: get-colour('reply-content');
+}
+
+.containerDefault-3tr_sE {
+  .name-3l27Hl,
+  .wrapper-PY0fhH {
+    color: get-colour('category-name');
+  }
+}
+
+.userLimit-3aerPX {
+  > .wrapper-2tAnRe {
+    color: get-colour('number');
+
+    > .users-3kndPl {
+      width: 27px;
+      padding: 0 4px 0 8px;
+      background-color: var(--background-secondary-alt);
+    }
+
+    > .total-i6us2n {
+      width: 26px;
+      padding: 0 6px 0 4px;
+      background-color: black;
+
+      &::after {
+        border: none;
+      }
+    }
+  }
+}
+
+.containerDefault--pIXnN {
+  @include channel-name-and-icon(deeppink);
+
+  &:hover {
+    @include channel-name-and-icon(var(--interactive-hover));
+  }
+
+  .unread-2lAfLh {
+    background-color: get-colour('number');
+  }
+
+  .modeUnread-1qO3K1 {
+    @include channel-name-and-icon(get-colour('number'));
+  }
+
+  .modeMuted-onO3r- {
+    @include channel-name-and-icon(var(--interactive-muted));
+  }
+
+  .modeSelected-346R90 {
+    @include channel-name-and-icon(var(--interactive-active));
+  }
+}

@@ -1,0 +1,20 @@
+@use '../../../helpers/functions' as *;
+@use '../../../helpers/variables' as vars;
+
+.scroller-3__pG8 {
+  box-shadow: vars.$modal-box-shadow;
+  background-color: var(--background-secondary);
+
+  .title-2_aCTw {
+    color: get-colour('category-name');
+  }
+
+  .button-3k0cO7 {
+    background-color: var(--background-modifier-selected);
+
+    &:hover {
+      color: get-colour('mango-yellow');
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

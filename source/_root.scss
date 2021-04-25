@@ -1,0 +1,57 @@
+@use './helpers/functions' as *;
+
+.theme-dark,
+.theme-light,
+:root {
+  --header-primary: #{get-colour('light-grey')};
+
+  --background-accent: rgba(3, 13, 34, 1);
+  --background-primary: var(--background-accent);
+
+  --background-secondary: rgba(1, 11, 30, 1);
+  --background-secondary-alt: rgba(0, 9, 21, 1);
+
+  --background-tertiary: rgba(0, 5, 15, 1);
+  --background-floating: var(--background-tertiary);
+
+  --background-modifier-hover: rgba(3, 9, 27, 1);
+  --background-modifier-active: rgba(3, 16, 40, 1);
+  --background-modifier-selected: var(--background-modifier-active);
+
+  --background-mobile-primary: var(--background-primary);
+  --background-mobile-secondary: var(--background-secondary);
+  --background-mentioned: #{get-colour('mango-yellow', 0.075)};
+
+  --text-link: rgba(62, 200, 255, 1);
+  --text-normal: rgba(255, 27, 240, 1);
+  --text-muted: rgba(182, 182, 182, 1);
+
+  --header-secondary: rgba(205, 207, 211, 1);
+  --channels-default: rgba(201, 201, 201, 1);
+  --channeltextarea-background: var(--background-secondary-alt);
+
+  --interactive-normal: #{get-colour('almost-cyan')};
+  --interactive-hover: #{get-colour('mango-yellow')};
+  --interactive-active: rgba(209, 41, 255, 1);
+  --interactive-muted: rgba(48, 52, 61, 1);
+
+  --activity-card-background: var(--background-tertiary);
+  --radio-group-dot-foreground: var(--interactive-normal);
+
+  // Huge thanks to Nyria#3863 for helping me find these
+  --scrollbar-auto-track: transparent;
+  --scrollbar-thin-thumb: var(--background-tertiary);
+  --scrollbar-auto-thumb: #{get-colour('category-name')};
+  --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
+  --scrollbar-auto-scrollbar-color-track: var(--background-secondary);
+
+  --toast-background: var(--background-primary);
+  --toast-header: var(--background-tertiary);
+  --toast-contents: var(--background-secondary);
+  --toast-border: var(--background-tertiary);
+  --toast-box-shadow: rgba(0, 0, 0, 0.2);
+
+  // i'm unsure of what exactly this does
+  // if someone could tell me that'd be cool
+  --offline-color: rgba(60, 60, 60, 1);
+}

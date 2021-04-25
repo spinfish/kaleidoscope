@@ -1,0 +1,59 @@
+@use 'sass:meta';
+@use 'sass:string';
+@use 'functions' as funcs;
+
+@mixin border($args...) {
+  @each $name, $value in meta.keywords($args) {
+    border-#{$name}: $value;
+  }
+}
+
+@mixin channel-name-and-icon($colour) {
+  .icon-1DeIlz,
+  .channelName-2YrOjO {
+    color: $colour;
+  }
+}
+
+@mixin growing-dark-message-bar($target) {
+  #{$target}: -4px;
+
+  height: 33px;
+  background-color: var(--background-secondary);
+  transition: #{$target} .3s linear;
+
+  &:hover {
+    #{$target}: 0px;
+    background-color: var(--background-secondary-alt);
+  }
+}
+
+@mixin button-replace(
+  $default,
+  $new-background: null,
+  $text: white,
+  $border: null,
+  $important: false
+) {
+  &.#{funcs.get-btn-class($default)} {
+    $-use-important: if($important, string.unquote('!important'), null);
+
+    color: $text;
+    @if ($new-background) {
+      background-color: $new-background $-use-important;
+
+      &:hover {
+        background-color: rgba($new-background, 0.6) $-use-important;
+      }
+
+      &:active,
+      &:disabled {
+        background-color: rgba($new-background, 0.4) $-use-important;
+      }
+    }
+
+    @else if ($border) {
+      border-color: $border $-use-important;
+    }
+  }
+}

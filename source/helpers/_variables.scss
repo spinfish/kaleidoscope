@@ -1,0 +1,48 @@
+$btn-default-colours: (
+  'blurple': 'colorBrand-3pXr91',
+  'darkgrey': 'colorPrimary-3b3xI6',
+  'green': 'colorGreen-29iAKY',
+  'palered': 'colorRed-1TFJan'
+);
+
+$base-colours: (
+  'settings-larger-header': rgba(193, 0, 242, 1),
+  'discord-nitro-magenta': rgba(255, 115, 250, 1),
+  'reply-content': rgba(214, 46, 151, 1),
+  'bright-orange-red': rgba(255, 42, 0, 1),
+  'mango-yellow': rgba(255, 196, 22, 1),
+  'radio-bar-green': rgba(0, 162, 63, 1),
+  'spotify-dark-green': rgba(1, 112, 44, 1),
+  'number': rgba(1, 206, 206, 1),
+  'almost-cyan': rgba(5, 207, 255, 1),
+  'category-name': rgba(157, 217, 255, 1),
+  'settings-smaller-header': rgba(0, 118, 187, 1),
+  'dark-blue-popout-normal': rgba(1, 15, 40, 1),
+  'dark-blue-popout-playing': rgba(13, 10, 58, 1),
+  'streaming-violet': rgba(51, 12, 72, 1),
+  'message-hover': rgba(0, 10, 28, 1),
+  'spoiler-box': rgba(0, 0, 13, 1),
+  'light-grey': rgba(220, 221, 222, 1)
+);
+
+$colour-shades: (
+  'greyish-blue': rgba(138, 160, 180, 0.5),
+  'darker-orange-red': rgba(255, 42, 0, 0.75),
+  'darker-reply-content': rgba(214, 46, 151, 0.75),
+  'light-pink-tick-slider': rgba(255, 27, 240, 0.25),
+  'darker-interactive-active': rgba(209, 41, 255, 0.065)
+);
+
+$home-icon-background: url(
+  'https://media.discordapp.net/attachments/678012423067926539/835753488063397918/home_icon.png'
+);
+
+$notes-blur-transition: .2s cubic-bezier(0.2, 0.11, 0, 1);
+$modal-box-shadow: 0 0 2px 2px var(--background-tertiary);
+
+$nitro-header-gradient: linear-gradient(
+  to right,
+  var(--interactive-normal),
+  var(--interactive-active),
+  deeppink
+);

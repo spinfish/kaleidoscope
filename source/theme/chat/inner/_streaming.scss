@@ -1,0 +1,24 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount {
+  .root-2VTZPJ.tile-2naSqK {
+    background-color: var(--background-secondary);
+  }
+
+  .streamPreview-2-WUWT,
+  .emptyPreviewContainer-1KOcxV,
+  .quickSelectPopout-X1hvgV.regionSelectPopout-p9-0_W {
+    background-color: var(--background-tertiary);
+  }
+
+  .live-vBWnV6 {
+    background-color: get-colour('bright-orange-red') !important;
+  }
+
+  .participantsButton-KYW-IW {
+    &,
+    &:hover {
+      background-color: var(--background-primary);
+    }
+  }
+}

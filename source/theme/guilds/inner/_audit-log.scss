@@ -1,0 +1,28 @@
+#app-mount {
+  .auditLog-3jNbM6 {
+    border: 1px solid black;
+
+    [aria-expanded='true'] {
+      box-shadow: none;
+      background-color: var(--background-secondary);
+    }
+
+    [aria-expanded='false'] {
+      background-color: var(--background-modifier-hover);
+    }
+
+    .divider-1pnAR2 {
+      background-color: black;
+    }
+
+    > .changeDetails-bk98pu {
+      background: transparent;
+    }
+  }
+
+  // TODO: Find a better place to put this
+  // It is also used when choosing voice region in VC
+  .quickSelect-3BxO0K[style*='flex: 1 1 auto;'] > .quickSelectLabel-2r3iJ_ {
+    color: deeppink;
+  }
+}

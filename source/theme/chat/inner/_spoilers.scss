@@ -1,0 +1,19 @@
+@use '../../../helpers/functions' as *;
+
+%-spoiler-base {
+  background-color: get-colour('spoiler-box');
+}
+
+#app-mount {
+  .spoilerWarning-2aAZq1 {
+    @extend %-spoiler-base;
+  }
+
+  .spoilerText-3p6IlD {
+    @extend %-spoiler-base;
+
+    &:hover > .inlineContent-3ZjPuv {
+      opacity: 1;
+    }
+  }
+}

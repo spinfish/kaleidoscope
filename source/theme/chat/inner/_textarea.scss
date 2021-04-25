@@ -1,0 +1,26 @@
+@use '../../../helpers/functions' as *;
+
+.channelTextArea-rNsIhG {
+  .scrollableContainer-2NUZem {
+    border-radius: 8px;
+  }
+
+  // Reply container above chat bar
+  .container-2fRDfG {
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: var(--channeltextarea-background);
+
+    .colorBrand-2tjs5J {
+      color: var(--interactive-active); // @ON
+    }
+
+    .colorMuted-HdFt4q {
+      color: get-colour('reply-content'); // @OFF
+    }
+
+    [class*='color']:hover {
+      color: var(--interactive-hover);
+    }
+  }
+}

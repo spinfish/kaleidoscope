@@ -1,0 +1,13 @@
+@use '../../../helpers/mixins' as *;
+@use '../../../helpers/functions' as *;
+
+$-orange-red: get-colour('bright-orange-red');
+$-dark-green: get-colour('radio-bar-green');
+$-dark-cerise: get-shade('darker-reply-content');
+
+.lookOutlined-3sRXeN {
+  @include button-replace('blurple', $text: $-dark-cerise, $border: $-dark-cerise);
+  @include button-replace('palered', $text: $-orange-red, $border: $-orange-red);
+  @include button-replace('green', $text: $-dark-green, $border: $-dark-green);
+  // @include button-replace('white', $text: white, $border: white);
+}

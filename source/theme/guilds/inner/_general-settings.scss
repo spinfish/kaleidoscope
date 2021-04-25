@@ -1,0 +1,23 @@
+@use '../../../helpers/functions' as *;
+
+.elevationHigh-1PneE4 {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+.emojiInput-1aLNse {
+  background-color: var(--background-secondary) !important;
+
+  &:hover {
+    border-color: get-colour('almost-cyan', 0.25);
+  }
+
+  &:focus {
+    border-color: rgba(255, 27, 240, 0.5);
+  }
+}
+
+.colorPickerCustom-2CWBn2 {
+  border: none;
+  box-shadow: 0 0 0 2px black;
+  background-color: var(--background-tertiary) !important;
+}

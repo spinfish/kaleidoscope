@@ -1,0 +1,18 @@
+@use '../../../helpers/functions' as *;
+
+.container-3auIfb {
+  background-color: rgba(255, 27, 240, 0.25) !important;
+
+  &[style*='rgb(67, 181, 129)'],
+  &[style*='rgb(114, 118, 125)'] {
+    .slider-TkfMQL {
+      path {
+        fill: black;
+      }
+
+      rect {
+        fill: get-colour('light-grey');
+      }
+    }
+  }
+}

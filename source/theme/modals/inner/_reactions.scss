@@ -1,0 +1,29 @@
+.focusLock-Ns3yie {
+  .root-1gCeng {
+    border: none;
+    background-color: var(--background-primary);
+    box-shadow: 0 0 5px 1px black;
+  }
+
+  .scroller-1-nKid {
+    width: auto;
+    background-color: var(--background-secondary-alt);
+
+    .size14-e6ZScH {
+      padding-right: 4px;
+    }
+  }
+
+  .reactors-Blmlhw {
+    width: 85%;
+    background-color: inherit;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--background-tertiary);
+    }
+  }
+
+  .reactor-3UBcOI {
+    box-shadow: none;
+  }
+}

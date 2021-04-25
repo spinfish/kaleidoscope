@@ -1,0 +1,45 @@
+@use '../../../helpers/functions' as *;
+
+.quickswitcher-3JagVE {
+  background-color: var(--background-secondary-alt);
+
+  > .scrollerBase-289Jih {
+    background-color: inherit;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
+
+  > .input-2VB9rf {
+    border: 1px solid black;
+    background-color: get-colour('dark-blue-popout-normal');
+  }
+
+  .header-13MUnb {
+    color: get-colour('number', 0.95);
+  }
+
+  .resultFocused-3aIoYe {
+    background-color: get-shade('darker-interactive-active');
+
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid var(--interactive-active);
+      height: 100%;
+    }
+  }
+
+  // Mimic discord's mention badge
+  .badge-36LyGI {
+    background-color: red;
+    width: 16px !important;
+    padding: inherit;
+    margin-left: 1px;
+    border-radius: 8px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+}

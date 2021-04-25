@@ -1,0 +1,56 @@
+@use '../../../helpers/functions' as *;
+
+$-mic-test-gradient: linear-gradient(
+  to right,
+  get-shade('darker-reply-content'),
+  get-colour('almost-cyan')
+);
+
+#app-mount
+.userSettingsVoice-iwdUCU {
+  // Microphone testing
+  .container-3PXSwK {
+    height: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: $-mic-test-gradient !important;
+
+    > .progress-1IcQ3A {
+      background-color: var(--background-secondary);
+    }
+
+    > .notches-1sAcEM {
+      background-image: none;
+    }
+  }
+
+  .inputSensitivityToggle-2LKb8o {
+    // Automatic
+    .speaking-2bFhO4 {
+      background-color: get-colour('radio-bar-green');
+    }
+
+    // Manual
+    &.manual-36Evg9 {
+      .fill-3eUagR {
+        background-color: rgba(0, 0, 0, 0.45) !important;
+      }
+
+      [style*='rgb(251, 184, 72)'] { // Yellow
+        background-color: get-colour('almost-cyan') !important;
+      }
+
+      [style*='rgb(105, 196, 154)'] { // Green
+        background-color: get-shade('darker-reply-content') !important;
+      }
+    }
+  }
+
+  .previewOverlay-2O7_KC {
+    border: 1px solid black;
+  }
+
+  .previewOverlayInner-1WXURq {
+    background-color: var(--background-secondary);
+  }
+}

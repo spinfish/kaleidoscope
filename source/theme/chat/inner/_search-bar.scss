@@ -1,0 +1,32 @@
+@use '../../../helpers/functions' as *;
+
+// The code below is heavily based on code provided by
+// a snippet by DoggyBootsy#1333. Thanks so much!
+
+.search-36MZv- {
+  order: -4;
+  margin-left: 0px;
+
+  .searchBar-3dMhjb {
+    width: 28px;
+    transition: width 0.5s ease-in-out;
+    background: none;
+
+    &:hover,
+    &[aria-expanded='true'] {
+      color: get-colour('almost-cyan');
+      width: 240px;
+      background-color: var(--background-tertiary);
+    }
+
+    .icon-3cZ1F_ {
+      height: 24px;
+      width: 24px;
+      color: get-colour('almost-cyan');
+    }
+
+    .iconContainer-O4O2CN {
+      bottom: 3px;
+    }
+  }
+}

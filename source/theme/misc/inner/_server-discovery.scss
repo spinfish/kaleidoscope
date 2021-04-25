@@ -1,0 +1,30 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount {
+  .pageWrapper-1PgVDX {
+    background-color: var(--background-primary);
+  }
+
+  .categoryItem-1QIroW {
+    color: get-colour('almost-cyan');
+
+    &.selectedCategoryItem-FHKU_o > div {
+      color: var(--interactive-active);
+      background-color: rgb(4, 20, 69, 0.65); // Really
+    }
+  }
+
+  .discoverHeader-Ijkm_M {
+    color: get-colour('settings-smaller-header');
+  }
+
+  .guildListSection-2CS8vH {
+    > .guildList-3cJX3d .card-3DjzTQ {
+      box-shadow: 0 0 0 1px black;
+    }
+
+    > .wrapper-1sSZUt {
+      color: get-colour('category-name');
+    }
+  }
+}

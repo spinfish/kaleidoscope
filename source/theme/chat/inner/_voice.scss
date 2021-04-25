@@ -1,0 +1,52 @@
+@use '../../../helpers/functions' as *;
+
+.callContainer-36WRfH,
+.videoBackgroundTransition-3wpOSl {
+  // User cards, applies to streams as well
+  .background-ujHpbY[style*='rgb(21, 18, 18)'] {
+    background-color: var(--background-tertiary) !important;
+  }
+}
+
+#app-mount
+.callContainer-36WRfH {
+  background-color: var(--background-secondary-alt);
+
+  // Mute/deafen patch next to avatar
+  .voiceAvatar-14IynY + .status-1WEaea {
+    background: get-colour('bright-orange-red');
+  }
+
+  .emptyPreviewWrapper-14RNSK {
+    filter: brightness(10%); // Discord makes it lighter for some reason
+    background-color: var(--background-tertiary);
+  }
+
+  .border-3dQmSY.speaking-WDn8Wm {
+    box-shadow: inset 0 0 0 2px get-colour('radio-bar-green'), inset 0 0 0 3px black;
+  }
+
+  .bottomControls-lIJyYL {
+    .primaryDark-3mSFDl {
+      background-color: var(--background-primary);
+    }
+
+    // Selected
+    .white-3GPOIp {
+      background-color: get-shade('darker-reply-content');
+
+      .centerIcon-2G6o-T,
+      .directionDown-26e7eE {
+        color: white;
+
+        .slash-33-IMF {
+          fill: white;
+        }
+      }
+    }
+
+    .red-33-Lnk {
+      background-color: get-colour('bright-orange-red');
+    }
+  }
+}

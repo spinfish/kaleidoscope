@@ -1,0 +1,30 @@
+@use '../../../helpers/mixins' as *;
+@use '../../../helpers/functions' as *;
+
+$-corner-transition: 1s linear;
+$-box-shadow: 0 0 0 1px var(--background-tertiary);
+
+.unreadBar-3t3sYc {
+  @include border(
+    $bottom-left-radius: 3px,
+    $bottom-right-radius: 3px,
+    $bottom: solid 3px var(--background-primary)
+  );
+
+  box-shadow: $-box-shadow;
+  background-color: var(--background-tertiary);
+
+  transition: background-color 0.3s linear,
+              border-bottom-left-radius $-corner-transition,
+              border-bottom-right-radius $-corner-transition;
+
+  &:hover {
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background-color: var(--background-modifier-selected);
+  }
+
+  > .text-2e2ZyG {
+    color: get-colour('almost-cyan');
+  }
+}

@@ -1,0 +1,25 @@
+@use '../../../helpers/functions' as *;
+
+#private-channels {
+  ::-webkit-scrollbar {
+    width: 6px;
+
+    &-thumb {
+      background-color: cornflowerblue;
+    }
+  }
+
+  .headerText-2F0828 {
+    color: get-colour('almost-cyan');
+  }
+
+  .clickable-1JJAn8 .overflow-WK9Ogt {
+    color: get-colour('category-name');
+  }
+
+  [href$='@me'],
+  [href*='store'] {
+    margin-bottom: 5px;
+    background-color: var(--background-primary);
+  }
+}

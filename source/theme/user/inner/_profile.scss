@@ -1,0 +1,64 @@
+@use '../../../helpers/functions' as *;
+
+.root-SR8cQa {
+  .topSectionSpotify-1lI0-P {
+    background-color: get-colour('spotify-dark-green');
+
+    .bar-3urHkF {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    // Huge thanks to DoggyBootsy and void for helping me with this!
+    .contentImagesProfile-1Mz07W {
+      width: -webkit-fill-available;
+    }
+
+    .fullWidth-1orjjo {
+      width: 33px;
+      margin-left: 5px;
+    }
+
+    .spotifyButtonLogo-3uT57D {
+      left: 7.7px;
+      position: absolute;
+    }
+  }
+
+  .topSectionStreaming-1Tpf5X {
+    background-color: get-colour('streaming-violet');
+  }
+
+  .topSectionPlaying-1J5E4n {
+    background-color: get-colour('dark-blue-popout-playing');
+  }
+
+  // Make the Send Message text not match the background
+  [class^='topSection']:not(.topSectionNormal-2-vo2m) div + button .contents-18-Yxp {
+    font-weight: 600;
+    color: get-colour('dark-blue-popout-normal');
+  }
+
+  .body-3ND3kc {
+    background-color: var(--background-primary);
+  }
+
+  .connectedAccount-36nQx7 {
+    border-color: black;
+    background-color: get-colour('message-hover');
+
+    &:hover {
+      background-color: var(--background-modifier-active);
+    }
+  }
+
+  // Thanku Luckfire
+  .connectedAccountVerifiedIcon-3aZz_K {
+    .childContainer-1wxZNh path {
+      fill: black;
+    }
+
+    .flowerStar-1GeTsn path {
+      fill: get-colour('reply-content');
+    }
+  }
+}

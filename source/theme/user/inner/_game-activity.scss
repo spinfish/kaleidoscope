@@ -1,0 +1,28 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount {
+  .nowPlaying-284llR {
+    background-color: rgb(2, 142, 78);
+  }
+
+  .addGamePopout-2RY8Ju.elevationBorderHigh-2WYJ09 {
+    box-shadow: 0 0 0 2px var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+  }
+
+  // Ugh. This needs improvement somehow
+  .game-1ipmAa .gameNameInput-385LoS {
+    &:hover,
+    &:focus {
+      background-color: var(--background-secondary);
+    }
+
+    &:hover {
+      border-color: get-colour('almost-cyan', 0.25);
+    }
+
+    &:focus {
+      border-color: rgba(255, 27, 240, 0.5);
+    }
+  }
+}

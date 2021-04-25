@@ -1,0 +1,49 @@
+@use '../../../helpers/functions' as *;
+
+// app-mount
+#app-mount
+.keyboardShortcutsModal-3piNz7 {
+  background-color: var(--background-accent);
+
+  .content-2Add9f {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: get-colour('number');
+
+    &::after {
+      content: '!!!';
+    }
+  }
+
+  .modalSubtitle-1Pj5nv {
+    color: deeppink;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    margin-top: -5px;
+
+    &::after {
+      content: ' :D';
+    }
+  }
+
+  .wrapper-1sSZUt {
+    color: get-colour('settings-smaller-header');
+  }
+
+  .keybindDescription-2RDbC2 {
+    color: get-colour('category-name');
+  }
+
+  .keybindShortcut-1BD6Z1 span {
+    margin: 3px;
+    padding: 5px;
+    box-shadow: 0 0 0 1px black;
+    background-color: var(--background-modifier-selected);
+  }
+
+  .divider-3573oO {
+    height: 0px;
+    background-color: get-colour('mango-yellow');
+  }
+}

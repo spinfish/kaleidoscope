@@ -1,0 +1,24 @@
+@use '../../../helpers/functions' as *;
+
+#guild-header-popout-premium-subscribe {
+  color: get-colour('discord-nitro-magenta');
+
+  &:active:not(.hideInteraction-1iHO1O) {
+    color: white;
+    background-color: get-colour('discord-nitro-magenta', 0.65);
+
+    &:hover {
+      .icon-LYJorE path {
+        fill: white;
+      }
+    }
+  }
+
+  &.focused-3afm-j {
+    background-color: get-colour('discord-nitro-magenta', 0.075);
+
+    .icon-LYJorE path {
+      fill: get-colour('discord-nitro-magenta');
+    }
+  }
+}

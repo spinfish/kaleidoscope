@@ -1,0 +1,9 @@
+@use '../../../helpers/mixins' as *;
+@use '../../../helpers/functions' as *;
+
+.lookFilled-1Gx00P {
+  @include button-replace('blurple', get-shade('darker-reply-content'));
+  @include button-replace('darkgrey', get-shade('grey-blue'), $important: true);
+  @include button-replace('green', get-colour('spotify-dark-green'));
+  @include button-replace('palered', get-colour('bright-orange-red'));
+}
