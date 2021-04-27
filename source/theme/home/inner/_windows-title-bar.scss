@@ -1,0 +1,48 @@
+@use '../../../helpers/functions' as *;
+
+.platform-win .titleBar-AC4pGV {
+  .winButtonClose-1HsbF- {
+    &:hover {
+      background-color: get-colour('bright-orange-red');
+
+      // Make X only go white on hover
+      svg polygon {
+        fill: white;
+      }
+    }
+
+    // Normal appearance
+    svg polygon {
+      fill: get-colour('bright-orange-red');
+    }
+  }
+
+  .winButtonMinMax-PBQ2gm {
+    // Maximize
+    &:nth-child(3) {
+      &:hover {
+        background-color: orange;
+      }
+
+      svg rect {
+        stroke: orange;
+      }
+    }
+
+    // Minimize
+    &:last-child { // Or nth-child(4)
+      &:hover {
+        background-color: get-colour('radio-bar-green');
+      }
+
+      svg rect {
+        stroke: get-colour('radio-bar-green');
+      }
+    }
+
+    // Being more specific here avoids use of #app-mount -> !important
+    &.winButton-iRh8-Z:hover svg rect {
+      stroke: white;
+    }
+  }
+}
