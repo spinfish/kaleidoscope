@@ -2,8 +2,7 @@
 @use '../../../helpers/variables' as vars;
 
 // Regular upload modal
-#app-mount
-.uploadModal-2ifh8j {
+#app-mount .uploadModal-2ifh8j {
   box-shadow: vars.$modal-box-shadow;
   background-color: var(--background-primary);
 

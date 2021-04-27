@@ -1,6 +1,9 @@
 @use '../../../helpers/functions' as *;
 
-.mention-1f5kbO,
+.unreadMentionsBar-1Bu1dC.mention-1f5kbO  {
+  background-color: get-colour('bright-orange-red');
+}
+
 .numberBadge-2s8kKX {
   background-color: get-colour('bright-orange-red') !important;
 }

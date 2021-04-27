@@ -925,7 +925,10 @@
   background-position: 10px center;
 }
 
-.mention-1f5kbO,
+.unreadMentionsBar-1Bu1dC.mention-1f5kbO {
+  background-color: #ff2a00;
+}
+
 .numberBadge-2s8kKX {
   background-color: #ff2a00 !important;
 }

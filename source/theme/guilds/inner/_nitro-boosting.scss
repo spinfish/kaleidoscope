@@ -2,8 +2,7 @@
 @use '../../../helpers/functions' as *;
 @use '../../../helpers/variables' as vars;
 
-#app-mount
-.perksModalContentWrapper-2HU6uL {
+#app-mount .perksModalContentWrapper-2HU6uL {
   background-color: var(--background-primary);
 
   h3:not(.headingTier1-K4ha7e) {
