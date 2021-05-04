@@ -13,6 +13,14 @@
   @include growing-dark-message-bar($target: bottom);
 }
 
+.messagesErrorBar-nyJGU7 {
+  background-color: get-colour('bright-orange-red');
+
+  .barButtonBase-2uLO1z {
+    color: white
+  }
+}
+
 .isUnread-3Ef-o9 {
   @include border(
     $width: 3px,
@@ -31,5 +39,11 @@
       fill: rebeccapurple;
       color: rebeccapurple;
     }
+  }
+
+  .content-1o0f9g {
+    color: var(--interactive-active);
+    bottom: 7px;
+    position: relative;
   }
 }

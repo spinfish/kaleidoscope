@@ -1,6 +1,7 @@
 @forward 'inner/audit-log';
 @forward 'inner/boost-status';
-@forward 'inner/channels';
+@forward 'inner/channel-permissions';
+@forward 'inner/channels-sidebar';
 @forward 'inner/community';
 @forward 'inner/general-settings';
 @forward 'inner/header-popout';

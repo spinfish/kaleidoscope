@@ -256,6 +256,13 @@
   background-color: var(--background-secondary-alt);
 }
 
+.messagesErrorBar-nyJGU7 {
+  background-color: #ff2a00;
+}
+.messagesErrorBar-nyJGU7 .barButtonBase-2uLO1z {
+  color: white;
+}
+
 .isUnread-3Ef-o9 {
   border-width: 3px;
   border-color: rebeccapurple;
@@ -270,6 +277,11 @@
 .isUnread-3Ef-o9 > .unreadPill-2HyYtt path {
   fill: rebeccapurple;
   color: rebeccapurple;
+}
+.isUnread-3Ef-o9 .content-1o0f9g {
+  color: var(--interactive-active);
+  bottom: 7px;
+  position: relative;
 }
 
 #app-mount .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, #app-mount .calendarPicker-2yf6Ci .react-datepicker__day:hover {
@@ -603,6 +615,39 @@
   color: #9dd9ff;
 }
 
+#app-mount .container-VSDcQc > .autocompleteShadow-iiGWFU {
+  box-shadow: 0 0 0 1px solid var(--background-tertiary);
+}
+#app-mount .container-VSDcQc > .header-2bNvm4,
+#app-mount .container-VSDcQc .autocompleteArrow-Zxoy9H {
+  box-shadow: inherit;
+  background-color: var(--background-tertiary);
+}
+#app-mount .container-VSDcQc > .sectionTag-pXyto9 {
+  background-color: var(--background-secondary-alt);
+}
+#app-mount .group-1WdBVp {
+  border-color: black;
+}
+#app-mount .group-1WdBVp [aria-checked=false].deny-3nAuT6 {
+  color: #ff2a00;
+}
+#app-mount .group-1WdBVp [aria-checked=false].passthrough-1c2ewQ {
+  color: #ffc416;
+}
+#app-mount .group-1WdBVp [aria-checked=false].allow-1PzSY3 {
+  color: #00a23f;
+}
+#app-mount .group-1WdBVp [aria-checked=true].deny-3nAuT6 {
+  background-color: #ff2a00;
+}
+#app-mount .group-1WdBVp [aria-checked=true].passthrough-1c2ewQ {
+  background-color: #ffc416;
+}
+#app-mount .group-1WdBVp [aria-checked=true].allow-1PzSY3 {
+  background-color: #00a23f;
+}
+
 .topic-TCb_qw {
   color: #d62e97;
 }
@@ -893,6 +938,14 @@
 }
 .platform-win .titleBar-AC4pGV .winButtonMinMax-PBQ2gm.winButton-iRh8-Z:hover svg rect {
   stroke: white;
+}
+
+.path-92Hmty {
+  stroke: var(--interactive-normal) !important;
+}
+
+.spinner-2enMB9 .wanderingCubesItem-WPXqao {
+  background-color: var(--interactive-normal);
 }
 
 .inputDefault-_djjkz {

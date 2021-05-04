@@ -37,7 +37,7 @@ $home-icon-background: url(
   'https://raw.githubusercontent.com/spinfish/kaleidoscope/master/source/images/home_icon_background.svg'
 );
 
-$notes-blur-transition: .2s cubic-bezier(0.2, 0.11, 0, 1);
+$notes-blur-transition: 0.2s cubic-bezier(0.2, 0.11, 0, 1);
 $modal-box-shadow: 0 0 2px 2px var(--background-tertiary);
 
 $nitro-header-gradient: linear-gradient(
