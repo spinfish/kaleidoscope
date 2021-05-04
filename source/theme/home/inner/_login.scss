@@ -1,0 +1,12 @@
+@use '../../../helpers/variables' as vars;
+
+.splashBackground-1FRCko {
+  .image-2jyRAK.loaded-3PtF_J {
+    content: vars.$login-background;
+  }
+
+  .canvas-3XuBXe {
+    // Removes practically impossible to theme splash on side
+    display: none;
+  }
+} 
