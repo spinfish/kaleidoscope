@@ -1,0 +1,18 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount .everyonePopout-nEbJY3 {
+  box-shadow: 0 2px 5px 0 var(--background-tertiary);
+  background-color: var(--background-secondary-alt);
+
+  > .footer-2aTx0s {
+    background-color: var(--background-secondary);
+
+    > .icon-2qOzDL path {
+      fill: get-colour('almost-cyan');
+    }
+
+    > .colorStandard-2KCXvj {
+      color: deeppink;
+    }
+  }
+}
