@@ -1,0 +1,16 @@
+@use '../../../helpers/functions' as *;
+
+.messagesPopoutWrap-1MQ1bW {
+  width: 550px;
+}
+
+.searchResultsWrap-3-pOjs {
+  width: 550px;
+
+  .pageButton-2ruNwd.activeButton-rvKcqq {
+    &,
+    &:hover {
+      background-color: get-colour('almost-cyan');
+    }
+  }
+}
