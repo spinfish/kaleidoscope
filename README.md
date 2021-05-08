@@ -1,5 +1,5 @@
 # kaleidoscope
-A vibrant, colourful dark theme for [Powercord](https://github.com/powercord-org/powercord) heavily based on [the 2077 theme for VSCode](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme 'Thanks, Endormi!').
+A vibrant, colourful dark theme for Discord heavily based on [the 2077 theme for VSCode](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme 'Thanks, Endormi!').
 
 ![Main Preview](https://cdn.discordapp.com/attachments/715106442406920273/835786520216338452/kaleidoscope_preview_one.png)
 

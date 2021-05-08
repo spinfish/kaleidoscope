@@ -389,9 +389,15 @@
   background-color: var(--background-modifier-selected);
 }
 
-.searchResultsWrap-3-pOjs,
 .messagesPopoutWrap-1MQ1bW {
   width: 550px;
+}
+
+.searchResultsWrap-3-pOjs {
+  width: 550px;
+}
+.searchResultsWrap-3-pOjs .pageButton-2ruNwd.activeButton-rvKcqq, .searchResultsWrap-3-pOjs .pageButton-2ruNwd.activeButton-rvKcqq:hover {
+  background-color: #05cfff;
 }
 
 .search-36MZv- {
@@ -718,6 +724,20 @@
   background-color: black;
 }
 
+#app-mount .everyonePopout-nEbJY3 {
+  box-shadow: 0 2px 5px 0 var(--background-tertiary);
+  background-color: var(--background-secondary-alt);
+}
+#app-mount .everyonePopout-nEbJY3 > .footer-2aTx0s {
+  background-color: var(--background-secondary);
+}
+#app-mount .everyonePopout-nEbJY3 > .footer-2aTx0s > .icon-2qOzDL path {
+  fill: #05cfff;
+}
+#app-mount .everyonePopout-nEbJY3 > .footer-2aTx0s > .colorStandard-2KCXvj {
+  color: deeppink;
+}
+
 .elevationHigh-1PneE4 {
   background-color: var(--background-secondary-alt) !important;
 }
@@ -895,6 +915,13 @@
 }
 .tutorialContainer-2sGCg9 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9::before {
   animation: rotation 10s linear infinite;
+}
+
+.splashBackground-1FRCko .image-2jyRAK.loaded-3PtF_J {
+  content: url("https://raw.githubusercontent.com/spinfish/kaleidoscope/master/source/images/login_background.png");
+}
+.splashBackground-1FRCko .canvas-3XuBXe {
+  display: none;
 }
 
 #private-channels ::-webkit-scrollbar {
@@ -1136,6 +1163,15 @@
 #app-mount .keyboardShortcutsModal-3piNz7 .divider-3573oO {
   height: 0px;
   background-color: #ffc416;
+}
+
+.powercord .powercord-donate-modal {
+  background-color: var(--background-tertiary);
+  box-shadow: 0 2px 5px var(--background-tertiary);
+}
+.powercord .powercord-donate-modal .footer-2gL1pp {
+  background-color: var(--background-secondary-alt);
+  box-shadow: 0 0 0 1px black;
 }
 
 .quickswitcher-3JagVE {
