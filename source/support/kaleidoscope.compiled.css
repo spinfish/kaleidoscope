@@ -1174,6 +1174,30 @@
   box-shadow: 0 0 0 1px black;
 }
 
+.powercord .powercord-product-license-modal {
+  color: var(--header-secondary);
+  background-color: var(--background-tertiary);
+  box-shadow: 0 2px 5px 0 var(--background-tertiary);
+}
+.powercord .powercord-product-license-modal h4 {
+  color: #0076bb;
+}
+.powercord .powercord-product-license-modal span {
+  color: var(--text-normal);
+}
+.powercord .powercord-product-license-modal span::before {
+  width: 7px;
+}
+.powercord .powercord-product-license-modal-data.permissions span::before {
+  background-color: #00a23f;
+}
+.powercord .powercord-product-license-modal-data.limitations span::before {
+  background-color: #ff2a00;
+}
+.powercord .powercord-product-license-modal-data.conditions span::before {
+  background-color: #05cfff;
+}
+
 .quickswitcher-3JagVE {
   background-color: var(--background-secondary-alt);
 }

@@ -1,0 +1,35 @@
+@use '../../../helpers/functions' as *;
+
+.powercord {
+  .powercord-product-license-modal {
+    color: var(--header-secondary);
+    background-color: var(--background-tertiary);
+    box-shadow: 0 2px 5px 0 var(--background-tertiary);
+
+    h4 {
+      color: get-colour('settings-smaller-header');
+    }
+
+    span {
+      color: var(--text-normal);
+
+      &::before {
+        width: 7px;
+      }
+    }
+  }
+
+  .powercord-product-license-modal-data {
+    &.permissions span::before {
+      background-color: get-colour('radio-bar-green');
+    }
+
+    &.limitations span::before {
+      background-color: get-colour('bright-orange-red');
+    }
+
+    &.conditions span::before {
+      background-color: get-colour('almost-cyan');
+    }
+  }
+}
