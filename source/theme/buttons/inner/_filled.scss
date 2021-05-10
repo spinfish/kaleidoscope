@@ -1,9 +1,22 @@
-@use '../../../helpers/mixins' as *;
 @use '../../../helpers/functions' as *;
+@use '../../../helpers/variables' as *;
 
-.lookFilled-1Gx00P {
-  @include button-replace('blurple', get-shade('darker-reply-content'));
-  @include button-replace('darkgrey', get-shade('grey-blue'), $important: true);
-  @include button-replace('green', get-colour('spotify-dark-green'));
-  @include button-replace('palered', get-colour('bright-orange-red'));
+#app-mount .lookFilled-1Gx00P {
+  @each $type, $colour in $btn-default-colours {
+    &.#{$type} {
+      color: white;
+      background-color: var(--kds-#{$colour});
+
+      $sass-colour: get-colour($colour) or get-shade($colour);
+
+      &:hover {
+        background-color: rgba($sass-colour, 0.85);
+      }
+
+      &:active,
+      &:disabled {
+        background-color: rgba($sass-colour, 0.7);
+      }
+    }
+  }
 }

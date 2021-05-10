@@ -1,12 +1,10 @@
-@use '../../../helpers/functions' as *;
-
 #app-mount {
   .pageWrapper-1PgVDX {
     background-color: var(--background-primary);
   }
 
   .categoryItem-1QIroW {
-    color: get-colour('almost-cyan');
+    color: var(--kds-almost-cyan);
 
     &.selectedCategoryItem-FHKU_o > div {
       color: var(--interactive-active);
@@ -15,7 +13,7 @@
   }
 
   .discoverHeader-Ijkm_M {
-    color: get-colour('settings-smaller-header');
+    color: var(--kds-settings-smaller-header);
   }
 
   .guildListSection-2CS8vH {
@@ -24,7 +22,7 @@
     }
 
     > .wrapper-1sSZUt {
-      color: get-colour('category-name');
+      color: var(--kds-category-name);
     }
   }
 }

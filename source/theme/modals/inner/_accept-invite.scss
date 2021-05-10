@@ -1,19 +1,18 @@
-@use '../../../helpers/functions' as *;
-@use '../../../helpers/variables' as vars;
+@use '../../../helpers/variables' as *;
 
 .scroller-3__pG8 {
-  box-shadow: vars.$modal-box-shadow;
+  box-shadow: $modal-box-shadow;
   background-color: var(--background-secondary);
 
   .title-2_aCTw {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 
   .button-3k0cO7 {
     background-color: var(--background-modifier-selected);
 
     &:hover {
-      color: get-colour('mango-yellow');
+      color: var(--kds-mango-yellow);
       background-color: rgba(0, 0, 0, 0.4);
     }
   }

@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 #app-mount .keyboardShortcutsModal-3piNz7 {
   background-color: var(--background-accent);
 
@@ -7,7 +5,7 @@
     font-style: italic;
     font-weight: bold;
     text-transform: uppercase;
-    color: get-colour('number');
+    color: var(--kds-number);
 
     &::after {
       content: '!!!';
@@ -26,11 +24,11 @@
   }
 
   .wrapper-1sSZUt {
-    color: get-colour('settings-smaller-header');
+    color: var(--kds-settings-smaller-header);
   }
 
   .keybindDescription-2RDbC2 {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 
   .keybindShortcut-1BD6Z1 span {
@@ -42,6 +40,6 @@
 
   .divider-3573oO {
     height: 0px;
-    background-color: get-colour('mango-yellow');
+    background-color: var(--kds-mango-yellow);
   }
 }

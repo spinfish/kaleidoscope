@@ -1,15 +1,13 @@
-@use '../../../helpers/functions' as *;
-
 .userPopout-3XzG_A {
   width: 255px;
   box-shadow: 0 0 0px 1px var(--background-tertiary);
 
   .headerNormal-T_seeN {
-    background-color: get-colour('dark-blue-popout-normal');
+    background-color: var(--kds-dark-blue-popout-normal);
   }
 
   > [class^='header']:not(.headerNormal-T_seeN) {
-    background-color: get-colour('dark-blue-popout-playing');
+    background-color: var(--kds-dark-blue-popout-playing);
   }
 
   > .footer-1fjuF6,

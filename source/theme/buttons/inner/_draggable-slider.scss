@@ -1,16 +1,14 @@
-@use '../../../helpers/functions' as *;
-
 .slider-1PF9SW {
   .grabber-3mFHz2 {
-    border-color: get-colour('mango-yellow');
-    background-color: get-colour('mango-yellow');
+    border-color: var(--kds-mango-yellow);
+    background-color: var(--kds-mango-yellow);
   }
 
   .bar-2Qqk5Z {
-    background-color: get-colour('reply-content');
+    background-color: var(--kds-reply-content);
 
     .barFill-23-gu- {
-      background-color: get-colour('category-name');
+      background-color: var(--kds-category-name);
     }
   }
 }

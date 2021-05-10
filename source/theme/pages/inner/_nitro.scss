@@ -1,0 +1,18 @@
+@use '../../../helpers/variables' as *;
+
+.wrapper-3nSjSv {
+  background-image: $nitro-header-gradient;
+}
+
+.tier1-1ttHRY.banner-3Kac2g {
+  border-radius: 8px;
+  background-image: linear-gradient(to right, rgb(167, 100, 237), rgb(226, 146, 170));
+
+  .colorBrand-3pXr91 {
+    color: var(--kds-dark-blue-popout-normal);
+  }
+}
+
+.hero-EvfTTA .lookInverted-2D7oAl {
+  color: var(--kds-settings-larger-header);
+}

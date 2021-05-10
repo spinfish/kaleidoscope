@@ -1,20 +1,19 @@
 @use '../../../helpers/mixins' as *;
-@use '../../../helpers/functions' as *;
 
 .topic-TCb_qw {
-  color: get-colour('reply-content');
+  color: var(--kds-reply-content);
 }
 
 .containerDefault-3tr_sE {
   .name-3l27Hl,
   .wrapper-PY0fhH {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 }
 
 .userLimit-3aerPX {
   > .wrapper-2tAnRe {
-    color: get-colour('number');
+    color: var(--kds-number);
 
     > .users-3kndPl {
       width: 27px;
@@ -42,11 +41,11 @@
   }
 
   .unread-2lAfLh {
-    background-color: get-colour('number');
+    background-color: var(--kds-number);
   }
 
   .modeUnread-1qO3K1 {
-    @include channel-name-and-icon(get-colour('number'));
+    @include channel-name-and-icon(var(--kds-number));
   }
 
   .modeMuted-onO3r- {

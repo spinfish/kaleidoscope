@@ -28,32 +28,52 @@
   }
 }
 
-@mixin button-replace(
-  $default,
-  $new-background: null,
-  $text: white,
-  $border: null,
-  $important: false
-) {
-  &.#{funcs.get-btn-class($default)} {
-    $-use-important: if($important, string.unquote('!important'), null);
+// I am suffering immensely
 
-    color: $text;
-    @if ($new-background) {
-      background-color: $new-background $-use-important;
+@mixin popout-button($colour-name) {
+  $colour: funcs.get-colour($colour-name);
 
-      &:hover {
-        background-color: rgba($new-background, 0.6) $-use-important;
-      }
+  @if $colour-name == 'dark-blue-popout-normal' {
+    color: funcs.get-colour('almost-cyan');
+  } @else {
+    color: #{$colour};
+  }
 
-      &:active,
-      &:disabled {
-        background-color: rgba($new-background, 0.4) $-use-important;
-      }
+  &:active:not(.hideInteraction-1iHO1O) {
+    color: white;
+    background-color: rgba($colour, 0.65);
+
+    // Need this otherwise it goes to original colour
+    // if button is selected but cursor is moved away
+    .icon-LYJorE path {
+      fill: white;
     }
+  }
 
-    @else if ($border) {
-      border-color: $border $-use-important;
+  &.focused-3afm-j {
+    color: white;
+    background-color: rgba($colour, 0.15);
+
+    .icon-LYJorE path {
+      fill: white;
     }
+  }
+}
+
+@mixin special-themed-item-button($colour, $opacity) {
+  // People writing Discord's CSS must be psychopaths because they
+  // have !importants IN STYLESHEET CSS WITH NO INLINE STYLES ANYWHERE
+  // So I gotta use !important here. Sorry.
+
+  color: $colour !important;
+
+  &:hover {
+    background-color: rgba($colour, 0.075) !important;
+  }
+
+  &:active,
+  &[aria-selected='true'] {
+    color: white !important;
+    background-color: rgba($colour, $opacity) !important;
   }
 }

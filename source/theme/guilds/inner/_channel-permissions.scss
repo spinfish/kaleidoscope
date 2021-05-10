@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 #app-mount {
   .container-VSDcQc {
     > .autocompleteShadow-iiGWFU {
@@ -22,29 +20,29 @@
 
     [aria-checked='false'] {
       &.deny-3nAuT6 {
-        color: get-colour('bright-orange-red');
+        color: var(--kds-bright-orange-red);
       }
 
       &.passthrough-1c2ewQ {
-        color: get-colour('mango-yellow');
+        color: var(--kds-mango-yellow);
       }
 
       &.allow-1PzSY3 {
-        color: get-colour('radio-bar-green');
+        color: var(--kds-radio-bar-green);
       }
     }
 
     [aria-checked='true'] {
       &.deny-3nAuT6 {
-        background-color: get-colour('bright-orange-red');
+        background-color: var(--kds-bright-orange-red);
       }
 
       &.passthrough-1c2ewQ {
-        background-color: get-colour('mango-yellow');
+        background-color: var(--kds-mango-yellow);
       }
 
       &.allow-1PzSY3 {
-        background-color: get-colour('radio-bar-green');
+        background-color: var(--kds-radio-bar-green);
       }
     }
   }

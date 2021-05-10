@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 .channelTextArea-rNsIhG {
   .scrollableContainer-2NUZem {
     border-radius: 8px;
@@ -16,7 +14,7 @@
     }
 
     .colorMuted-HdFt4q {
-      color: get-colour('reply-content'); // @OFF
+      color: var(--kds-reply-content); // @OFF
     }
 
     [class*='color']:hover {

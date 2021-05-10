@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 .quickswitcher-3JagVE {
   background-color: var(--background-secondary-alt);
 
@@ -13,7 +11,7 @@
 
   > .input-2VB9rf {
     border: 1px solid black;
-    background-color: get-colour('dark-blue-popout-normal');
+    background-color: var(--kds-dark-blue-popout-normal);
   }
 
   .header-13MUnb {
@@ -21,7 +19,7 @@
   }
 
   .resultFocused-3aIoYe {
-    background-color: get-shade('darker-interactive-active');
+    background-color: var(--kds-darker-interactive-active);
 
     &::before {
       content: '';

@@ -1,5 +1,4 @@
 @use '../../../helpers/mixins' as *;
-@use '../../../helpers/functions' as *;
 
 $-nitro-icon: url(
   'https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg'
@@ -31,12 +30,12 @@ $-nitro-icon: url(
 
   .summaryInfo-2QFKUg {
     > .date-2Qr15l {
-      color: get-colour('mango-yellow');
+      color: var(--kds-mango-yellow);
     }
 
     > .description-RQzS-K {
       font-weight: bold;
-      color: get-colour('settings-smaller-header');
+      color: var(--kds-settings-smaller-header);
     }
 
     > .amount-ukM6w- {
@@ -59,6 +58,6 @@ $-nitro-icon: url(
 
   .paymentHeader-3QlZQi,
   .refundSubHeader-3hp-GM {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 }

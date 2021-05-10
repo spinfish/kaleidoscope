@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 #app-mount {
   .videoControls-2kcYic {
     .buffer-26XPkd {
@@ -13,7 +11,7 @@
       &,
       &::before,
       &::after {
-        background-color: get-colour('almost-cyan');
+        background-color: var(--kds-almost-cyan);
       }
     }
 

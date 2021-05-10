@@ -1,7 +1,5 @@
-@use '../../../helpers/functions' as *;
-
 %-spoiler-base {
-  background-color: get-colour('spoiler-box');
+  background-color: var(--kds-spoiler-box);
 }
 
 #app-mount {

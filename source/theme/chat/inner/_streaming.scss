@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 #app-mount {
   .root-2VTZPJ.tile-2naSqK {
     background-color: var(--background-secondary);
@@ -12,7 +10,7 @@
   }
 
   .live-vBWnV6 {
-    background-color: get-colour('bright-orange-red') !important;
+    background-color: var(--kds-bright-orange-red) !important;
   }
 
   .participantsButton-KYW-IW {

@@ -3,12 +3,12 @@
 #app-mount .message-2qnXI6 {
   &:hover {
     // Setting --background-message-hover doesn't work
-    background-color: get-colour('message-hover');
+    background-color: var(--kds-message-hover);
   }
 
   // --background-mentioned, however, does
   &.mentioned-xhSam7::before {
-    background-color: get-colour('mango-yellow');
+    background-color: var(--kds-mango-yellow);
   }
 
   // Clyde messages and message you're replying to
@@ -17,13 +17,13 @@
     background-color: get-colour('number', 0.075);
 
     &::before {
-      background-color: get-colour('number');
+      background-color: var(--kds-number);
     }
   }
 
   .edited-3sfAzf,
   .timestamp-3ZCmNB {
-    color: get-colour('mango-yellow');
+    color: var(--kds-mango-yellow);
   }
 
   .repliedMessage-VokQwo {
@@ -41,7 +41,7 @@
     }
 
     .repliedTextPreview-2NBljf {
-      color: get-colour('reply-content');
+      color: var(--kds-reply-content);
 
       &:hover {
         color: var(--interactive-active);

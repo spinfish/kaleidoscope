@@ -10,7 +10,3 @@
 @function get-shade($name) {
   @return map.get(vars.$colour-shades, $name);
 }
-
-@function get-btn-class($discord-colour) {
-  @return string.unquote(map.get(vars.$btn-default-colours, $discord-colour));
-}

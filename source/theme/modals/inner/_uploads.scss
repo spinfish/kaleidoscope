@@ -1,13 +1,12 @@
-@use '../../../helpers/functions' as *;
-@use '../../../helpers/variables' as vars;
+@use '../../../helpers/variables' as *;
 
 // Regular upload modal
 #app-mount .uploadModal-2ifh8j {
-  box-shadow: vars.$modal-box-shadow;
+  box-shadow: $modal-box-shadow;
   background-color: var(--background-primary);
 
   .filename-ovv3c5 {
-    color: get-colour('number');
+    color: var(--kds-number);
     margin-bottom: 6px;
   }
 
@@ -46,10 +45,10 @@
     }
 
     .inner-3nWsbo {
-      border-color: get-colour('almost-cyan');
+      border-color: var(--kds-almost-cyan);
 
       .title-2Vtl4y {
-        color: get-colour('category-name');
+        color: var(--kds-category-name);
 
         > strong {
           color: var(--interactive-active); // Channel name

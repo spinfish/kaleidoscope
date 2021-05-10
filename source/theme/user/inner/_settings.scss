@@ -1,9 +1,7 @@
-@use '../../../helpers/functions' as *;
-
 .notificationSettings-1NQKPR .wrapper-3jrx9n {
-  border: 2px solid get-colour('number');
+  border: 2px solid var(--kds-number);
 
   .selected-mKYnfr {
-    background-color: get-colour('number');
+    background-color: var(--kds-number);
   }
 }

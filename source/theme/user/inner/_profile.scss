@@ -1,8 +1,6 @@
-@use '../../../helpers/functions' as *;
-
 .root-SR8cQa {
   .topSectionSpotify-1lI0-P {
-    background-color: get-colour('spotify-dark-green');
+    background-color: var(--kds-spotify-dark-green);
 
     .bar-3urHkF {
       background-color: rgba(0, 0, 0, 0.15);
@@ -25,17 +23,17 @@
   }
 
   .topSectionStreaming-1Tpf5X {
-    background-color: get-colour('streaming-violet');
+    background-color: var(--kds-streaming-violet);
   }
 
   .topSectionPlaying-1J5E4n {
-    background-color: get-colour('dark-blue-popout-playing');
+    background-color: var(--kds-dark-blue-popout-playing);
   }
 
   // Make the Send Message text not match the background
-  [class^='topSection']:not(.topSectionNormal-2-vo2m) div + button .contents-18-Yxp {
+  [class^='topSection']:not(.topSectionNormal-2-vo2m) div + button .contents-18-Yxp { // ew ew ew
     font-weight: 600;
-    color: get-colour('dark-blue-popout-normal');
+    color: var(--kds-dark-blue-popout-normal);
   }
 
   .body-3ND3kc {
@@ -44,7 +42,7 @@
 
   .connectedAccount-36nQx7 {
     border-color: black;
-    background-color: get-colour('message-hover');
+    background-color: var(--kds-message-hover);
 
     &:hover {
       background-color: var(--background-modifier-active);
@@ -58,7 +56,7 @@
     }
 
     .flowerStar-1GeTsn path {
-      fill: get-colour('reply-content');
+      fill: var(--kds-reply-content);
     }
   }
 }

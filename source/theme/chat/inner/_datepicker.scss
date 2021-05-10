@@ -1,8 +1,6 @@
-@use '../../../helpers/functions' as *;
-
 %-reactpicker-day-hover {
   background-color: var(--background-secondary-alt);
-  color: get-colour('mango-yellow');
+  color: var(--kds-mango-yellow);
   font-weight: 800;
 }
 
@@ -19,7 +17,7 @@
     background-color: var(--background-secondary-alt);
 
     .datePickerHint-3Q1Udw > .hintValue-29ny8Z {
-      background-color: get-shade('darker-reply-content');
+      background-color: var(--kds-darker-reply-content);
     }
   }
 
@@ -47,7 +45,7 @@
     &__day {
       border-color: black;
       filter: brightness(150%);
-      color: get-colour('category-name');
+      color: var(--kds-category-name);
       background-color: var(--background-secondary);
 
       &:hover {
@@ -60,7 +58,7 @@
         }
 
         &::after {
-          background-color: get-shade('darker-reply-content');
+          background-color: var(--kds-darker-reply-content);
         }
       }
 

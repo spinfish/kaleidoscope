@@ -1,8 +1,7 @@
 @use '../../../helpers/mixins' as *;
-@use '../../../helpers/functions' as *;
 
 .barButtonBase-2uLO1z {
-  color: get-colour('almost-cyan');
+  color: var(--kds-almost-cyan);
 }
 
 .newMessagesBar-265mhP {
@@ -14,10 +13,10 @@
 }
 
 .messagesErrorBar-nyJGU7 {
-  background-color: get-colour('bright-orange-red');
+  background-color: var(--kds-bright-orange-red);
 
   .barButtonBase-2uLO1z {
-    color: white
+    color: white;
   }
 }
 
@@ -42,7 +41,7 @@
   }
 
   .content-1o0f9g {
-    color: var(--interactive-active);
+    color: var(--kds-almost-cyan);
     bottom: 7px;
     position: relative;
   }

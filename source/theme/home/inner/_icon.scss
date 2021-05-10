@@ -1,4 +1,3 @@
-@use '../../../helpers/functions' as *;
 @use '../../../helpers/keyframes' as *;
 @use '../../../helpers/variables' as vars;
 
@@ -20,7 +19,7 @@
       width: 30px;
       height: 30px;
       position: absolute; // Make sure it stays put when hovered
-      color: get-colour('light-grey');
+      color: var(--kds-light-grey);
     }
   }
 

@@ -22,11 +22,17 @@
  * SOFTWARE.
  */
 
+@use 'sass:map';
 @use './helpers/functions' as *;
+@use './helpers/variables' as *;
 
 .theme-dark,
 .theme-light,
 :root {
+  @each $colour, $value in map.merge($base-colours, $colour-shades) {
+    --kds-#{$colour}: #{$value};
+  }
+
   --header-primary: #{get-colour('light-grey')};
 
   --background-accent: rgba(3, 13, 34, 1);
@@ -68,12 +74,6 @@
   --scrollbar-auto-thumb: #{get-colour('category-name')};
   --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
   --scrollbar-auto-scrollbar-color-track: var(--background-secondary);
-
-  --toast-background: var(--background-primary);
-  --toast-header: var(--background-tertiary);
-  --toast-contents: var(--background-secondary);
-  --toast-border: var(--background-tertiary);
-  --toast-box-shadow: rgba(0, 0, 0, 0.2);
 
   // i'm unsure of what exactly this does
   // if someone could tell me that'd be cool

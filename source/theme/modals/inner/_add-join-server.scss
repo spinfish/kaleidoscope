@@ -1,18 +1,16 @@
-@use '../../../helpers/functions' as *;
-
 // Thanks discord!
 .theme-light .root-1gCeng {
   box-shadow: none;
   background-color: var(--background-secondary-alt);
 
   .colorHeaderPrimary-26Jzh- {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 
   // Template buttons
   .container-UC8Ug1 {
     border-color: black;
-    background-color: get-colour('message-hover');
+    background-color: var(--kds-message-hover);
 
     &:hover {
       background-color: var(--background-modifier-selected);
@@ -29,20 +27,20 @@
     background-color: inherit;
 
     .footerTitle-2CYZch {
-      color: get-colour('almost-cyan');
+      color: var(--kds-almost-cyan);
       margin-bottom: 16px; // Fixes blurriness and eases cramp
     }
 
     .sizeMin-1mJd1x {
-      color: get-colour('number');
+      color: var(--kds-number);
     }
 
     .footerButton-ayFTfX.lookFilled-1Gx00P {
       box-shadow: 0 0 0 1px black;
-      background-color: get-colour('message-hover');
+      background-color: var(--kds-message-hover);
 
       &:hover {
-        color: get-colour('mango-yellow');
+        color: var(--kds-mango-yellow);
         background-color: var(--toast-box-shadow);
 
         &:after,

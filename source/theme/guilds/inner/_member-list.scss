@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 .overflowRolesPopout-140n9i {
   &[class*='popout'],
   .overflowRolesPopoutArrow-2O66oH {
@@ -8,10 +6,10 @@
   }
 
   .overflowRolesPopoutHeaderText-1SW-y3 {
-    color: get-colour('almost-cyan');
+    color: var(--kds-almost-cyan);
   }
 
   .overflowRolesPopoutHeaderIcon-6PNEZA path {
-    fill: get-colour('almost-cyan');
+    fill: var(--kds-almost-cyan);
   }
 }

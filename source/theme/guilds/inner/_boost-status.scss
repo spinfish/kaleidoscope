@@ -1,5 +1,4 @@
 @use '../../../helpers/mixins' as *;
-@use '../../../helpers/functions' as *;
 
 .content-22JeIO {
   background-color: var(--background-primary);
@@ -23,7 +22,7 @@
     background-color: var(--background-secondary-alt);
 
     > .tierLock-1oFMOZ path {
-      fill: get-shade('greyish-blue');
+      fill: var(--kds-greyish-blue);
     }
   }
 
@@ -36,7 +35,7 @@
       color: var(--text-normal);
     }
     .perks-2Ve4tD{
-      color: get-colour('reply-content');
+      color: var(--kds-reply-content);
     }
   }
 
@@ -46,6 +45,6 @@
   }
 
   ~ .wrapper-1hrFc0 > h3 {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 }

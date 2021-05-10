@@ -1,25 +1,19 @@
-.item-PXvHYJ {
-  &.themed-OHr7kt {
-    // [aria-controls='logout-tab']
-    &[style*='rgb(240, 71, 71)'] {
-      color: red !important;
+@use '../../../helpers/mixins' as *;
 
-      &:active,
-      &[aria-selected='true'] {
-        color: white !important;
-        background-color: rgba(red, 0.9) !important;
-      }
-    }
+// Subscriptions + Server Boost Status
+.premiumTabItem-1QTfBr,
+.serverBoostTabItem-2hFTIN {
+  @include special-themed-item-button(cyan, 0.6);
 
-    // [aria-controls='Discord Nitro-tab']
-    &[style*='rgb(114, 137, 218)'] {
-      color: cyan !important;
-
-      &:active,
-      &[aria-selected='true'] {
-        color: white !important;
-        background-color: rgba(cyan, 0.5) !important;
-      }
+  &:active,
+  &[aria-selected='true'] {
+    path {
+      fill: white;
     }
   }
+}
+
+// Logout
+.item-PXvHYJ.themed-OHr7kt[style*='rgb(237, 66, 69)'] {
+  @include special-themed-item-button(red, 0.9);
 }

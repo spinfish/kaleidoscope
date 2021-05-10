@@ -1,9 +1,7 @@
-@use '../../../helpers/functions' as *;
-
 $-mic-test-gradient: linear-gradient(
   to right,
-  get-shade('darker-reply-content'),
-  get-colour('almost-cyan')
+  var(--kds-darker-reply-content),
+  var(--kds-almost-cyan)
 );
 
 #app-mount .userSettingsVoice-iwdUCU {
@@ -26,7 +24,7 @@ $-mic-test-gradient: linear-gradient(
   .inputSensitivityToggle-2LKb8o {
     // Automatic
     .speaking-2bFhO4 {
-      background-color: get-colour('radio-bar-green');
+      background-color: var(--kds-radio-bar-green);
     }
 
     // Manual
@@ -36,11 +34,11 @@ $-mic-test-gradient: linear-gradient(
       }
 
       [style*='rgb(251, 184, 72)'] { // Yellow
-        background-color: get-colour('almost-cyan') !important;
+        background-color: var(--kds-almost-cyan) !important;
       }
 
-      [style*='rgb(105, 196, 154)'] { // Green
-        background-color: get-shade('darker-reply-content') !important;
+      [style*='rgb(87, 242, 135)'] { // Green
+        background-color: var(--kds-radio-bar-green) !important;
       }
     }
   }

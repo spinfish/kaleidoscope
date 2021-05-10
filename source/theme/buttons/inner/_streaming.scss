@@ -1,17 +1,13 @@
-@use '../../../helpers/functions' as *;
+#app-mount .item-3T2z1R {
+  border-color: black;
 
-#app-mount {
-  .item-3T2z1R {
-    border-color: black;
+  &.selectorButton-EEUWed {
+    &:hover {
+      background: transparent;
+    }
 
-    &.selectorButton-EEUWed {
-      &:hover {
-        background: transparent;
-      }
-
-      &.selectorButtonSelected-t5V9On {
-        background-color: get-shade('darker-reply-content');
-      }
+    &.selectorButtonSelected-t5V9On {
+      background-color: var(--kds-darker-reply-content);
     }
   }
 }

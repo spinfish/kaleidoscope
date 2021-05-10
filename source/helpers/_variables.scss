@@ -1,10 +1,3 @@
-$btn-default-colours: (
-  'blurple': 'colorBrand-3pXr91',
-  'darkgrey': 'colorPrimary-3b3xI6',
-  'green': 'colorGreen-29iAKY',
-  'palered': 'colorRed-1TFJan'
-);
-
 $base-colours: (
   'settings-larger-header': rgba(193, 0, 242, 1),
   'discord-nitro-magenta': rgba(255, 115, 250, 1),
@@ -31,6 +24,14 @@ $colour-shades: (
   'darker-reply-content': rgba(214, 46, 151, 0.75),
   'light-pink-tick-slider': rgba(255, 27, 240, 0.25),
   'darker-interactive-active': rgba(209, 41, 255, 0.065)
+);
+
+$btn-default-colours: (
+  'colorBrand-3pXr91': 'darker-reply-content',
+  'colorPrimary-3b3xI6': 'greyish-blue',
+  'colorGreen-29iAKY': 'spotify-dark-green',
+  'colorRed-1TFJan': 'bright-orange-red',
+  'actionRed-gYn8D3': 'bright-orange-red'
 );
 
 $home-icon-background: url(

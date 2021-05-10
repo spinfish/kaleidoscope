@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 .powercord {
   .powercord-product-license-modal {
     color: var(--header-secondary);
@@ -7,7 +5,7 @@
     box-shadow: 0 2px 5px 0 var(--background-tertiary);
 
     h4 {
-      color: get-colour('settings-smaller-header');
+      color: var(--kds-settings-smaller-header);
     }
 
     span {
@@ -21,15 +19,15 @@
 
   .powercord-product-license-modal-data {
     &.permissions span::before {
-      background-color: get-colour('radio-bar-green');
+      background-color: var(--kds-radio-bar-green);
     }
 
     &.limitations span::before {
-      background-color: get-colour('bright-orange-red');
+      background-color: var(--kds-bright-orange-red);
     }
 
     &.conditions span::before {
-      background-color: get-colour('almost-cyan');
+      background-color: var(--kds-almost-cyan);
     }
   }
 }

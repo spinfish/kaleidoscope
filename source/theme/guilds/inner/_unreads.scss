@@ -1,8 +1,4 @@
 @use '../../../helpers/mixins' as *;
-@use '../../../helpers/functions' as *;
-
-$-corner-transition: 1s linear;
-$-box-shadow: 0 0 0 1px var(--background-tertiary);
 
 .unreadBar-3t3sYc {
   @include border(
@@ -11,12 +7,14 @@ $-box-shadow: 0 0 0 1px var(--background-tertiary);
     $bottom: solid 3px var(--background-primary)
   );
 
-  box-shadow: $-box-shadow;
+  box-shadow: 0 0 0 1px var(--background-tertiary);
   background-color: var(--background-tertiary);
 
-  transition: background-color 0.3s linear,
-              border-bottom-left-radius $-corner-transition,
-              border-bottom-right-radius $-corner-transition;
+  transition-property: background-color,
+                       border-bottom-left-radius,
+                       border-bottom-right-radius;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 
   &:hover {
     border-bottom-left-radius: 13px;
@@ -25,6 +23,6 @@ $-box-shadow: 0 0 0 1px var(--background-tertiary);
   }
 
   > .text-2e2ZyG {
-    color: get-colour('almost-cyan');
+    color: var(--kds-almost-cyan);
   }
 }

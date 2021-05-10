@@ -1,0 +1,22 @@
+@use '../../../helpers/mixins' as *;
+
+#guild-header-popout-invite-people {
+  @include popout-button('almost-cyan');
+}
+
+#guild-header-popout-premium-subscribe {
+  @include popout-button('discord-nitro-magenta');
+}
+
+.colorDanger-2qLCe1 {
+  color: var(--kds-bright-orange-red);
+
+  &.focused-3afm-j,
+  &:active:not(.hideInteraction-1iHO1O) {
+    background-color: var(--kds-bright-orange-red);
+  }
+}
+
+.colorDefault-2K3EoJ:not([class*='Danger']) {
+  @include popout-button('dark-blue-popout-normal');
+}

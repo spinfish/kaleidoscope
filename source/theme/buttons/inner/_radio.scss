@@ -4,7 +4,6 @@
 $-yellow-orange-mix: color.mix(
   get-colour('mango-yellow'),
   get-colour('bright-orange-red'),
-  $weight: 50%
 );
 
 // Discord why must you hurt me in this way
@@ -15,20 +14,20 @@ $-yellow-orange-mix: color.mix(
 .radioBar-bMNUI- {
   border-width: 4px;
 
-  &[style*='#43b58'] {
+  &[style*='#3ba55c'] {
     // https://sass-lang.com/documentation/breaking-changes/css-vars
-    --radio-bar-accent-color: #{get-colour('radio-bar-green')} !important;
+    --radio-bar-accent-color: var(--kds-radio-bar-green) !important;
   }
 
-  &[style*='#faa61a'] {
-    --radio-bar-accent-color: #{get-colour('mango-yellow')} !important;
+  &[style*='#cb8615'] {
+    --radio-bar-accent-color: var(--kds-mango-yellow) !important;
   }
 
   &[style*='#f57731'] {
     --radio-bar-accent-color: #{$-yellow-orange-mix} !important;
   }
 
-  &[style*='#f04747'] {
-    --radio-bar-accent-color: #{get-colour('bright-orange-red')} !important;
+  &[style*='#ed4245'] {
+    --radio-bar-accent-color: var(--kds-bright-orange-red) !important;
   }
 }

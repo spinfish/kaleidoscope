@@ -1,7 +1,5 @@
-@use '../../../helpers/functions' as *;
-
 #private-channels {
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     width: 6px;
 
     &-thumb {
@@ -10,11 +8,11 @@
   }
 
   .headerText-2F0828 {
-    color: get-colour('almost-cyan');
+    color: var(--kds-almost-cyan);
   }
 
   .clickable-1JJAn8 .overflow-WK9Ogt {
-    color: get-colour('category-name');
+    color: var(--kds-category-name);
   }
 
   [href$='@me'],

@@ -1,9 +1,7 @@
-@use '../../../helpers/functions' as *;
-
 .platform-win .titleBar-AC4pGV {
   .winButtonClose-1HsbF- {
     &:hover {
-      background-color: get-colour('bright-orange-red');
+      background-color: var(--kds-bright-orange-red);
 
       // Make X only go white on hover
       svg polygon {
@@ -13,7 +11,7 @@
 
     // Normal appearance
     svg polygon {
-      fill: get-colour('bright-orange-red');
+      fill: var(--kds-bright-orange-red);
     }
   }
 
@@ -32,11 +30,11 @@
     // Minimize
     &:last-child { // Or nth-child(4)
       &:hover {
-        background-color: get-colour('radio-bar-green');
+        background-color: var(--kds-radio-bar-green);
       }
 
       svg rect {
-        stroke: get-colour('radio-bar-green');
+        stroke: var(--kds-radio-bar-green);
       }
     }
 

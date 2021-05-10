@@ -1,6 +1,6 @@
 @use '../../../helpers/functions' as *;
 
 .mention.wrapper-3WhCwL {
-  color: get-colour('number');
+  color: var(--kds-number);
   background-color: get-colour('number', 0.1);
 }
