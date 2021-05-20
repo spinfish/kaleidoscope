@@ -1,0 +1,29 @@
+// These are mainly to make it line up with
+// the toolbar and to make messages less squished
+
+%-base-message-popout-wrap {
+  width: 550px;
+  margin-top: 5px;
+}
+
+.messagesPopoutWrap-1MQ1bW {
+  @extend %-base-message-popout-wrap;
+  left: 87px;
+}
+
+.recentMentionsPopout-3rCiI6 {
+  @extend %-base-message-popout-wrap;
+  left: 8px;
+}
+
+.searchResultsWrap-3-pOjs {
+  width: 550px;
+
+  .pageButton-2ruNwd.activeButton-rvKcqq {
+    background-color: var(--kds-settings-smaller-header);
+
+    &:hover {
+      background-color: var(--kds-offline-colour);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+#app-mount .customStatusEmoji-7MXCgv {
+  &:not([src$='svg']) {
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    transition: 0.75s linear;
+    transition-property: width, height;
+
+    &:hover {
+      width: 60%;
+      height: 60%;
+    }
+
+    + .customStatusText-3YJeRZ {
+      display: block;
+    }
+  }
+}

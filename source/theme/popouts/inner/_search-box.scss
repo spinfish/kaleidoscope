@@ -1,0 +1,59 @@
+#search-results {
+  // First two properties are for keeping it as stuck
+  // to the right as possible like pinned messages and inbox
+  margin-top: 5px;
+  width: 450px !important;
+  background-color: var(--background-secondary);
+  box-shadow: 0 0 0 1px var(--background-tertiary), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+
+  > .focused-2bY0OD {
+    background-color: var(--background-secondary-alt);
+
+    // Keybind
+    span {
+      color: var(--kds-mango-yellow);
+      background-color: var(--background-modifier-selected);
+    }
+  }
+
+  strong,
+  .searchResultChannelIcon-1DnTme {
+    color: var(--kds-category-name);
+  }
+
+  .header-2N-gMV {
+    font-weight: 625;
+    color: var(--kds-settings-smaller-header);
+  }
+
+  .resultsGroup-r_nuzN::before {
+    display: none;
+  }
+
+  .queryText-3xoOY7 {
+    font-weight: bold;
+    color: var(--interactive-active);
+
+    strong {
+      color: rgb(185, 187, 190);
+    }
+  }
+
+  .option-96V44q::after {
+    background: transparent;
+  }
+
+  .selected-rZcOL- {
+    background-color: var(--background-secondary-alt);
+
+    &::before {
+      padding-left: 10px;
+      background-color: inherit;
+      filter: brightness(40%);
+    }
+  }
+
+  .displayedNick-3xxvzU {
+    color: var(--text-normal);
+  }
+}

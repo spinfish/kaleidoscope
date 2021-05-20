@@ -1,0 +1,11 @@
+@forward 'bigger-click-emoji';
+@forward 'custom-status-scrollbar';
+@forward 'nicer-roles';
+@forward 'popout-emoji-grow';
+@forward 'reaction-emoji-hover';
+@forward 'revert' hide $default-avatar-map;
+@forward 'status-indicators' hide $status-mapping;
+@forward 'status-picker';
+@forward 'user-notes';
+
+@import url('https://nyri4.github.io/Discolored/main.css');

@@ -17,17 +17,15 @@
     }
   }
 
-  .powercord-product-license-modal-data {
-    &.permissions span::before {
-      background-color: var(--kds-radio-bar-green);
-    }
+  .permissions span::before {
+    background-color: var(--kds-radio-bar-green);
+  }
 
-    &.limitations span::before {
-      background-color: var(--kds-bright-orange-red);
-    }
+  .limitations span::before {
+    background-color: var(--kds-bright-orange-red);
+  }
 
-    &.conditions span::before {
-      background-color: var(--kds-almost-cyan);
-    }
+  .conditions span::before {
+    background-color: var(--kds-almost-cyan);
   }
 }

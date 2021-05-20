@@ -1,0 +1,52 @@
+@use '../../../helpers/mixins' as *;
+
+.lookFilled-1Gx00P {
+  @include exclude-yellow-white {
+    color: white;
+    background-color: var(--fill-button-normal);
+
+    &:hover {
+      background-color: var(--fill-button-hover);
+    }
+
+    &:active,
+    &:disabled {
+      background-color: var(--fill-button-active);
+    }
+  }
+}
+
+.lookOutlined-3sRXeN {
+  @include exclude-yellow-white {
+    color: var(--line-button-colour);
+    background-color: transparent;
+    border-color: var(--line-button-colour);
+
+    &:hover {
+      background-color: var(--line-button-hover);
+    }
+  }
+}
+
+.colorBrand-3pXr91 {
+  @include filled-button('darker-reply-content');
+  @include lined-button('darker-reply-content');
+}
+
+.colorPrimary-3b3xI6 {
+  @include filled-button('greyish-blue');
+  // ... Yeah
+  --line-button-colour: rgba(255, 255, 255, 0.8);
+  --line-button-hover: rgba(255, 255, 255, 0.075);
+}
+
+.colorGreen-29iAKY {
+  @include filled-button('spotify-dark-green');
+  @include lined-button('radio-bar-green');
+}
+
+.colorRed-1TFJan,
+.actionRed-gYn8D3 {
+  @include filled-button('bright-orange-red');
+  @include lined-button('darker-orange-red');
+}

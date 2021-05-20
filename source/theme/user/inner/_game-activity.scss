@@ -5,6 +5,10 @@
     background-color: rgb(2, 142, 78);
   }
 
+  .notDetected-33MY4s {
+    background-color: var(--kds-greyish-blue);
+  }
+
   .addGamePopout-2RY8Ju.elevationBorderHigh-2WYJ09 {
     box-shadow: 0 0 0 2px var(--background-tertiary);
     background-color: var(--background-secondary-alt);
@@ -12,17 +16,14 @@
 
   // Ugh. This needs improvement somehow
   .game-1ipmAa .gameNameInput-385LoS {
-    &:hover,
-    &:focus {
-      background-color: var(--background-secondary);
-    }
-
     &:hover {
       border-color: get-colour('almost-cyan', 0.25);
+      background-color: var(--background-secondary);
     }
 
     &:focus {
       border-color: rgba(255, 27, 240, 0.5);
+      background-color: var(--background-secondary);
     }
   }
 }

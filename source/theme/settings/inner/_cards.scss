@@ -1,0 +1,27 @@
+#app-mount {
+  // Delete emoji/remove game button, etc
+  .button-2CgfFz {
+    box-shadow: 0 0 0 1px black;
+    background-color: var(--background-tertiary);
+  }
+
+  // Connections, integrations, etc
+  .card-3Qj_Yx {
+    border-color: var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+  }
+
+  // Member card and games
+  .card-FDVird {
+    box-shadow: none;
+
+    &::before {
+      border-color: black;
+      background-color: var(--background-secondary-alt);
+    }
+  }
+}
+
+.divider-3wNib3 {
+  border-color: black !important;
+}

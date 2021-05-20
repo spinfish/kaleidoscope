@@ -1,62 +1,56 @@
-.root-SR8cQa {
-  .topSectionSpotify-1lI0-P {
-    background-color: var(--kds-spotify-dark-green);
+// Change Send Message text on playing modals
+[class^='topSection'] .lookInverted-2D7oAl {
+  font-weight: 600;
+  color: var(--kds-dark-blue-popout-normal);
+}
 
-    .bar-3urHkF {
-      background-color: rgba(0, 0, 0, 0.15);
-    }
+.root-SR8cQa .body-3ND3kc {
+  background-color: var(--background-primary);
+}
 
-    // Huge thanks to DoggyBootsy and void for helping me with this!
-    .contentImagesProfile-1Mz07W {
-      width: -webkit-fill-available;
-    }
+.topSectionPlaying-1J5E4n {
+  background-color: var(--kds-dark-blue-popout-playing);
+}
 
-    .fullWidth-1orjjo {
-      width: 33px;
-      margin-left: 5px;
-    }
+.topSectionSpotify-1lI0-P {
+  background-color: var(--kds-spotify-dark-green);
 
-    .spotifyButtonLogo-3uT57D {
-      left: 7.7px;
-      position: absolute;
-    }
+  .bar-3urHkF {
+    background-color: rgba(0, 0, 0, 0.15);
   }
 
-  .topSectionStreaming-1Tpf5X {
-    background-color: var(--kds-streaming-violet);
+  .contentImagesProfile-1Mz07W {
+    width: -webkit-fill-available;
   }
 
-  .topSectionPlaying-1J5E4n {
-    background-color: var(--kds-dark-blue-popout-playing);
+  .fullWidth-1orjjo {
+    width: 33px;
+    margin-left: 5px;
   }
 
-  // Make the Send Message text not match the background
-  [class^='topSection']:not(.topSectionNormal-2-vo2m) div + button .contents-18-Yxp { // ew ew ew
-    font-weight: 600;
-    color: var(--kds-dark-blue-popout-normal);
+  .spotifyButtonLogo-3uT57D {
+    left: 7.7px;
+    position: absolute;
+  }
+}
+
+.topSectionStreaming-1Tpf5X {
+  background-color: var(--kds-streaming-violet);
+}
+
+.connectedAccount-36nQx7 {
+  border-color: black;
+  background-color: var(--kds-message-hover);
+
+  &:hover {
+    background-color: var(--background-modifier-active);
   }
 
-  .body-3ND3kc {
-    background-color: var(--background-primary);
+  .flowerStar-1GeTsn path {
+    fill: var(--kds-reply-content);
   }
 
-  .connectedAccount-36nQx7 {
-    border-color: black;
-    background-color: var(--kds-message-hover);
-
-    &:hover {
-      background-color: var(--background-modifier-active);
-    }
-  }
-
-  // Thanku Luckfire
-  .connectedAccountVerifiedIcon-3aZz_K {
-    .childContainer-1wxZNh path {
-      fill: black;
-    }
-
-    .flowerStar-1GeTsn path {
-      fill: var(--kds-reply-content);
-    }
+  .childContainer-1wxZNh path {
+    fill: black;
   }
 }

@@ -1,5 +1,4 @@
 @use 'sass:map';
-@use 'sass:string';
 @use 'variables' as vars;
 
 @function get-colour($name, $opacity: null) {

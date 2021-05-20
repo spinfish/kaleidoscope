@@ -1,0 +1,29 @@
+// Yeah
+.note-QfFU8y,
+.note-3HfJZ5 {
+  .textarea-2r0oV8 {
+    filter: blur(5px);
+    color: var(--text-normal);
+    transition: filter 0.35s cubic-bezier(0.2, 0.11, 0, 1);
+
+    &::placeholder {
+      color: var(--kds-almost-cyan);
+    }
+
+    &:hover {
+      filter: none;
+
+      &::placeholder {
+        color: var(--interactive-hover);
+      }
+    }
+
+    &:focus {
+      filter: none;
+
+      &::placeholder {
+        color: var(--interactive-active);
+      }
+    }
+  }
+}

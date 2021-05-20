@@ -1,0 +1,19 @@
+.root-SR8cQa .activity-1ythUs {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    height: 5px;
+
+    &-track {
+      border-radius: 4px;
+      margin-left: 18px;
+      margin-right: 18px;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    &-thumb {
+      border-radius: 4px;
+      background-color: var(--header-secondary);      
+    }
+  }
+}

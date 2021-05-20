@@ -1,0 +1,21 @@
+// Add role
+.container-3XJ8ns {
+  border-color: var(--background-tertiary);
+}
+
+// Role tooltip on member list
+.overflowRolesPopout-140n9i {
+  &[class*='popout'],
+  .overflowRolesPopoutArrow-2O66oH {
+    box-shadow: 0 0 0 1px black;
+    background-color: var(--background-secondary-alt);
+  }
+
+  .overflowRolesPopoutHeaderText-1SW-y3 {
+    color: var(--kds-almost-cyan);
+  }
+
+  .overflowRolesPopoutHeaderIcon-6PNEZA path {
+    fill: var(--kds-almost-cyan);
+  }
+}

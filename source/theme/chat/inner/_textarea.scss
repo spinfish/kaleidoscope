@@ -21,4 +21,19 @@
       color: var(--interactive-hover);
     }
   }
+
+  // Slash command prompt
+  .pill-2pQByF {
+    background-color: var(--background-primary);
+  }
+
+  .tabButton-1n4gNP {
+    rect {
+      fill: var(--kds-dark-blue-popout-playing);
+    }
+
+    path[d^='M0'] {
+      display: none;
+    }
+  }
 }

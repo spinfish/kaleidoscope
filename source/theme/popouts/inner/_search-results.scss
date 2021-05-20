@@ -1,0 +1,32 @@
+.searchResultsWrap-3-pOjs {
+  width: fit-content;
+}
+
+// I'm so sorry but this had to be done
+#search-results[data-jump-section='global'] {
+  box-shadow: none;
+
+  .searchResult-9tQ1uo {
+    overflow: auto;
+    background-color: var(--background-modifier-selected);
+
+    &::-webkit-scrollbar {
+      height: 5px;
+
+      &-thumb {
+        border-radius: inherit;
+        background-color: var(--background-tertiary);
+      }
+    }
+  }
+
+  .channelName-1JRO3C {
+    padding: 3px;
+    border-radius: 8px;
+    background-color: var(--background-modifier-selected);
+
+    &:hover {
+      background-color: var(--background-primary);
+    }
+  }
+}

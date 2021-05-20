@@ -1,0 +1,92 @@
+@use '../../../helpers/functions' as *;
+@use '../../../helpers/variables' as *;
+
+#app-mount {
+  .searchFilter-2ESiM3,
+  .searchAnswer-3Dz2-q {
+    color: var(--text-normal);
+    background-color: var(--background-secondary);
+  }
+
+  .datePicker--XZbmJ {
+    background-color: get-colour('almost-cyan', 0.015);
+    box-shadow: 0 0 0 5px get-colour('almost-cyan', 0.2) inset;
+    background: $lily-datepicker-bg-image center/cover no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background-color: var(--background-primary);
+    }
+  }
+
+  .datePickerHint-3Q1Udw {
+    z-index: 0;
+    margin: auto;
+    border-top-color: rgb(128, 128, 128, 0.25);
+  }
+
+  .hintValue-29ny8Z {
+    background-color: var(--kds-darker-reply-content);
+  }
+
+  .react-datepicker {
+    background-color: inherit;
+    left: 65px; // margin: auto + position didnt work lol
+
+    &__header {
+      background-color: inherit;
+    }
+
+    &__current-month {
+      color: deeppink;
+      border: none;
+      font-weight: bold;
+      font-size: 150%;
+    }
+
+    &__navigation {
+      &--next,
+      &--previous {
+        border-color: black;
+      }
+    }
+
+    // All the filter stuff is to compensate for the background image
+    &__day {
+      border-color: black;
+      filter: brightness(150%);
+      color: var(--kds-category-name);
+      background-color: var(--background-secondary);
+
+      &:hover:not(.react-datepicker__day--disabled) {
+        font-weight: 800;
+        color: var(--kds-mango-yellow);
+        background-color: var(--background-secondary-alt);
+      }
+
+      &-name {
+        font-weight: 700;
+        color: rgb(47, 2, 46);
+      }
+
+      &--outside-month {
+        filter: brightness(105%);
+      }
+
+      &--selected::after {
+        background-color: var(--kds-darker-reply-content);
+      }
+
+      &--disabled,
+      &--disabled:hover {
+        background-color: rgb(1, 16, 27);
+        filter: brightness(85%);
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -1,67 +1,63 @@
 @use '../../../helpers/variables' as *;
 
-// Regular upload modal
-#app-mount .uploadModal-2ifh8j {
-  box-shadow: $modal-box-shadow;
-  background-color: var(--background-primary);
+.filename-ovv3c5 {
+  color: var(--kds-number);
+  margin-bottom: 6px;
+}
 
-  .filename-ovv3c5 {
-    color: var(--kds-number);
-    margin-bottom: 6px;
-  }
-
-  .icon-kyxXVr:not(.image-2yrs5j) {
-    filter: invert(0.95); // Thanks D Mack#4481!
-  }
-
-  // Add a comment
-  .scrollableContainer-2NUZem {
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-
-    transition-duration: 0.2s;
-    transition-property: border-color, background-color;
-    transition-timing-function: ease-in-out;
-
-    // Mimic Discord's behaviour
-    &:hover {
-      border-color: rgba(4, 4, 5, 1);
-      background-color: rgba(3, 12, 31, 1);
-    }
-  }
-
+#app-mount {
   .footer-3mqk7D {
     box-shadow: none;
     background-color: var(--background-secondary-alt);
   }
-}
 
-// Drag and drop upload modal
-.uploadModalIn-1z07Bv {
+  // Have this under app-mount so it works for drag drop modal
+  .icon-kyxXVr:not(.image-2yrs5j) {
+    filter: invert(0.95); // Thanks D Mack#4481!
+  }
+
+  // Regular upload modal
+  .uploadModal-2ifh8j {
+    box-shadow: $modal-box-shadow;
+    background-color: var(--background-primary);
+
+    // Add a comment
+    .scrollableContainer-2NUZem {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      transition: 0.2s ease-in-out;
+      transition-property: border-color, background-color;
+
+      // Mimic Discord's behaviour
+      &:hover {
+        border-color: rgb(4, 4, 5);
+        background-color: rgb(3, 12, 31);
+      }
+    }
+  }
+
+  // Drag and drop upload modal
+  .bgScale-1otPtc {
+    background-color: var(--background-primary);
+  }
+
+  .inner-3nWsbo {
+    border-color: var(--kds-almost-cyan);
+  }
+
   .uploadDropModal-2kTwbc {
-    &,
-    .bgScale-1otPtc {
-      background-color: var(--background-primary);
+    // Channel name
+    strong {
+      color: var(--interactive-active);
     }
 
-    .inner-3nWsbo {
-      border-color: var(--kds-almost-cyan);
+    // "Upload to"
+    .title-2Vtl4y {
+      color: var(--kds-category-name);
+    }
 
-      .title-2Vtl4y {
-        color: var(--kds-category-name);
-
-        > strong {
-          color: var(--interactive-active); // Channel name
-        }
-      }
-
-      .icons-1w691d {
-        filter: invert(0.95);
-      }
-
-      .instructions-2Du9gG {
-        color: var(--header-primary);
-      }
+    .instructions-2Du9gG {
+      color: var(--header-primary);
     }
   }
 }

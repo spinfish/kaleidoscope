@@ -1,0 +1,122 @@
+@use '../../../helpers/variables' as *;
+
+%-base-tier-body {
+  font-weight: 550;
+  border: 1px solid black;
+  color: var(--text-normal);
+}
+
+%-subscriber-element {
+  border: 1px solid var(--background-tertiary);
+  background-color: var(--background-secondary-alt);
+}
+
+// All selectors are in order of boosting page -> settings
+// including union (e.g. tierUnlocked1, tierUnlocked2)
+
+#app-mount {
+  .perksModalContentWrapper-2HU6uL {
+    background-color: var(--background-primary);
+
+    h3:not(.headingTier1-K4ha7e) {
+      color: var(--kds-category-name);
+    }
+  }
+
+  .moreSubscribers-1cuWDE {
+    @extend %-subscriber-element;
+  }
+
+  .subscribersPopout-2CP6Ln {
+    @extend %-subscriber-element;
+    grid-gap: 12px;
+
+    // Make it not cut off part of the last 2 users
+    &::after {
+      content: '';
+      margin-bottom: 4px;
+    }
+  }
+
+  .barBackground-2EEiLw {
+    background-color: var(--background-tertiary);
+  }
+
+  .background-3xPPFc {
+    color: var(--background-tertiary);
+  }
+
+  .tierHeaderUnlocked-1n-OTI,
+  .tierHeaderUnlockedBackground-MW5XJU {
+    background-image: $nitro-header-gradient;
+  }
+
+  .tierUnlocked-25K6Kv,
+  .tierUnlocked-27DwHo {
+    color: rebeccapurple;
+  }
+
+  .tierHeaderLocked-1s2JJz,
+  .tierHeaderLocked-1a2opw {
+    border: 1px black;
+    border-style: solid solid none solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: var(--background-tertiary);
+  }
+
+  .tierMarkerBackground-3q29am {
+    background-color: var(--background-secondary-alt);
+  }
+
+  // Ugh I hate this but I tried messing around with at-root to no avail
+  .selectedTier-1JkO7i .tierMarkerBackground-3q29am {
+    filter: brightness(125%);
+    background-color: var(--kds-dark-blue-popout-normal);
+  }
+
+  .tierMarkerInProgress-24LMzJ {
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--kds-message-hover) !important;
+  }
+
+  .tierInProgress-3mBoXq {
+    background-color: var(--background-tertiary);
+  }
+
+  .tierLock-3CSxSX {
+    color: var(--kds-greyish-blue);
+  }
+
+  .tierUnlocked-25K6Kv {
+    color: rebeccapurple;
+  }
+
+  .tierBody-16Chc9 {
+    @extend %-base-tier-body;
+    background-color: var(--background-secondary-alt);
+  }
+
+  .tierBody-x9kBBp {
+    @extend %-base-tier-body;
+    background-color: var(--background-secondary);
+  }
+
+  .perks-2Ve4tD {
+    color: var(--kds-reply-content);
+  }
+
+  .unlocked-251xRB {
+    color: var(--kds-radio-bar-green);
+  }
+
+  .perk-2WeBWW {
+    background-color: var(--background-secondary-alt);
+  }
+
+  .divider-25_-sM,
+  .divider-Uf0Wob {
+    margin: 20px 0;
+    background: none;
+  }
+}

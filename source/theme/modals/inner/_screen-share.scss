@@ -1,0 +1,25 @@
+#app-mount {
+  .item-3T2z1R {
+    border-color: black;
+  }
+
+  .selectorButton-EEUWed {
+    &:hover {
+      background-color: transparent;
+    }
+
+    &.selectorButtonSelected-t5V9On {
+      background-color: var(--kds-darker-reply-content);
+    }
+  }
+}
+
+.sourceThumbnail-27dolk {
+  &.selected-1nOkyc {
+    box-shadow: 0 0 0 2px var(--kds-settings-smaller-header) inset;
+  }
+
+  @at-root .tile-2w4k5N:hover &:not(.selected-1nOkyc) {
+    box-shadow: 0 0 0 2px var(--kds-number) inset;
+  }
+}

@@ -1,7 +1,13 @@
 # kaleidoscope
-A vibrant, colourful dark theme for Discord heavily based on [the 2077 theme for VSCode](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme 'Thanks, Endormi!').
+A vibrant, colourful dark theme for Discord inspired by [the 2077 theme for VSCode](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme 'Thanks, Endormi!').
 
-![Main Preview](https://cdn.discordapp.com/attachments/715106442406920273/835786520216338452/kaleidoscope_preview_one.png)
+![Main Preview](https://media.discordapp.net/attachments/666510091658330123/844840411863187506/kaleidoscope_preview.png)
+
+## Features
+- Customizable status colours
+- Reverts the Discord visual update (to the best of its capacity)
+
+**IMPORTANT NOTE**: If you use the [Better Status Indicators plugin by Harley](https://github.com/griefMoDz/better-status-indicators 'really cool plogin btw') **please make sure the theme variables setting is enabled** (under `Customise`).
 
 ## Installation
 
@@ -28,5 +34,5 @@ Couldn't have done it without yall <3
 
 ## Extra previews
 
-![Preview Two](https://cdn.discordapp.com/attachments/715106442406920273/835786531616063538/kaleidoscope_preview_two.png)
-![Preview Three](https://cdn.discordapp.com/attachments/715106442406920273/835786526864441344/kaleidoscope_preview_three.png)
+![Preview Two](https://media.discordapp.net/attachments/666510091658330123/844842456637898772/kaleidoscope_preview_two.png)
+![Preview Three](https://media.discordapp.net/attachments/666510091658330123/844846736669147147/kaleidoscope_preview_three.png)

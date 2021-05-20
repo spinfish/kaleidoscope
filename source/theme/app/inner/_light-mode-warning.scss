@@ -1,0 +1,35 @@
+@use '../../../helpers/keyframes' as *;
+
+$-light-mode-warning-icon: url(
+  'https://discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg'
+);
+
+$-light-mode-warning-content: 'You need to have dark theme enabled for this '
+                              'theme to work properly! To enable it, go to '
+                              'Settings -> Appearance.';
+
+// The following code is heavily based on code from LuckFire's
+// amoled-cord theme, provided under the MIT license
+
+// https://github.com/LuckFire/amoled-cord/blob/main/src/addons/_warning.scss
+// Copyright (C) LuckFire
+
+.theme-light #app-mount::after {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  content: $-light-mode-warning-content;
+  background-color: var(--background-tertiary);
+  border: 2px solid;
+  animation: imagine-using-light-mode 0.8s infinite;
+  max-width: 315px;
+  line-height: normal;
+  padding: 15px 0 15px 60px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: white;
+  background-image: $-light-mode-warning-icon;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 10px center;
+}

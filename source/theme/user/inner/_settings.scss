@@ -1,5 +1,23 @@
-.notificationSettings-1NQKPR .wrapper-3jrx9n {
-  border: 2px solid var(--kds-number);
+@use '../../../helpers/functions' as *;
+
+// Profile customization
+.profileBackgroundPreview-3BVL0Q {
+  background-color: var(--background-secondary);
+}
+
+.avatarUploaderInner-3UNxY3 {
+  background-color: var(--background-secondary-alt)
+}
+
+// Overlay notifications
+.notificationSettings-1NQKPR {
+  .wrapper-3jrx9n {
+    border-color: var(--kds-number);
+  }
+
+  .option-n0icdO:not(.selected-mKYnfr):hover {
+    background-color: get-colour('almost-cyan', 0.6);
+  }
 
   .selected-mKYnfr {
     background-color: var(--kds-number);

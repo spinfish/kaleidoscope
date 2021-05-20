@@ -1,11 +1,39 @@
 @use '../../../helpers/mixins' as *;
 
+.item-1tOPte {
+  color: var(--popout-button-text);
+
+  &:active:not(.hideInteraction-1iHO1O) {
+    color: white;
+    background-color: var(--popout-button-active);
+
+    .icon-LYJorE path {
+      fill: white;
+    }
+  }
+
+  &.focused-3afm-j {
+    color: white;
+    background-color: var(--popout-button-focused);
+
+    .icon-LYJorE path {
+      fill: white;
+    }
+  }
+}
+
 #guild-header-popout-invite-people {
-  @include popout-button('almost-cyan');
+  @include popout-button('number');
 }
 
 #guild-header-popout-premium-subscribe {
   @include popout-button('discord-nitro-magenta');
+}
+
+.colorDefault-2K3EoJ {
+  &:not(.colorDanger-2qLCe1) {
+    @include popout-button('almost-cyan');
+  }
 }
 
 .colorDanger-2qLCe1 {
@@ -15,8 +43,4 @@
   &:active:not(.hideInteraction-1iHO1O) {
     background-color: var(--kds-bright-orange-red);
   }
-}
-
-.colorDefault-2K3EoJ:not([class*='Danger']) {
-  @include popout-button('dark-blue-popout-normal');
 }

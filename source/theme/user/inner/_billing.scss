@@ -1,8 +1,10 @@
-@use '../../../helpers/mixins' as *;
-
 $-nitro-icon: url(
   'https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg'
 );
+
+#app-mount .premiumIndicator-1XvbfM {
+  background-color: var(--kds-settings-larger-header);
+}
 
 .paymentHistory-2FXzro {
   .paymentPane-3bwJ6A {
@@ -16,18 +18,16 @@ $-nitro-icon: url(
   }
 
   .scrollerBase-289Jih {
-    @include border(
-      $width: 1px,
-      $color: black,
-      $style: solid none solid
-    );
     width: 665px;
+    border: 1px black;
+    border-style: solid none solid;
   }
 
   .gameIcon-gg34Dz {
     background-image: $-nitro-icon !important;
   }
 
+  // Needs to be nested else column names are coloured
   .summaryInfo-2QFKUg {
     > .date-2Qr15l {
       color: var(--kds-mango-yellow);

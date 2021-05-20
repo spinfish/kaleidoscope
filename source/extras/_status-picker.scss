@@ -1,0 +1,67 @@
+#status-picker {
+  .mask-1qbNWk {
+    height: 75%;
+    width: 75%;
+    margin-left: 33%;
+  }
+
+  // Doing it this way allows for a much DRYer output
+  .item-1tOPte {
+    &:hover,
+    &:active {
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.3;
+        z-index: 0;
+        border-radius: 2px;
+        background-color: var(--status-colour);
+      }
+
+      .status-1AY8sU {
+        background-color: white !important;
+      }
+    }
+
+    // Keep "Set a cusom status" text
+    &:not(#status-picker-custom-status) {
+      .status-1fhblQ {
+        display: none;
+      }
+    }
+  }
+
+  .separator-2I32lJ,
+  .description-2L932D {
+    display: none;
+  }
+
+  > .scrollerBase-289Jih {
+    display: grid;
+  }
+}
+
+#status-picker-custom-status {
+  grid-column: 1/5;
+}
+
+// I'm so sorry
+#status-picker-dnd {
+  --status-colour: var(--kds-dnd-colour);
+}
+
+#status-picker-idle {
+  --status-colour: var(--kds-idle-colour);
+}
+
+#status-picker-online {
+  --status-colour: var(--kds-online-colour);
+}
+
+#status-picker-invisible {
+  --status-colour: var(--kds-offline-colour);
+}

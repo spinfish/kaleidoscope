@@ -1,0 +1,74 @@
+@use '../../../helpers/mixins' as *;
+
+[data-list-id='guildsnav'] {
+  outline: none;
+}
+
+.sidebarRegionScroller-3MXcoP {
+  border-radius: 10px;
+}
+
+.customScroller-26gWhv,
+.contentRegionScroller-26nc1e {
+  @include layout-container;
+  background-color: var(--background-primary);
+}
+
+.chat-3bRxxu {
+  @include layout-container;
+}
+
+.panels-j1Uci_ {
+  border-radius: 10px;
+  background-color: var(--background-tertiary);
+
+  > div {
+    @include layout-container($margin: 'bottom');
+    margin-top: 5px; // There is probably a better solution for this.
+    background-color: var(--background-secondary-alt);
+    border-bottom: none; // Why do they even have these lmfao
+  }
+
+  // VC info
+  .container-1giJp5 {
+    border-bottom: none;
+  }
+}
+
+.sidebar-2K8pFh,
+.container-1D34oG,
+.applicationStore-1pNvnv,
+.pageWrapper-1PgVDX {
+  @include layout-container($bg: true);
+}
+
+.container-3w7J-x,
+.privateChannels-1nO12o {
+  @include layout-container($margin: null);
+}
+
+.guilds-1SWlCJ {
+  margin-left: 5px;
+
+  .scroller-1Bvpku {
+    background-color: var(--background-secondary);
+    padding-top: 7px;
+    border-radius: 10px;
+  }
+}
+
+.members-1998pB {
+  @include layout-container;
+  margin-top: 5px; // As well as
+}
+
+.membersWrap-2h-GB4 {
+  border-top-left-radius: 10px;
+  background-color: var(--background-tertiary);
+}
+
+.sidebarRegion-VFTUkN,
+.customContainer-1RHXqt,
+.contentTransitionWrap-3hqOEW {
+  background-color: var(--background-tertiary);
+}

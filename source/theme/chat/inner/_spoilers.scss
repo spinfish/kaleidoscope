@@ -1,14 +1,10 @@
-%-spoiler-base {
-  background-color: var(--kds-spoiler-box);
-}
-
 #app-mount {
   .spoilerWarning-2aAZq1 {
-    @extend %-spoiler-base;
+    background-color: var(--kds-spoiler-box);
   }
 
   .spoilerText-3p6IlD {
-    @extend %-spoiler-base;
+    background-color: var(--kds-spoiler-box);
 
     &:hover > .inlineContent-3ZjPuv {
       opacity: 1;

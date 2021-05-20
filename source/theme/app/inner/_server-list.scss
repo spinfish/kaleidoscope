@@ -1,0 +1,20 @@
+.circleIconButton-1QV--U {
+  color: var(--kds-radio-bar-green);
+  background-color: var(--background-secondary-alt);
+}
+
+.expandedFolderIconWrapper-Huv7rA {
+  background-color: var(--background-primary);
+}
+
+.expandedFolderBackground-1cujaW {
+  &:not(.collapsed-2ZrjoL) {
+    background-color: var(--background-primary);
+    box-shadow: 0 0 15px 5px var(--background-secondary-alt);
+  }
+}
+
+// Servers with no icon
+#app-mount .selected-bZ3Lue .acronym-2mOFsV {
+  background-color: var(--kds-settings-smaller-header);
+}

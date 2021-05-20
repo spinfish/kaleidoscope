@@ -1,0 +1,102 @@
+// LIVE badge
+.live-vBWnV6 {
+  background-color: var(--kds-bright-orange-red) !important;
+}
+
+// Little round avatars under VC name
+.avatarSpeaking-2IGMRN {
+  box-shadow: 0 0 0 2px var(--kds-radio-bar-green) inset,
+              0 0 0 3px var(--background-secondary) inset;
+}
+
+.qualitySettingsContainer-1gOtRJ {
+  border-color: var(--background-tertiary);
+}
+
+.bottomControls-lIJyYL {
+  .colorable-1bkp8v {
+    background-color: var(--call-button-normal);
+
+    &:hover {
+      background-color: var(--call-button-hover);
+    }
+  }
+
+  .primaryDark-3mSFDl {
+    --call-button-normal: var(--background-primary);
+    --call-button-hover: var(--kds-dark-blue-popout-normal);
+  }
+
+  .white-3GPOIp {
+    --call-button-normal: var(--kds-darker-reply-content);
+    --call-button-hover: var(--kds-reply-content);
+  }
+
+  .red-33-Lnk {
+    --call-button-normal: var(--kds-darker-orange-red);
+    --call-button-hover: var(--kds-bright-orange-red);
+  }
+
+  .slash-33-IMF,
+  .directionDown-26e7eE {
+    color: white;
+  }
+
+  @at-root #app-mount & .centerIcon-2G6o-T {
+    color: white;
+  }
+}
+
+.callContainer-36WRfH {
+  .background-ujHpbY {
+    background-color: var(--background-secondary) !important;
+  }
+
+  .speaking-WDn8Wm {
+    box-shadow: 0 0 0 2px var(--kds-radio-bar-green) inset, 0 0 0 3px black inset;
+  }
+
+  @at-root #app-mount & {
+    background-color: var(--background-secondary-alt);
+
+    .status-1WEaea {
+      background-color: var(--kds-bright-orange-red);
+    }
+  }
+}
+
+// Streaming
+.background-ujHpbY { // Floating stream card
+  background-color: var(--background-secondary-alt) !important;
+}
+
+#app-mount {
+  // Show/hide participants
+  .participantsButton-KYW-IW {
+    &,
+    &:hover {
+      background-color: var(--background-primary);
+    }
+  }
+
+  // Popout from hovering streamer's VC username
+  .streamPreview-2-WUWT {
+    background-color: var(--background-tertiary);
+  }
+
+  // Top part of popout where preview is embedded
+  .previewContainer-12UlHl {
+    background-color: inherit;
+  }
+}
+
+// You've been disconnected/stream still running/loading
+.root-2sELX6,
+.spinner-2UBgbJ {
+  background: var(--background-tertiary);
+}
+
+// No one else is here yet...
+.tile-2naSqK {
+  background-color: var(--background-secondary);
+}

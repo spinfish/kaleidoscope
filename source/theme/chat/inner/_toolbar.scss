@@ -1,0 +1,66 @@
+// Yeah
+.iconBadge-qZ4Ksk {
+  background-color: var(--kds-bright-orange-red);
+}
+
+.toolbar-1t6TWx {
+  height: 34px;
+  border-radius: 8px 4px 4px 8px;
+  background: var(--background-secondary-alt);
+
+  .anchor-3Z-8Bb {
+    order: -1;
+  }
+}
+
+// Ew lol
+.search-36MZv- {
+  &,
+  + [aria-label='Update Ready!'] {
+    order: -1;
+  }
+}
+
+.updateIconForeground-3tnNZn {
+  fill: var(--kds-radio-bar-green);
+}
+
+// Everything below is heavily based on code from a
+// snippet made by DoggyBootsy#1333. Thanks so much!
+
+.icon-3cZ1F_ {
+  height: 24px;
+  width: 24px;
+  color: var(--interactive-normal);
+
+  // Couldn't get it to change colour and if you hover
+  // onto it from the right there's a split second where
+  // it shows the text cursor but oh well
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.iconContainer-O4O2CN {
+  bottom: 3px;
+}
+
+.search-36MZv- {
+  margin-left: 0px;
+}
+
+.searchBar-3dMhjb {
+  width: 28px;
+  background: none;
+  transition: width 0.6s ease-in-out;
+
+  @at-root {
+    &:hover,
+    .open-6_Y_aH &,
+    .focused-31_ccS & {
+      width: 240px;
+      margin-left: 5px;
+      background: var(--background-tertiary);
+    }
+  }
+}

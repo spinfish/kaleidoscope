@@ -5,9 +5,12 @@
 
   .categoryItem-1QIroW {
     color: var(--kds-almost-cyan);
+  }
 
-    &.selectedCategoryItem-FHKU_o > div {
-      color: var(--interactive-active);
+  .selectedCategoryItem-FHKU_o {
+    color: var(--interactive-active);
+
+    > .itemInner-gPkiWb {
       background-color: rgb(4, 20, 69, 0.65); // Really
     }
   }
@@ -17,7 +20,7 @@
   }
 
   .guildListSection-2CS8vH {
-    > .guildList-3cJX3d .card-3DjzTQ {
+    .card-3DjzTQ {
       box-shadow: 0 0 0 1px black;
     }
 

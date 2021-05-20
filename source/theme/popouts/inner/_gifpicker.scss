@@ -1,0 +1,43 @@
+@use '../../../helpers/functions' as *;
+
+#app-mount {
+  .categoryFadeBlurple-1j72_A {
+    background-color: get-colour('almost-cyan', 0.5);
+  }
+
+  .emptyHintCard-2mUdMe {
+    background-color: rgba(get-shade('greyish-blue'), 0.35);
+  }
+
+  .result-3w1ZcL {
+    &:hover::after {
+      box-shadow: 0 0 0 2px var(--kds-almost-cyan) inset,
+                  0 0 0 3px var(--background-primary) inset;
+    }
+
+    &[style*='rgb(146, 154, 250)'] {
+      background-color: rgb(0, 10, 45) !important;
+    }
+
+    &[style*='rgb(179, 174, 255)'] {
+      background-color: rgba(0, 13, 50) !important;
+    }
+
+    &[style*='rgb(115, 142, 245)'] {
+      background-color: rgb(16, 15, 62) !important;
+    }
+  }
+}
+
+.gifFavoriteButton-3Zycl7 {
+  color: var(--interactive-normal);
+
+  &:hover,
+  &.selected-1mBDsA {
+    color: var(--interactive-hover);
+  }
+
+  &::after {
+    border-color: var(--kds-mango-yellow);
+  }
+}

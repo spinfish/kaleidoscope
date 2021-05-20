@@ -1,18 +1,33 @@
-@use 'sass:meta';
 @use 'sass:string';
-@use 'functions' as funcs;
+@use 'functions' as *;
 
-@mixin border($args...) {
-  @each $name, $value in meta.keywords($args) {
-    border-#{$name}: $value;
+@mixin exclude-yellow-white {
+  &:not(.colorYellow-2JqYwt):not(.colorWhite-rEQuAQ) {
+    @content;
   }
 }
 
-@mixin channel-name-and-icon($colour) {
-  .icon-1DeIlz,
-  .channelName-2YrOjO {
-    color: $colour;
-  }
+@mixin popout-button($colour-name) {
+  $colour: get-colour($colour-name);
+
+  --popout-button-text: #{$colour};
+  --popout-button-focused: #{rgba($colour, 0.15)};
+  --popout-button-active: #{rgba($colour, 0.65)};
+}
+
+@mixin filled-button($colour-name) {
+  $colour: get-colour($colour-name) or get-shade($colour-name);
+
+  --fill-button-normal: #{$colour};
+  --fill-button-hover: #{rgba($colour, 0.85)};
+  --fill-button-active: #{rgba($colour, 0.7)};
+}
+
+@mixin lined-button($colour-name) {
+  $colour: get-colour($colour-name) or get-shade($colour-name);
+
+  --line-button-colour: #{$colour};
+  --line-button-hover: #{rgba($colour, 0.075)};
 }
 
 @mixin growing-dark-message-bar($target) {
@@ -28,35 +43,26 @@
   }
 }
 
-// I am suffering immensely
+@mixin layout-container($margin: 'left', $bg: false) {
+  margin-#{$margin}: 5px;
+  border-radius: 10px;
 
-@mixin popout-button($colour-name) {
-  $colour: funcs.get-colour($colour-name);
-
-  @if $colour-name == 'dark-blue-popout-normal' {
-    color: funcs.get-colour('almost-cyan');
-  } @else {
-    color: #{$colour};
+  @if $bg {
+    background-color: var(--background-tertiary);
   }
+}
 
-  &:active:not(.hideInteraction-1iHO1O) {
-    color: white;
-    background-color: rgba($colour, 0.65);
+@mixin windows-min-max-button($colour) {
+  &:hover {
+    background-color: $colour;
 
-    // Need this otherwise it goes to original colour
-    // if button is selected but cursor is moved away
-    .icon-LYJorE path {
-      fill: white;
+    rect {
+      stroke: white;
     }
   }
 
-  &.focused-3afm-j {
-    color: white;
-    background-color: rgba($colour, 0.15);
-
-    .icon-LYJorE path {
-      fill: white;
-    }
+  rect {
+    stroke: $colour;
   }
 }
 

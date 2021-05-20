@@ -1,3 +1,4 @@
+// Normal
 .userPopout-3XzG_A {
   width: 255px;
   box-shadow: 0 0 0px 1px var(--background-tertiary);
@@ -16,7 +17,28 @@
   }
 }
 
+// Profile experiment
+.headerNormal-1l1Znk {
+  @at-root #app-mount & {
+    background-color: var(--kds-dark-blue-popout-playing);
+  }
+
+  > .profileBanner-j34RzR {
+    background-color: inherit !important;
+  }
+}
+
+.headerTop-2y3V6H {
+  background-color: inherit;
+}
+
+.avatar-22FtUu {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 // Shhh (thanks Luckfire)
 .botTag-2WPJ74 {
+  color: white;
   background-color: deeppink;
 }

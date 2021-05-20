@@ -1,0 +1,28 @@
+@use '../../../helpers/mixins' as *;
+
+// Exit
+.winButtonClose-1HsbF- {
+  &:hover {
+    background-color: var(--kds-bright-orange-red);
+
+    polygon {
+      fill: white;
+    }
+  }
+
+  polygon {
+    fill: var(--kds-bright-orange-red);
+  }
+}
+
+.winButtonMinMax-PBQ2gm {
+  // Maximize
+  &:nth-child(3) {
+    @include windows-min-max-button(orange);
+  }
+
+  // Minimize
+  &:nth-child(4) { // :last-child works here too
+    @include windows-min-max-button(var(--kds-radio-bar-green));
+  }
+}

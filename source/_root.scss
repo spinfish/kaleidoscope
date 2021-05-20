@@ -33,7 +33,7 @@
     --kds-#{$colour}: #{$value};
   }
 
-  --header-primary: #{get-colour('light-grey')};
+  --header-primary: var(--kds-light-grey);
 
   --background-accent: rgba(3, 13, 34, 1);
   --background-primary: var(--background-accent);
@@ -60,8 +60,8 @@
   --channels-default: rgba(201, 201, 201, 1);
   --channeltextarea-background: var(--background-secondary-alt);
 
-  --interactive-normal: #{get-colour('almost-cyan')};
-  --interactive-hover: #{get-colour('mango-yellow')};
+  --interactive-normal: var(--kds-almost-cyan);
+  --interactive-hover: var(--kds-mango-yellow);
   --interactive-active: rgba(209, 41, 255, 1);
   --interactive-muted: rgba(48, 52, 61, 1);
 
@@ -71,7 +71,7 @@
   // Huge thanks to Nyria#3863 for helping me find these
   --scrollbar-auto-track: transparent;
   --scrollbar-thin-thumb: var(--background-tertiary);
-  --scrollbar-auto-thumb: #{get-colour('category-name')};
+  --scrollbar-auto-thumb: var(--kds-category-name);
   --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
   --scrollbar-auto-scrollbar-color-track: var(--background-secondary);
 

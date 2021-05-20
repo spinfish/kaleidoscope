@@ -21,14 +21,11 @@
 }
 
 .isUnread-3Ef-o9 {
-  @include border(
-    $width: 3px,
-    $color: rebeccapurple,
-    $top-left-radius: 3px
-  );
-
   top: 8px;
   padding: 7px;
+  border-width: 3px;
+  border-color: rebeccapurple;
+  border-top-left-radius: 3px;
 
   > .unreadPill-2HyYtt {
     top: -8px;
@@ -41,8 +38,8 @@
   }
 
   .content-1o0f9g {
-    color: var(--kds-almost-cyan);
-    bottom: 7px;
+    bottom: 8px;
+    color: var(--text-normal);
     position: relative;
   }
 }

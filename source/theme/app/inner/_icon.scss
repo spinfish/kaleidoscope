@@ -1,0 +1,29 @@
+@use '../../../helpers/keyframes' as *;
+@use '../../../helpers/variables' as *;
+
+// Warning: the following code is a bit hacky!
+// References: https://jsfiddle.net/tvsgoaj9/2/
+
+.homeIcon-FuNwkv {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  color: var(--kds-light-grey);
+}
+
+.childWrapper-anI2G9 {
+  &:not(.acronym-2mOFsV) { // Servers with no icon
+    clip-path: circle(50% at center);
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: $home-icon-background center/100% no-repeat;
+    }
+  }
+
+  @at-root .selected-bZ3Lue &::before {
+    animation: rotation 10s linear infinite;
+  }
+}

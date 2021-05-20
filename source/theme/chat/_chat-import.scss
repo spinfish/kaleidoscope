@@ -1,13 +1,9 @@
-@forward 'inner/autocomplete';
 @forward 'inner/bars';
-@forward 'inner/datepicker';
 @forward 'inner/mentions';
 @forward 'inner/messages';
-@forward 'inner/pins-and-results';
-@forward 'inner/search-bar';
-@forward 'inner/search-box';
 @forward 'inner/spoilers';
 @forward 'inner/spotify-card';
-@forward 'inner/streaming';
 @forward 'inner/textarea';
-@forward 'inner/voice'; // Nice
+@forward 'inner/toolbar';
+@forward 'inner/video-controls';
+@forward 'inner/voice-streaming';

@@ -26,23 +26,18 @@ $colour-shades: (
   'darker-interactive-active': rgba(209, 41, 255, 0.065)
 );
 
-$btn-default-colours: (
-  'colorBrand-3pXr91': 'darker-reply-content',
-  'colorPrimary-3b3xI6': 'greyish-blue',
-  'colorGreen-29iAKY': 'spotify-dark-green',
-  'colorRed-1TFJan': 'bright-orange-red',
-  'actionRed-gYn8D3': 'bright-orange-red'
+$login-background: url(
+  'https://raw.githubusercontent.com/spinfish/kaleidoscope/master/source/images/login_background.png'
 );
 
 $home-icon-background: url(
   'https://raw.githubusercontent.com/spinfish/kaleidoscope/master/source/images/home_icon_background.svg'
 );
 
-$login-background: url(
-  'https://raw.githubusercontent.com/spinfish/kaleidoscope/master/source/images/login_background.png'
+$lily-datepicker-bg-image: url(
+  'https://media.discordapp.net/attachments/678012423067926539/842665461127970816/lily.png'
 );
 
-$notes-blur-transition: 0.2s cubic-bezier(0.2, 0.11, 0, 1);
 $modal-box-shadow: 0 0 2px 2px var(--background-tertiary);
 
 $nitro-header-gradient: linear-gradient(

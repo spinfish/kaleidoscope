@@ -1,0 +1,34 @@
+@use 'sass:color';
+@use '../../../helpers/functions' as *;
+
+$-yellow-orange-mix: color.mix(
+  get-colour('mango-yellow'),
+  get-colour('bright-orange-red'),
+);
+
+.radioBar-bMNUI- {
+  border-width: 4px;
+
+  &[style*='#3ba55c'] {
+    --radio-bar-accent-color: var(--kds-radio-bar-green) !important;
+  }
+
+  &[style*='#cb8615'] {
+    --radio-bar-accent-color: var(--kds-mango-yellow) !important;
+  }
+
+  &[style*='#f57731'] {
+    // https://sass-lang.com/documentation/breaking-changes/css-vars
+    --radio-bar-accent-color: #{$-yellow-orange-mix} !important;
+  }
+
+  &[style*='#ed4245'] {
+    --radio-bar-accent-color: var(--kds-bright-orange-red) !important;
+  }
+
+  // Totally not the most expensive fucking selector ever
+  @at-root #MODERATION-tab .children-rWhLdy > div:first-child &:not([style*='--radio']) {
+    border-left-style: solid;
+    border-color: rgba(165, 179, 231, 0.35);
+  }
+}

@@ -1,0 +1,22 @@
+.buffer-26XPkd {
+  background-color: transparent;
+}
+
+.mediaBarProgress-1xaPtl {
+  &,
+  &::before,
+  &::after {
+    background-color: var(--kds-almost-cyan);
+  }
+}
+
+#app-mount .mediaBarGrabber-1FqnbN {
+  background-color: var(--interactive-hover);
+}
+
+.mediaBarWrapper-3D7r67 {
+  &,
+  &::after {
+    background-color: deeppink;
+  }
+}

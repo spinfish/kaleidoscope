@@ -1,66 +1,101 @@
 @use '../../../helpers/functions' as *;
 
-#app-mount .message-2qnXI6 {
-  &:hover {
-    // Setting --background-message-hover doesn't work
-    background-color: var(--kds-message-hover);
-  }
-
-  // --background-mentioned, however, does
-  &.mentioned-xhSam7::before {
-    background-color: var(--kds-mango-yellow);
-  }
-
-  // Clyde messages and message you're replying to
-  &.ephemeral-1PsL1r,
-  &.replying-1x3H0T {
-    background-color: get-colour('number', 0.075);
-
-    &::before {
-      background-color: var(--kds-number);
-    }
-  }
-
+#app-mount {
   .edited-3sfAzf,
   .timestamp-3ZCmNB {
     color: var(--kds-mango-yellow);
   }
 
-  .repliedMessage-VokQwo {
-    .replyBadge-r1su3o {
-      background: transparent;
-    }
+  // Reply messages
+  .repliedMessage-VokQwo::before {
+    border-color: var(--background-tertiary);
+  }
 
-    .replyIcon-1b4Xjp {
-      width: 20px;
-      height: 10px;
+  .replyBadge-r1su3o {
+    background: transparent;
+  }
 
-      path {
-        fill: white;
-      }
-    }
+  .replyIcon-1b4Xjp {
+    width: 20px;
+    height: 10px;
 
-    .repliedTextPreview-2NBljf {
-      color: var(--kds-reply-content);
-
-      &:hover {
-        color: var(--interactive-active);
-      }
+    path {
+      fill: white;
     }
   }
 
-  .wrapper-2aW0bm {
-    background-color: transparent;
-    box-shadow: none;
+  .repliedTextPreview-2NBljf {
+    color: var(--kds-reply-content);
 
-    .button-1ZiXG9 {
-      margin: 0 2px;
-      border-radius: 5px;
-      background-color: var(--background-tertiary);
+    &:hover {
+      color: var(--interactive-active);
+    }
+  }
 
-      &:hover {
-        background-color: var(--background-modifier-selected);
-      }
+  .message-2qnXI6 {
+    &:hover {
+      // --background-message-hover doesnt work 
+      // and yet --background-mentioned does
+      background-color: var(--kds-message-hover);
+    }
+  }
+}
+
+.mentioned-xhSam7::before {
+  background-color: var(--kds-mango-yellow);
+}
+
+// Clyde & replying
+.ephemeral-1PsL1r,
+.replying-1x3H0T {
+  background-color: get-colour('number', 0.075);
+
+  &::before {
+    background-color: var(--kds-number);
+  }
+}
+
+// Mentioned + replying
+.mentioned-xhSam7.replying-1x3H0T {
+  background-color: rgba(
+    mix(
+      get-colour('number'),
+      get-colour('mango-yellow')
+    ),
+    0.075
+  );
+
+  &::before {
+    background: linear-gradient(
+      to top,
+      var(--kds-mango-yellow),
+      var(--kds-reply-content),
+      var(--interactive-active),
+      var(--kds-number)
+    );
+  }
+}
+
+// Message hover toolbar
+.wrapper-2aW0bm {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+// Message hover buttons
+.button-1ZiXG9 {
+  margin: 0 2px;
+  border-radius: 5px;
+  background-color: var(--background-tertiary);
+
+  &:hover {
+    background-color: var(--background-modifier-selected);
+  }
+
+  &.dangerous-2r8KxV {
+    &,
+    &:hover {
+      color: var(--kds-bright-orange-red);
     }
   }
 }

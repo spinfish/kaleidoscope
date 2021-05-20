@@ -1,21 +1,15 @@
-@use '../../../helpers/mixins' as *;
-
 .unreadBar-3t3sYc {
-  @include border(
-    $bottom-left-radius: 3px,
-    $bottom-right-radius: 3px,
-    $bottom: solid 3px var(--background-primary)
-  );
+  border-left-radius: 3px;
+  bottom-right-radius: 3px;
+  bottom: 3px solid var(--background-primary);
 
   box-shadow: 0 0 0 1px var(--background-tertiary);
   background-color: var(--background-tertiary);
 
+  transition: 0.3s linear;
   transition-property: background-color,
                        border-bottom-left-radius,
                        border-bottom-right-radius;
-  transition-duration: 0.3s;
-  transition-timing-function: linear;
-
   &:hover {
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
