@@ -51,7 +51,8 @@ $targets: (
   color: var(--header-secondary);
 }
 
-.hljs {
+.hljs,
+.codeLine-14BKbG {
   // General
   --number: rgb(255, 148, 111);
   --class: rgb(202, 175, 237);
@@ -105,7 +106,9 @@ $targets: (
   --class-params: rgb(255, 167, 211);
   --tag-attr: var(--selector-attr); // div <class>="className"
   --meta-string: rgb(126, 226, 136); // #define CONST <'5'>
+}
 
+.hljs {
   @each $target in $targets {
     &-#{$target} {
       color: var(--#{$target});
