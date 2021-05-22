@@ -1,0 +1,143 @@
+// ======================================================== \\
+//                                                          \\
+//      PLEASE DON'T READ THIS CODE OR YOU WILL SUFFER      \\
+//                                                          \\
+// ======================================================== \\
+// ======================================================== \\
+//                                                          \\
+//        PLEASE I'M BEGGING YOU FOR THE LOVE OF GOD        \\
+//                                                          \\
+// ======================================================== \\
+
+$targets: (
+  'number',
+  'class',
+  'function',
+  'type',
+  'built_in',
+  'doctag',
+  'variable',
+  'params',
+  'title',
+  'regexp',
+  'keyword',
+  'subst',
+  'literal',
+  'string',
+  'comment',
+  'attr',
+  'attribute',
+  'meta',
+  'meta-keyword',
+  'link',
+  'strong',
+  'quote',
+  'section',
+  'code',
+  'emphasis',
+  'bullet',
+  'selector-class',
+  'selector-id',
+  'selector-attr',
+  'selector-pseudo',
+  'selector-tag',
+  'name',
+  'tag',
+  'addition',
+  'deletion'
+);
+
+.powercord-codeblock-lang {
+  color: var(--header-secondary);
+}
+
+.hljs {
+  // General
+  --number: rgb(255, 148, 111);
+  --class: rgb(202, 175, 237);
+  --function: var(--class); // () in class/func definition
+  --type: var(--class-params); // {Number} in JSdoc
+  --built_in: var(--class-params); // this, var (CSS), Math, filter
+  --doctag: rgb(195, 142, 253); // @param, @return in JSDoc
+  --variable: rgb(187, 187, 187); // $variable
+  --params: var(--variable); // (<...args>)
+  --title: rgb(125, 187, 209); // get <whateverProperty>()
+  --regexp: var(--title);
+  --keyword: rgb(255, 117, 188); // @import, print, console
+  --subst: var(--keyword); // Template/f-string thingy
+  --literal: rgb(245, 192, 86); // Booleans
+  --string: rgb(126, 242, 174);
+  --comment: rgb(113, 113, 113);
+  --attr: rgb(207, 175, 250); // JSON keys, JS object destruct
+  --attribute: rgb(143, 188, 143); // CSS properties
+
+  // Meta
+  --meta: rgb(245, 97, 116); // !important
+  --meta-keyword: rgb(245, 66, 128); // <#define> CONST '5'
+
+  // Markdown
+  --link: rgb(140, 166, 189);
+  --strong: var(--class-title); // Bold
+  --quote: var(--literal);
+  --section: rgb(68, 222, 207);
+  --code: rgb(47, 185, 104); // Inline code
+  --emphasis: var(--subst); // Italic
+  --bullet: var(--kds-darker-reply-content);
+
+  // CSS
+  --selector-class: var(--class-title);
+  --selector-id: rgb(74, 160, 110);
+  --selector-attr: rgb(171, 224, 219);
+  --selector-pseudo: rgb(168, 123, 219); // :not, :hover (not ::)
+  --selector-tag: var(--kds-darker-reply-content);
+
+  // HTML
+  --name: rgb(255, 148, 111); // HTML tag name
+  --tag: rgb(245, 97, 116, 0.8); // Punctuation in HTML tag
+
+  // Diff
+  --addition: var(--kds-radio-bar-green);
+  --deletion: var(--kds-bright-orange-red);
+
+  // Stupid two part cases
+  --class-keyword: var(--number); // <class> Foo
+  --class-title: rgb(232, 110, 72); // class <Foo>
+  --class-params: rgb(255, 167, 211);
+  --tag-attr: var(--selector-attr); // div <class>="className"
+  --meta-string: rgb(126, 226, 136); // #define CONST <'5'>
+
+  @each $target in $targets {
+    &-#{$target} {
+      color: var(--#{$target});
+    }
+  }
+
+  &-class {
+    // .hljs-class .hljs-keyword
+    .hljs-keyword {
+      color: var(--class-keyword);
+    }
+
+    // .hljs-class .hljs-title
+    .hljs-title {
+      color: var(--class-title);
+    }
+
+    // .hljs-class .hljs-params
+    .hljs-params {
+      color: var(--class-params);
+    }
+  }
+
+  // .hljs-tag .hljs-attr
+  &-tag {
+    .hljs-attr {
+      color: var(--tag-attr);
+    }
+  }
+
+  // .hljs .hljs-meta-string
+  @at-root & &-meta-string {
+    color: var(--meta-string);
+  }
+}

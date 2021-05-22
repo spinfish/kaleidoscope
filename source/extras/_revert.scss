@@ -16,6 +16,11 @@ $default-avatar-map: (
   'c6a249645d46209f337279cd2ca998c7': 'https://discordapp.com/assets/6debd47ed13483642cf09e832ed0bc1b.png' // System
 );
 
+// Mini Discord icon + text on nitro page
+.heroIcon-3QgOM5 path:nth-child(n + 6) {
+  display: none;
+}
+
 // Thanks to Doggybootsy for this!
 .homeIcon-FuNwkv path {
   d: path(
@@ -34,8 +39,8 @@ $default-avatar-map: (
   }  
 }
 
-// Revert stupidly ugly new reactions
 #app-mount {
+  // Revert stupidly ugly new reactions
   .reaction-1hd86g {
     background-color: var(--background-secondary);
 
@@ -54,5 +59,10 @@ $default-avatar-map: (
   .reactionMe-wv5HKu {
     border-color: transparent;
     background-color: get-colour('almost-cyan', 0.2);
+  }
+
+  // Revert nitro page banner
+  .hero-EvfTTA {
+    background-image: url('https://discord.com/assets/a821f6c69ee5729cec9e82246c2cd63a.svg');
   }
 }

@@ -5,6 +5,7 @@ A vibrant, colourful dark theme for Discord inspired by [the 2077 theme for VSCo
 
 ## Features
 - Customizable status colours
+- Custom codeblock styling (using HLJS)
 - Reverts the Discord visual update (to the best of its capacity)
 
 **IMPORTANT NOTE**: If you use the [Better Status Indicators plugin by Harley](https://github.com/griefMoDz/better-status-indicators 'really cool plogin btw') **please make sure the theme variables setting is enabled** (under `Customise`).

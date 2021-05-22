@@ -32,13 +32,7 @@
   height: 24px;
   width: 24px;
   color: var(--interactive-normal);
-
-  // Couldn't get it to change colour and if you hover
-  // onto it from the right there's a split second where
-  // it shows the text cursor but oh well
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 .iconContainer-O4O2CN {

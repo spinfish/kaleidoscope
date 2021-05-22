@@ -1,0 +1,31 @@
+// Red mention marker
+.unreadMentionsBar-1Bu1dC.mention-1f5kbO  {
+  background-color: var(--kds-bright-orange-red);
+}
+
+// Mentions
+.numberBadge-2s8kKX {
+  background-color: var(--kds-bright-orange-red) !important;
+}
+
+.textBadge-1iylP6 {
+  // Red badges e.g. LIVE, NEW
+  &[style*='rgb(237, 66, 69)'] {
+    background-color: var(--kds-bright-orange-red) !important;
+  }
+
+  // Blurple badges e.g. BETA
+  &[style*='rgb(114, 137, 218)'], // OG blurple
+  &[style*='rgb(88, 101, 242)'] {
+    background-color: var(--kds-settings-smaller-header) !important;
+  }
+}
+
+// Profile badges - many thanks to Doggybootsy for this!
+.profileBadge-2niAfJ {
+  transition: 0.2s transform ease-in-out;
+
+  &:hover {
+    transform: translateY(-1.5px);
+  }
+}

@@ -37,15 +37,13 @@ $status-mapping: (
   --kds-offline-colour: var(--bsi-offline-color, rgb(7, 134, 130));
 }
 
-// Status picker and DMs
 @each $new-colour, $inner-map in $status-mapping {
+  // Status picker and DMs
   .status-1AY8sU[style*='#{get($inner-map, 'rgb')}'] {
     background-color: $new-colour !important;
   }
-}
 
-// Regular and typing
-@each $new-colour, $inner-map in $status-mapping {
+  // Regular and typing
   .pointerEvents-2zdfdO[fill*='#{get($inner-map, 'hex')}'] {
     fill: $new-colour;
   }
@@ -61,7 +59,7 @@ $status-mapping: (
     content: attr(aria-label);
   }
 
-  @each $new-colour, $inner-map in $status-mapping {
+  @each $inner-map in values($status-mapping) {
     $aria-label-name: get($inner-map, 'to-string');
 
     &[aria-label='#{$aria-label-name}']::after {

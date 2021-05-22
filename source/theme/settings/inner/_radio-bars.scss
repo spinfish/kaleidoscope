@@ -27,7 +27,7 @@ $-yellow-orange-mix: color.mix(
   }
 
   // Totally not the most expensive fucking selector ever
-  @at-root #MODERATION-tab .children-rWhLdy > div:first-child &:not([style*='--radio']) {
+  @at-root .children-rWhLdy > div:first-child &:not([style*='--radio']) {
     border-left-style: solid;
     border-color: rgba(165, 179, 231, 0.35);
   }
