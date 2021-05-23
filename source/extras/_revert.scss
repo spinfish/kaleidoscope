@@ -28,6 +28,11 @@ $default-avatar-map: (
   );
 }
 
+// Login page QR code logo
+.qrCodeOverlay-qgtlTP img {
+  content: url('https://discord.com/assets/36d4b341723daffd4a372e1b19591da1.png');
+}
+
 // Revert default avatars
 @each $original-src, $new-src in $default-avatar-map {
   .avatar-VxgULZ[src*='#{$original-src}'] { // Regular avatars

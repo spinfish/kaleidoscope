@@ -1,11 +1,17 @@
-.root-1gCeng {
-  .footer-2gL1pp,
-  .message-2qRu38 {
+#app-mount {
+  .root-1gCeng,
+  .modal-yWgWj- {
     box-shadow: 0 0 0 1px black;
-    background-color: var(--background-secondary-alt);
-  }
-}
+    background-color: var(--background-secondary);
 
-#app-mount .separator-2-RRj_ {
-  box-shadow: 0 1px 0 0 var(--background-tertiary), 0 1px 2px 0 black;
+    .footer-2gL1pp,
+    .message-2qRu38 {
+      box-shadow: inherit;
+      background-color: var(--background-secondary-alt);
+    }
+  }
+
+  .separator-2-RRj_ {
+    box-shadow: 0 1px 0 0 var(--background-tertiary), 0 1px 2px 0 black;
+  }
 }
