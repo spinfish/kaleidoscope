@@ -11,12 +11,15 @@
     color: var(--kds-almost-cyan);
   }
 
-  .clickable-1JJAn8 .overflow-WK9Ogt {
-    color: var(--kds-category-name);
+  .clickable-1JJAn8 {
+    .overflow-WK9Ogt {
+      color: var(--kds-category-name);
+    }
   }
 
-  [href$='@me'],
-  [href*='store'] {
+  a[href='/discovery'],
+  a[href='/channels/@me'],
+  a[href='/store'] {
     margin-bottom: 5px;
     background-color: var(--background-primary);
   }

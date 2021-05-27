@@ -2,8 +2,10 @@ $-nitro-icon: url(
   'https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg'
 );
 
-#app-mount .premiumIndicator-1XvbfM {
-  background-color: var(--kds-settings-larger-header);
+#app-mount {
+  .premiumIndicator-1XvbfM {
+    background-color: var(--kds-settings-larger-header);
+  }
 }
 
 .paymentHistory-2FXzro {
@@ -44,8 +46,10 @@ $-nitro-icon: url(
     }
   }
 
-  .hoverablePayment-Yc6mK7:hover {
-    background-color: var(--background-tertiary);
+  .hoverablePayment-Yc6mK7 {
+    &:hover {
+      background-color: var(--background-tertiary);
+    }
   }
 
   .expandedInfo-3kfShd {

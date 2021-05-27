@@ -1,9 +1,4 @@
 .theme-light {
-  .root-1gCeng {
-    box-shadow: none;
-    background-color: var(--background-secondary-alt);
-  }
-
   // Template buttons
   .container-UC8Ug1 {
     border-color: black;
@@ -19,9 +14,7 @@
   }
 
   .footer-2gL1pp {
-    box-shadow: none;
     border-top: 1.5px solid black;
-    background-color: inherit;
 
     .sizeMin-1mJd1x {
       color: var(--kds-number);
@@ -34,18 +27,27 @@
   }
 
   // Join a Server - footerButton part is necessary
-  .footerButton-ayFTfX.lookFilled-1Gx00P {
-    box-shadow: 0 0 0 1px black;
-    background-color: var(--kds-message-hover);
+  .footerButton-ayFTfX{
+    &.lookFilled-1Gx00P {
+      box-shadow: 0 0 0 1px black;
+      background-color: var(--kds-message-hover);
 
-    &:hover {
-      color: var(--kds-mango-yellow);
-      background-color: var(--toast-box-shadow);
+      &:hover {
+        color: var(--kds-mango-yellow);
+        background-color: var(--toast-box-shadow) !important; // Pain
 
-      &::after,
-      &::before {
-        content: 'bruh'; // Hehe
+        &::after,
+        &::before {
+          content: 'bruh'; // Hehe
+        }
       }
+    }
+  }
+
+  // Customize your server - upload icon
+  .uploadIcon-2IFzZU {
+    circle {
+      fill: var(--kds-settings-smaller-header);
     }
   }
 }

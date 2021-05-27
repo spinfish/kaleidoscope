@@ -1,6 +1,8 @@
 // Red mention marker
-.unreadMentionsBar-1Bu1dC.mention-1f5kbO  {
-  background-color: var(--kds-bright-orange-red);
+.unreadMentionsBar-1Bu1dC {
+  &.mention-1f5kbO {
+    background-color: var(--kds-bright-orange-red);
+  }
 }
 
 // Mentions

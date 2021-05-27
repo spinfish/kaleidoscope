@@ -1,3 +1,9 @@
+#app-mount {
+  .mediaBarGrabber-1FqnbN {
+    background-color: var(--interactive-hover);
+  }
+}
+
 .buffer-26XPkd {
   background-color: transparent;
 }
@@ -8,10 +14,6 @@
   &::after {
     background-color: var(--kds-almost-cyan);
   }
-}
-
-#app-mount .mediaBarGrabber-1FqnbN {
-  background-color: var(--interactive-hover);
 }
 
 .mediaBarWrapper-3D7r67 {

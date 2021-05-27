@@ -5,4 +5,11 @@
 .css-3vaxre-menu {
   border-color: var(--background-tertiary);
   background-color: var(--background-secondary);
+  box-shadow: var(--background-secondary) 0px 1px 5px 0px;
+}
+
+.quickSelect-3BxO0K {
+  > .quickSelectLabel-2r3iJ_ {
+    color: deeppink;
+  }
 }

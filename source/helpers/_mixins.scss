@@ -1,6 +1,4 @@
 @use 'sass:string';
-@use 'functions' as *;
-
 @mixin exclude-yellow-white {
   &:not(.colorYellow-2JqYwt):not(.colorWhite-rEQuAQ) {
     @content;
@@ -8,26 +6,20 @@
 }
 
 @mixin popout-button($colour-name) {
-  $colour: get-colour($colour-name);
-
-  --popout-button-text: #{$colour};
-  --popout-button-focused: #{rgba($colour, 0.15)};
-  --popout-button-active: #{rgba($colour, 0.65)};
+  --popout-button-text: var(--kds-#{$colour-name});
+  --popout-button-focused: rgba(var(--kds-#{$colour-name}-rgb), 0.15);
+  --popout-button-active: rgba(var(--kds-#{$colour-name}-rgb), 0.65);
 }
 
 @mixin filled-button($colour-name) {
-  $colour: get-colour($colour-name) or get-shade($colour-name);
-
-  --fill-button-normal: #{$colour};
-  --fill-button-hover: #{rgba($colour, 0.85)};
-  --fill-button-active: #{rgba($colour, 0.7)};
+  --fill-button-normal: var(--kds-#{$colour-name});
+  --fill-button-hover: rgba(var(--kds-#{$colour-name}-rgb), 0.85);
+  --fill-button-active: rgba(var(--kds-#{$colour-name}-rgb), 0.7);
 }
 
 @mixin lined-button($colour-name) {
-  $colour: get-colour($colour-name) or get-shade($colour-name);
-
-  --line-button-colour: #{$colour};
-  --line-button-hover: #{rgba($colour, 0.075)};
+  --line-button-colour: var(--kds-#{$colour-name});
+  --line-button-hover: rgba(var(--kds-#{$colour-name}-rgb), 0.075);
 }
 
 @mixin growing-dark-message-bar($target) {
@@ -35,7 +27,7 @@
 
   height: 33px;
   background-color: var(--background-secondary);
-  transition: #{$target} .3s linear;
+  transition: #{$target} 0.3s linear;
 
   &:hover {
     #{$target}: 0px;

@@ -6,8 +6,10 @@
   .spoilerText-3p6IlD {
     background-color: var(--kds-spoiler-box);
 
-    &:hover > .inlineContent-3ZjPuv {
-      opacity: 1;
+    &:hover {
+      .inlineContent-3ZjPuv {
+        opacity: 1;
+      }
     }
   }
 }

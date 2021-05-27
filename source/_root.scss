@@ -23,14 +23,14 @@
  */
 
 @use 'sass:map';
-@use './helpers/functions' as *;
 @use './helpers/variables' as *;
 
 .theme-dark,
 .theme-light,
 :root {
   @each $colour, $value in map.merge($base-colours, $colour-shades) {
-    --kds-#{$colour}: #{$value};
+    --kds-#{$colour}: rgb(#{$value});
+    --kds-#{$colour}-rgb: #{$value};
   }
 
   --header-primary: var(--kds-light-grey);
@@ -50,7 +50,7 @@
 
   --background-mobile-primary: var(--background-primary);
   --background-mobile-secondary: var(--background-secondary);
-  --background-mentioned: #{get-colour('mango-yellow', 0.075)};
+  --background-mentioned: rgba(var(--kds-mango-yellow-rgb), 0.075);
 
   --text-link: rgba(62, 200, 255, 1);
   --text-normal: rgba(255, 27, 240, 1);

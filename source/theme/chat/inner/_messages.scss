@@ -1,5 +1,3 @@
-@use '../../../helpers/functions' as *;
-
 #app-mount {
   .edited-3sfAzf,
   .timestamp-3ZCmNB {
@@ -7,8 +5,10 @@
   }
 
   // Reply messages
-  .repliedMessage-VokQwo::before {
-    border-color: var(--background-tertiary);
+  .repliedMessage-VokQwo {
+    &::before {
+      border-color: var(--background-tertiary);
+    }
   }
 
   .replyBadge-r1su3o {
@@ -41,14 +41,16 @@
   }
 }
 
-.mentioned-xhSam7::before {
-  background-color: var(--kds-mango-yellow);
+.mentioned-xhSam7 {
+  &::before {
+    background-color: var(--kds-mango-yellow);
+  }
 }
 
 // Clyde & replying
 .ephemeral-1PsL1r,
 .replying-1x3H0T {
-  background-color: get-colour('number', 0.075);
+  background-color: rgba(var(--kds-number-rgb), 0.075);
 
   &::before {
     background-color: var(--kds-number);
@@ -57,13 +59,7 @@
 
 // Mentioned + replying
 .mentioned-xhSam7.replying-1x3H0T {
-  background-color: rgba(
-    mix(
-      get-colour('number'),
-      get-colour('mango-yellow')
-    ),
-    0.075
-  );
+  background-color: rgba(var(--kds-mentioned-replying-bg-rgb), 0.075);
 
   &::before {
     background: linear-gradient(

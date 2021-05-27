@@ -33,8 +33,12 @@
     display: none;
   }
 
-  &.interactive-3B9GmY:not(.active-1xchHY):hover {
-    background-color: rgba(0, 0, 0, 0.75);
+  &.interactive-3B9GmY {
+    &:not(.active-1xchHY) {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+    }
   }
 
   &.active-1xchHY {

@@ -1,15 +1,6 @@
-// Normal
+// New profiles
 .userPopout-3XzG_A {
-  width: 255px;
-  box-shadow: 0 0 0px 1px var(--background-tertiary);
-
-  .headerNormal-T_seeN {
-    background-color: var(--kds-dark-blue-popout-normal);
-  }
-
-  > [class^='header']:not(.headerNormal-T_seeN) {
-    background-color: var(--kds-dark-blue-popout-playing);
-  }
+  box-shadow: 0 0 3px 1px var(--background-tertiary);
 
   > .footer-1fjuF6,
   > .scrollerBase-289Jih {
@@ -17,27 +8,36 @@
   }
 }
 
-// Profile experiment
 .headerNormal-1l1Znk {
-  @at-root #app-mount & {
-    background-color: var(--kds-dark-blue-popout-playing);
-  }
+  background-color: var(--kds-dark-blue-popout-playing);
 
-  > .profileBanner-j34RzR {
+  > .profileBanner-33-uE1 {
     background-color: inherit !important;
   }
+
+  .activity-fViXj7 {
+    padding: 16px 16px;
+  }
+
+  .headerTop-2y3V6H {
+    background-color: inherit;
+    border-bottom: none;
+  }
+
+  .avatar-22FtUu {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .aboutMeSection-3bipSD {
+    background-color: inherit;
+  }
 }
 
-.headerTop-2y3V6H {
-  background-color: inherit;
+.roleName-32vpEy {
+  color: var(--header-secondary);
 }
 
-.avatar-22FtUu {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-// Shhh (thanks Luckfire)
 .botTag-2WPJ74 {
   color: white;
   background-color: deeppink;

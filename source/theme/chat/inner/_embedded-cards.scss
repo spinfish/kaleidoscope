@@ -1,0 +1,31 @@
+#app-mount {
+  // Spotify invite
+  .invite-18yqGF {
+    border: none;
+    background-color: var(--background-secondary);
+    box-shadow: 0 0 1px 1px var(--background-secondary-alt);
+
+    .header-Hg_qNF {
+      filter: brightness(175%);
+    }
+
+    .colorGrey-2DXtkV {
+      &:disabled {
+        background-color: var(--background-tertiary);
+      }
+    }
+  }
+
+  // Nitro gift cards
+  .tile-2OwFgW {
+    box-shadow: 0 0 1px 1px var(--background-secondary-alt);
+    background-color: var(--background-secondary-alt);
+  }
+}
+
+// Nitro gift cards continued
+.giftCodeContainer-1fbmAS {
+  .invalidPoop-pnUbq7 {
+    background-color: var(--background-secondary)
+  }
+}

@@ -1,18 +1,21 @@
-// Change Send Message text on playing modals
-[class^='topSection'] .lookInverted-2D7oAl {
-  font-weight: 600;
-  color: var(--kds-dark-blue-popout-normal);
-}
+.root-SR8cQa {
+  .body-3ND3kc {
+    background-color: var(--background-primary);
+  }
 
-.root-SR8cQa .body-3ND3kc {
-  background-color: var(--background-primary);
+  .lookInverted-2D7oAl {
+    font-weight: 600;
+    color: var(--inverted-button-colour);
+  }
 }
 
 .topSectionPlaying-1J5E4n {
+  --inverted-button-colour: var(--kds-dark-blue-popout-playing);
   background-color: var(--kds-dark-blue-popout-playing);
 }
 
 .topSectionSpotify-1lI0-P {
+  --inverted-button-colour: var(--kds-spotify-dark-green);
   background-color: var(--kds-spotify-dark-green);
 
   .bar-3urHkF {
@@ -32,9 +35,19 @@
     left: 7.7px;
     position: absolute;
   }
+
+  // Fix being too close together
+  .horizontal-3fI3M- {
+    > :not(:first-child) {
+      &:not(.disabledButtonWrapper-3wH6-b) {
+        margin-left: 4px;
+      }
+    }
+  }
 }
 
 .topSectionStreaming-1Tpf5X {
+  --inverted-button-colour: var(--kds-streaming-violet);
   background-color: var(--kds-streaming-violet);
 }
 
@@ -46,11 +59,15 @@
     background-color: var(--background-modifier-active);
   }
 
-  .flowerStar-1GeTsn path {
-    fill: var(--kds-reply-content);
+  .flowerStar-1GeTsn {
+    path {
+      fill: var(--kds-reply-content);
+    }
   }
 
-  .childContainer-1wxZNh path {
-    fill: black;
+  .childContainer-1wxZNh {
+    path {
+      fill: black;
+    }
   }
 }

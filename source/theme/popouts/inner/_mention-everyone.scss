@@ -1,16 +1,18 @@
-#app-mount .everyonePopout-nEbJY3 {
-  box-shadow: 0 2px 5px 0 var(--background-tertiary);
-  background-color: var(--background-secondary-alt);
+#app-mount {
+  .contentWarningPopout-n5JsIs {
+    box-shadow: 0 2px 5px 0 var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
 
-  .icon-2qOzDL path {
-    fill: var(--kds-almost-cyan);
-  }
+    .icon-2RSfUw path {
+      fill: var(--kds-almost-cyan);
+    }
 
-  > .footer-2aTx0s {
-    background-color: var(--background-secondary);
+    > .footer-3N9rgh {
+      background-color: var(--background-secondary);
 
-    > .colorStandard-2KCXvj {
-      color: deeppink;
+      > .colorStandard-2KCXvj {
+        color: deeppink;
+      }
     }
   }
 }

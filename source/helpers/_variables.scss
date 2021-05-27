@@ -1,29 +1,33 @@
+@use 'sass:map';
+
 $base-colours: (
-  'settings-larger-header': rgba(193, 0, 242, 1),
-  'discord-nitro-magenta': rgba(255, 115, 250, 1),
-  'reply-content': rgba(214, 46, 151, 1),
-  'bright-orange-red': rgba(255, 42, 0, 1),
-  'mango-yellow': rgba(255, 196, 22, 1),
-  'radio-bar-green': rgba(0, 162, 63, 1),
-  'spotify-dark-green': rgba(1, 112, 44, 1),
-  'number': rgba(1, 206, 206, 1),
-  'almost-cyan': rgba(5, 207, 255, 1),
-  'category-name': rgba(157, 217, 255, 1),
-  'settings-smaller-header': rgba(0, 118, 187, 1),
-  'dark-blue-popout-normal': rgba(1, 15, 40, 1),
-  'dark-blue-popout-playing': rgba(13, 10, 58, 1),
-  'streaming-violet': rgba(51, 12, 72, 1),
-  'message-hover': rgba(0, 10, 28, 1),
-  'spoiler-box': rgba(0, 0, 13, 1),
-  'light-grey': rgba(220, 221, 222, 1)
+  'settings-larger-header': '193, 0, 242',
+  'discord-nitro-magenta': '255, 115, 250',
+  'reply-content': '214, 46, 151',
+  'bright-orange-red': '255, 42, 0',
+  'radio-bar-orange': '255, 119, 11',
+  'mango-yellow': '255, 196, 22',
+  'mentioned-replying-bg': '128, 201, 114',
+  'radio-bar-green': '0, 162, 63',
+  'spotify-dark-green': '1, 112, 44',
+  'number': '1, 206, 206',
+  'almost-cyan': '5, 207, 255',
+  'category-name': '157, 217, 255',
+  'settings-smaller-header': '0, 118, 187',
+  'dark-blue-popout-normal': '1, 15, 40',
+  'dark-blue-popout-playing': '13, 10, 58',
+  'streaming-violet': '51, 12, 72',
+  'message-hover': '0, 10, 28',
+  'spoiler-box': '0, 0, 13',
+  'light-grey': '220, 221, 222' 
 );
 
 $colour-shades: (
-  'greyish-blue': rgba(138, 160, 180, 0.5),
-  'darker-orange-red': rgba(255, 42, 0, 0.75),
-  'darker-reply-content': rgba(214, 46, 151, 0.75),
-  'light-pink-tick-slider': rgba(255, 27, 240, 0.25),
-  'darker-interactive-active': rgba(209, 41, 255, 0.065)
+  'greyish-blue': '70, 86, 107',
+  'darker-orange-red': '192, 34, 9',
+  'darker-reply-content': '160, 37, 121',
+  'light-pink-tick-slider': '255, 27, 240, 0.25',
+  'darker-interactive-active': '209, 41, 255'
 );
 
 $login-background: url(

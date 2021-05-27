@@ -21,6 +21,10 @@
 .item-1yAxl1 {
   color: var(--permission-colour);
 
+  &:not(.selected-2YhbGh) {
+    cursor: pointer;
+  }
+
   &.selected-2YhbGh {
     background-color: var(--permission-colour);
   }

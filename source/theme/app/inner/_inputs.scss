@@ -1,10 +1,8 @@
-@use '../../../helpers/functions' as *;
-
 .inputDefault-_djjkz {
   border-color: var(--background-tertiary);
 
   &:hover {
-    border-color: get-colour('almost-cyan', 0.5);
+    border-color: rgba(var(--kds-almost-cyan-rgb), 0.5);
   }
 
   &:focus {

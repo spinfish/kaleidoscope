@@ -1,23 +1,29 @@
-.powercord .powercord-toast {
-  filter: brightness(120%);
+.powercord {
+  .powercord-toast {
+    filter: brightness(120%);
 
-  --toast-background: var(--background-secondary);
-  --toast-header: var(--background-tertiary);
-  --toast-contents: var(--background-primary);
-  --toast-box-shadow: rgba(0, 0, 0, 0.2);
-  --toast-border: var(--background-secondary-alt);
+    --toast-background: var(--background-secondary);
+    --toast-header: var(--background-tertiary);
+    --toast-contents: var(--background-primary);
+    --toast-box-shadow: rgba(0, 0, 0, 0.2);
+    --toast-border: var(--background-secondary-alt);
 
-  .header {
-    color: var(--kds-category-name);
+    .header {
+      color: var(--kds-category-name);
 
-    .icon {
-      color: var(--kds-settings-larger-header);
+      .icon {
+        color: var(--kds-settings-larger-header);
+      }
     }
-  }
 
-  .colorBrand-3pXr91 {
-    border: 1px solid var(--kds-almost-cyan);
-    background-color: transparent !important; // Pain
-    color: var(--kds-almost-cyan) !important; // Pain x2
+    .colorBrand-3pXr91 {
+      border: 1px solid var(--kds-almost-cyan);
+      background-color: transparent;
+      color: var(--kds-almost-cyan);
+
+      &:hover {
+        background-color: rgba(var(--kds-almost-cyan-rgb), 0.075) !important;
+      }
+    }
   }
 }

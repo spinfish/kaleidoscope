@@ -19,11 +19,13 @@
 .searchResultsWrap-3-pOjs {
   width: 550px;
 
-  .pageButton-2ruNwd.activeButton-rvKcqq {
-    background-color: var(--kds-settings-smaller-header);
+  .pageButton-2ruNwd {
+    &.activeButton-rvKcqq {
+      background-color: var(--kds-settings-smaller-header);
 
-    &:hover {
-      background-color: var(--kds-offline-colour);
+      &:hover {
+        background-color: var(--kds-offline-colour);
+      }
     }
   }
 }

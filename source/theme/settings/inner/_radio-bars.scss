@@ -1,11 +1,3 @@
-@use 'sass:color';
-@use '../../../helpers/functions' as *;
-
-$-yellow-orange-mix: color.mix(
-  get-colour('mango-yellow'),
-  get-colour('bright-orange-red'),
-);
-
 .radioBar-bMNUI- {
   border-width: 4px;
 
@@ -19,7 +11,7 @@ $-yellow-orange-mix: color.mix(
 
   &[style*='#f57731'] {
     // https://sass-lang.com/documentation/breaking-changes/css-vars
-    --radio-bar-accent-color: #{$-yellow-orange-mix} !important;
+    --radio-bar-accent-color: var(--kds-radio-bar-orange) !important;
   }
 
   &[style*='#ed4245'] {

@@ -1,8 +1,6 @@
 .powercord {
   .powercord-product-license-modal {
     color: var(--header-secondary);
-    background-color: var(--background-tertiary);
-    box-shadow: 0 2px 5px 0 var(--background-tertiary);
 
     h4 {
       color: var(--kds-settings-smaller-header);
@@ -13,19 +11,20 @@
 
       &::before {
         width: 7px;
+        background-color: var(--powercord-license-dot-colour) !important; // Pain
       }
     }
   }
 
-  .permissions span::before {
-    background-color: var(--kds-radio-bar-green);
+  .permissions {
+    --powercord-license-dot-colour: var(--kds-radio-bar-green);
   }
 
-  .limitations span::before {
-    background-color: var(--kds-bright-orange-red);
-  }
+  .limitations {
+    --powercord-license-dot-colour: var(--kds-bright-orange-red);
+  } 
 
-  .conditions span::before {
-    background-color: var(--kds-almost-cyan);
+  .conditions {
+    --powercord-license-dot-colour: var(--kds-almost-cyan);
   }
 }

@@ -1,6 +1,7 @@
-@use '../../../helpers/functions' as *;
+@use '../../../helpers/variables' as *;
 
 .quickswitcher-3JagVE {
+  box-shadow: $modal-box-shadow;
   background-color: var(--background-secondary-alt);
 
   > .scrollerBase-289Jih {
@@ -17,17 +18,17 @@
   }
 
   .header-13MUnb {
-    color: get-colour('number', 0.95);
+    color: rgba(var(--kds-number-rgb), 0.95);
   }
 
   .resultFocused-3aIoYe {
-    background-color: var(--kds-darker-interactive-active);
+    background-color: rgba(var(--kds-darker-interactive-active-rgb), 0.05);
 
     &::before {
       content: '';
       position: absolute;
-      border: 1px solid var(--interactive-active);
       height: 100%;
+      border: 1px solid var(--interactive-active);
     }
   }
 

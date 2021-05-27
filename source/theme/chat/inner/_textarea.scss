@@ -9,7 +9,7 @@
     margin-bottom: 5px;
     background-color: var(--channeltextarea-background);
 
-    .colorBrand-2tjs5J {
+    .colorLink-2vG20E {
       color: var(--interactive-active); // @ON
     }
 
@@ -17,8 +17,10 @@
       color: var(--kds-reply-content); // @OFF
     }
 
-    [class*='color']:hover {
-      color: var(--interactive-hover);
+    .mentionButton-3710-W {
+      &:hover {
+        color: var(--interactive-hover);
+      }
     }
   }
 

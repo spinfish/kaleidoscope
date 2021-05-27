@@ -1,18 +1,11 @@
 // This is for themeing the modals for the amazing plugin Github in Discord
 // created by ugly-patootie, that you should most definitely take a look at c::
 
-.powercord .githubModel {
-  background-color: var(--background-tertiary);
-  box-shadow: 0 0 2px 2px var(--background-tertiary);
-
-  .back-outfile {
-    border: none;
-    box-shadow: 0 0 0 1px black;
-  }
-
-  .footer-2gL1pp {
-    background-color: var(--background-secondary);
-    box-shadow: none;
-    border-top: 2px solid black;
+.powercord {
+  .githubModel {
+    .back-outfile {
+      border: none !important;
+      box-shadow: 0 0 0 1px black;
+    }
   }
 }

@@ -6,6 +6,10 @@
   background-color: var(--background-secondary);
   box-shadow: 0 0 0 1px var(--background-tertiary), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 
+  > .queryContainer-RKFJW- {
+    border-bottom-color: var(--background-tertiary);
+  }
+
   > .focused-2bY0OD {
     background-color: var(--background-secondary-alt);
 
@@ -26,8 +30,10 @@
     color: var(--kds-settings-smaller-header);
   }
 
-  .resultsGroup-r_nuzN::before {
-    display: none;
+  .resultsGroup-r_nuzN {
+    &::before {
+      display: none;
+    }
   }
 
   .queryText-3xoOY7 {
@@ -39,8 +45,10 @@
     }
   }
 
-  .option-96V44q::after {
-    background: transparent;
+  .option-96V44q {
+    &::after {
+      background: transparent;
+    }
   }
 
   .selected-rZcOL- {

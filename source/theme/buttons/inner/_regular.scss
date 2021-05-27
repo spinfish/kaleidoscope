@@ -5,13 +5,18 @@
     color: white;
     background-color: var(--fill-button-normal);
 
-    &:hover {
-      background-color: var(--fill-button-hover);
+    &:not(:disabled) {
+      &:hover {
+        background-color: var(--fill-button-hover);
+      }
+
+      &:active {
+        background-color: var(--fill-button-active);
+      }
     }
 
-    &:active,
     &:disabled {
-      background-color: var(--fill-button-active);
+      opacity: 0.2;
     }
   }
 }
@@ -33,6 +38,7 @@
   @include lined-button('darker-reply-content');
 }
 
+.colorGrey-2DXtkV,
 .colorPrimary-3b3xI6 {
   @include filled-button('greyish-blue');
   // ... Yeah

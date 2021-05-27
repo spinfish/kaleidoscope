@@ -24,6 +24,7 @@
   }
 
   @at-root .selected-bZ3Lue &::before {
+    background-color: transparent;
     animation: rotation 10s linear infinite;
   }
 }

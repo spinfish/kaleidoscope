@@ -14,6 +14,10 @@
 }
 
 // Logout
-.item-PXvHYJ.themed-OHr7kt[style*='rgb(237, 66, 69)'] {
-  @include special-themed-item-button(red, 0.9);
+.item-PXvHYJ {
+  &.themed-OHr7kt {
+    &[style*='rgb(237, 66, 69)'] {
+      @include special-themed-item-button(red, 0.9);
+    }
+  }
 }

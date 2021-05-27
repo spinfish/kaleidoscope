@@ -1,4 +1,3 @@
-@use '../../../helpers/functions' as *;
 @use '../../../helpers/variables' as *;
 
 #app-mount {
@@ -9,8 +8,8 @@
   }
 
   .datePicker--XZbmJ {
-    background-color: get-colour('almost-cyan', 0.015);
-    box-shadow: 0 0 0 5px get-colour('almost-cyan', 0.2) inset;
+    background-color: rgba(var(--kds-almost-cyan-rgb), 0.015);
+    box-shadow: 0 0 0 5px rgba(var(--kds-almost-cyan-rgb), 0.2) inset;
     background: $lily-datepicker-bg-image center/cover no-repeat;
 
     &::before {
@@ -62,10 +61,12 @@
       color: var(--kds-category-name);
       background-color: var(--background-secondary);
 
-      &:hover:not(.react-datepicker__day--disabled) {
-        font-weight: 800;
-        color: var(--kds-mango-yellow);
-        background-color: var(--background-secondary-alt);
+      &:hover {
+        &:not(.react-datepicker__day--disabled) {
+          font-weight: 800;
+          color: var(--kds-mango-yellow);
+          background-color: var(--background-secondary-alt);
+        }
       }
 
       &-name {
@@ -77,8 +78,10 @@
         filter: brightness(105%);
       }
 
-      &--selected::after {
-        background-color: var(--kds-darker-reply-content);
+      &--selected {
+        &::after {
+          background-color: var(--kds-darker-reply-content);
+        }
       }
 
       &--disabled,

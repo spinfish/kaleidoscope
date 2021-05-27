@@ -1,5 +1,3 @@
-@use '../helpers/functions' as *;
-
 // Discord is stupid.
 :root {
   --font-display: var(--font-family) !important; // Sorry katlyn
@@ -15,11 +13,6 @@ $default-avatar-map: (
   'c09a43a372ba81e3018c3151d4ed4773': 'https://discordapp.com/assets/322c936a8c8be1b803cd94861bdfa868.png', // Grey
   'c6a249645d46209f337279cd2ca998c7': 'https://discordapp.com/assets/6debd47ed13483642cf09e832ed0bc1b.png' // System
 );
-
-// Mini Discord icon + text on nitro page
-.heroIcon-3QgOM5 path:nth-child(n + 6) {
-  display: none;
-}
 
 // Thanks to Doggybootsy for this!
 .homeIcon-FuNwkv path {
@@ -51,7 +44,7 @@ $default-avatar-map: (
 
     &:not(.reactionMe-wv5HKu) {
       &:hover {
-        border-color: get-colour('mango-yellow', 0.2);
+        border-color: rgba(var(--kds-mango-yellow-rgb), 0.2);
       }
 
       &:active {
@@ -63,7 +56,7 @@ $default-avatar-map: (
 
   .reactionMe-wv5HKu {
     border-color: transparent;
-    background-color: get-colour('almost-cyan', 0.2);
+    background-color: rgba(var(--kds-almost-cyan-rgb), 0.2);
   }
 
   // Revert nitro page banner
