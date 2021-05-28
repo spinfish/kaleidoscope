@@ -1,8 +1,10 @@
 @use '../../../helpers/variables' as *;
 
 .splashBackground-1FRCko {
-  .image-2jyRAK.loaded-3PtF_J {
-    content: $login-background;
+  .image-2jyRAK {
+    &.loaded-3PtF_J {
+      content: $login-background;
+    }
   }
 
   .canvas-3XuBXe,

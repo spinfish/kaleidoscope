@@ -1,10 +1,15 @@
 // New profiles
 .userPopout-3XzG_A {
+  --text-normal: var(--header-secondary);
   box-shadow: 0 0 3px 1px var(--background-tertiary);
 
   > .footer-1fjuF6,
   > .scrollerBase-289Jih {
     background-color: var(--background-secondary);
+  }
+
+  .user-details-text {
+    margin-top: 8px;
   }
 }
 

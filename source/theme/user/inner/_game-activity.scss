@@ -14,11 +14,10 @@
     }
   }
 
-  // Ugh. This needs improvement somehow
   .game-1ipmAa {
     .gameNameInput-385LoS {
       &:hover {
-        border-color: rgba(var(--kds-almost-cyan), 0.25);
+        border-color: rgba(var(--kds-almost-cyan-rgb), 0.25);
         background-color: var(--background-secondary);
       }
 

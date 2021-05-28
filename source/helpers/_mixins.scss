@@ -1,4 +1,3 @@
-@use 'sass:string';
 @mixin exclude-yellow-white {
   &:not(.colorYellow-2JqYwt):not(.colorWhite-rEQuAQ) {
     @content;
@@ -58,7 +57,7 @@
   }
 }
 
-@mixin special-themed-item-button($colour, $opacity) {
+@mixin special-themed-item-button($colour, $opacity, $path: false) {
   // People writing Discord's CSS must be psychopaths because they
   // have !importants IN STYLESHEET CSS WITH NO INLINE STYLES ANYWHERE
   // So I gotta use !important here. Sorry.
@@ -70,8 +69,14 @@
   }
 
   &:active,
-  &[aria-selected='true'] {
+  &.selected-3s45Ha {
     color: white !important;
     background-color: rgba($colour, $opacity) !important;
+
+    @if $path {
+      path {
+        fill: white;
+      }
+    }
   }
 }

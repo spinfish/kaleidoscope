@@ -3,14 +3,7 @@
 // Subscriptions + Server Boost Status
 .premiumTabItem-1QTfBr,
 .serverBoostTabItem-2hFTIN {
-  @include special-themed-item-button(cyan, 0.6);
-
-  &:active,
-  &[aria-selected='true'] {
-    path {
-      fill: white;
-    }
-  }
+  @include special-themed-item-button(cyan, 0.6, $path: true);
 }
 
 // Logout

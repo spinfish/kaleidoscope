@@ -16,32 +16,35 @@
   }
 }
 
-#app-mount .itemCard-v9viV7 {
-  border: none;
-  box-shadow: 0 0 0 1px black;
+// Activity card
+#app-mount {
+  .itemCard-v9viV7 {
+    border: none;
+    box-shadow: 0 0 0 1px black;
 
-  .body-1ld4H7 {
-    background-color: inherit;
-  }
+    .body-1ld4H7 {
+      background-color: inherit;
+    }
 
-  .section-2gLsgF {
-    margin-top: 7.5px;
-    background-color: var(--background-secondary);
-  }
+    .section-2gLsgF {
+      margin-top: 7.5px;
+      background-color: var(--background-secondary);
+    }
 
-  .separator-XqIyoz {
-    display: none;
-  }
+    .separator-XqIyoz {
+      display: none;
+    }
 
-  &.interactive-3B9GmY {
-    &:not(.active-1xchHY) {
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.75);
+    &.interactive-3B9GmY {
+      &:not(.active-1xchHY) {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.75);
+        }
       }
     }
-  }
 
-  &.active-1xchHY {
-    background-color: var(--background-tertiary);
+    &.active-1xchHY {
+      background-color: var(--background-tertiary);
+    }
   }
 }

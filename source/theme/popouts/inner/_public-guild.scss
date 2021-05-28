@@ -1,0 +1,9 @@
+// I'm fully aware that this code is basically the same as
+// the contentwarningpopout but I'm not making a mixin just
+// for this
+#app-mount {
+  .guildPopout-3CgKqR {
+    background-color: var(--background-secondary-alt);
+    box-shadow: 0 2px 5px 0 var(--background-tertiary);
+  }
+}

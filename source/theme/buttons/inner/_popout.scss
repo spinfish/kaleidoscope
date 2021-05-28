@@ -3,12 +3,14 @@
 .item-1tOPte {
   color: var(--popout-button-text);
 
-  &:active:not(.hideInteraction-1iHO1O) {
-    color: white;
-    background-color: var(--popout-button-active);
+  &:active {
+    &:not(.hideInteraction-1iHO1O) {
+      color: white;
+      background-color: var(--popout-button-active);
 
-    .icon-LYJorE path {
-      fill: white;
+      .icon-LYJorE path {
+        fill: white;
+      }
     }
   }
 

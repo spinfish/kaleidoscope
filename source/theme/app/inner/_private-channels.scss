@@ -12,15 +12,28 @@
   }
 
   .clickable-1JJAn8 {
+    border-radius: 10px;
+
+    // Special 3 channels at top
+    &:hover {
+      background-color: transparent;
+    }
+
     .overflow-WK9Ogt {
       color: var(--kds-category-name);
     }
   }
 
-  a[href='/discovery'],
-  a[href='/channels/@me'],
-  a[href='/store'] {
-    margin-bottom: 5px;
-    background-color: var(--background-primary);
+  .layout-2DM8Md {
+    border-radius: 10px;
+  }
+
+  a {
+    &[href='/discovery'],
+    &[href='/channels/@me'],
+    &[href='/store'] {
+      margin-bottom: 5px;
+      background-color: var(--background-primary);
+    }
   }
 }

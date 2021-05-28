@@ -10,7 +10,6 @@
   }
 
   &[style*='#f57731'] {
-    // https://sass-lang.com/documentation/breaking-changes/css-vars
     --radio-bar-accent-color: var(--kds-radio-bar-orange) !important;
   }
 

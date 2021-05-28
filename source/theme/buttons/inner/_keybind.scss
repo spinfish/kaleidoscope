@@ -1,7 +1,11 @@
-#app-mount .keybindShortcut-1BD6Z1 span {
-  box-shadow: none;
-  margin: none;
-  color: var(--header-secondary);
-  border: 1px solid var(--background-tertiary);
-  background-color: var(--background-tertiary);
+#app-mount {
+  .keybindShortcut-1BD6Z1 {
+    span {
+      box-shadow: none;
+      margin: none;
+      color: var(--header-secondary);
+      border: 1px solid var(--background-tertiary);
+      background-color: var(--background-tertiary);
+    }
+  }
 }

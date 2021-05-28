@@ -1,9 +1,5 @@
 @use '../../../helpers/mixins' as *;
 
-[data-list-id='guildsnav'] {
-  outline: none;
-}
-
 .sidebarRegionScroller-3MXcoP {
   border-radius: 10px;
 }
@@ -50,6 +46,10 @@
 
 .guilds-1SWlCJ {
   margin-left: 5px;
+
+  > .tree-2wKJdG {
+    outline: none;
+  }
 
   .scroller-1Bvpku {
     background-color: var(--background-secondary);

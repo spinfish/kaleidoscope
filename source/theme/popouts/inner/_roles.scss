@@ -5,7 +5,8 @@
 
 // Role tooltip on member list
 .overflowRolesPopout-140n9i {
-  &[class*='popout'],
+  &.popoutTop-1WcJ06,
+  &.popoutBottom-2BJWty,
   .overflowRolesPopoutArrow-2O66oH {
     box-shadow: 0 0 0 1px black;
     background-color: var(--background-secondary-alt);
@@ -15,7 +16,9 @@
     color: var(--kds-almost-cyan);
   }
 
-  .overflowRolesPopoutHeaderIcon-6PNEZA path {
-    fill: var(--kds-almost-cyan);
+  .overflowRolesPopoutHeaderIcon-6PNEZA {
+    path {
+      fill: var(--kds-almost-cyan);
+    }
   }
 }

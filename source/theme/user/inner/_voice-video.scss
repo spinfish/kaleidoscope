@@ -9,8 +9,8 @@ $-mic-test-gradient: linear-gradient(
 }
 
 .manual-36Evg9 {
-  .fill-3eUagR {
-    background-color: rgba(0, 0, 0, 0.45) !important;
+  @at-root #app-mount & .fill-3eUagR {
+    background-color: rgba(0, 0, 0, 0.45);
   }
 
   [style*="rgb(251, 184, 72)"] { // Yellow

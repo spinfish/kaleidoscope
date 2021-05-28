@@ -12,8 +12,10 @@
   }
 
   // Have this under app-mount so it works for drag drop modal
-  .icon-kyxXVr:not(.image-2yrs5j) {
-    filter: invert(0.95); // Thanks D Mack#4481!
+  .icon-kyxXVr {
+    &:not(.image-2yrs5j) {
+      filter: invert(0.95); // Thanks D Mack#4481!
+    }
   }
 
   // Regular upload modal

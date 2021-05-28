@@ -45,30 +45,30 @@
   &::before {
     background-color: var(--kds-mango-yellow);
   }
+
+  // Mentioned + replying
+  &.replying-1x3H0T {
+    background-color: rgba(var(--kds-mentioned-replying-bg-rgb), 0.075);
+
+    &::before {
+      background: linear-gradient(
+        to top,
+        var(--kds-mango-yellow),
+        var(--kds-reply-content),
+        var(--interactive-active),
+        var(--kds-number)
+      );
+    }
+  }
 }
 
-// Clyde & replying
+// Clyde + replying
 .ephemeral-1PsL1r,
 .replying-1x3H0T {
   background-color: rgba(var(--kds-number-rgb), 0.075);
 
   &::before {
     background-color: var(--kds-number);
-  }
-}
-
-// Mentioned + replying
-.mentioned-xhSam7.replying-1x3H0T {
-  background-color: rgba(var(--kds-mentioned-replying-bg-rgb), 0.075);
-
-  &::before {
-    background: linear-gradient(
-      to top,
-      var(--kds-mango-yellow),
-      var(--kds-reply-content),
-      var(--interactive-active),
-      var(--kds-number)
-    );
   }
 }
 
