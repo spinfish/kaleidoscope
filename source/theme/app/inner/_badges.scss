@@ -23,12 +23,19 @@
   }
 }
 
-// Profile badges - many thanks to Doggybootsy for this!
+// Profile badges
 .profileBadge-2niAfJ {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// No support from Better Badges (yet?)
+.powercord-badge,
+.profileBadgeEarlySupporter-2ng_jL {
   transition: 0.2s transform ease-in-out;
 
   &:hover {
-    cursor: pointer;
     transform: translateY(-1.5px);
   }
 }
