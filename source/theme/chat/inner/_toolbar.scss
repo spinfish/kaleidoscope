@@ -1,3 +1,5 @@
+@use '../../../helpers/mixins' as *;
+
 // Yeah
 .iconBadge-qZ4Ksk {
   background-color: var(--kds-bright-orange-red);
@@ -15,8 +17,7 @@
 
 // Ew lol
 .search-36MZv- {
-  &,
-  + [aria-label='Update Ready!'] {
+  @include parent-and("+ [aria-label='Update Ready!']") {
     order: -1;
   }
 }

@@ -1,3 +1,4 @@
+@use '../../../helpers/mixins' as *;
 @use '../../../helpers/variables' as *;
 
 #app-mount {
@@ -84,11 +85,12 @@
         }
       }
 
-      &--disabled,
-      &--disabled:hover {
-        background-color: rgb(1, 16, 27);
-        filter: brightness(85%);
-        cursor: not-allowed;
+      &--disabled {
+        @include parent-and('&:hover') {
+          background-color: rgb(1, 16, 27);
+          filter: brightness(85%);
+          cursor: not-allowed;
+        }
       }
     }
   }

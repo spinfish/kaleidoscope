@@ -1,3 +1,5 @@
+@use '../../../helpers/mixins' as *;
+
 #app-mount {
   .edited-3sfAzf,
   .timestamp-3ZCmNB {
@@ -89,8 +91,7 @@
   }
 
   &.dangerous-2r8KxV {
-    &,
-    &:hover {
+    @include parent-and('&:hover') {
       color: var(--kds-bright-orange-red);
     }
   }

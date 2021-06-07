@@ -4,6 +4,13 @@
   }
 }
 
+// Because it's prettier imo
+@mixin parent-and($other-selectors...) {
+  &, #{$other-selectors} {
+    @content;
+  }
+}
+
 @mixin popout-button($colour-name) {
   --popout-button-text: var(--kds-#{$colour-name});
   --popout-button-focused: rgba(var(--kds-#{$colour-name}-rgb), 0.15);

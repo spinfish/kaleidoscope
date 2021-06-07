@@ -1,3 +1,5 @@
+@use '../../../helpers/mixins' as *;
+
 // Little round avatars under VC name
 .avatarSpeaking-2IGMRN {
   box-shadow: 0 0 0 2px var(--kds-radio-bar-green) inset,
@@ -68,8 +70,7 @@
 #app-mount {
   // Show/hide participants
   .participantsButton-KYW-IW {
-    &,
-    &:hover {
+    @include parent-and('&:hover') {
       background-color: var(--background-primary);
     }
   }

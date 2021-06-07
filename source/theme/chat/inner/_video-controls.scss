@@ -1,3 +1,5 @@
+@use '../../../helpers/mixins' as *;
+
 #app-mount {
   .mediaBarGrabber-1FqnbN {
     background-color: var(--interactive-hover);
@@ -9,16 +11,13 @@
 }
 
 .mediaBarProgress-1xaPtl {
-  &,
-  &::before,
-  &::after {
+  @include parent-and('&::before', '&::after') {
     background-color: var(--kds-almost-cyan);
   }
 }
 
 .mediaBarWrapper-3D7r67 {
-  &,
-  &::after {
+  @include parent-and('&::after') {
     background-color: deeppink;
   }
 }
