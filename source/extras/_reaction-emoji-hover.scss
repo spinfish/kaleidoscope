@@ -1,13 +1,10 @@
-.reactionTooltip-3pvwwY {
-  .reactionTooltipContent-2TwEIL {
-    display: block;
-    text-align: center;
-  }
+.reactionTooltipContent-2TwEIL {
+  display: block;
+  text-align: center;
 
-  .reactionTooltipEmoji-3LG0v8 {
-    height: 110px;
+  > .reactionTooltipEmoji-3LG0v8 {
     width: 100%;
-    display: block;
+    height: 110px;
     margin-bottom: 9px;
   }
 }

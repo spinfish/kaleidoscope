@@ -1,39 +1,17 @@
-.root-SR8cQa {
-  .body-3ND3kc {
-    background-color: var(--background-primary);
-  }
-
-  .lookInverted-2D7oAl {
-    font-weight: 600;
-    color: var(--inverted-button-colour);
-  }
-
-  .headerInfo-30uryT {
-    --text-normal: var(--header-secondary); // For user-details
-    margin-left: 12px;
-  }
-}
-
-.topSectionPlaying-1J5E4n {
-  --inverted-button-colour: var(--kds-dark-blue-popout-playing);
+.topSection-y3p-_D {
+  --text-normal: var(--header-secondary);
   background-color: var(--kds-dark-blue-popout-playing);
-}
 
-.topSectionSpotify-1lI0-P {
-  --inverted-button-colour: var(--kds-spotify-dark-green);
-  background-color: var(--kds-spotify-dark-green);
-
+  // Spotify related things
   .bar-3urHkF {
     background-color: rgba(0, 0, 0, 0.15);
   }
 
-  .contentImagesProfile-1Mz07W {
-    width: -webkit-fill-available;
-  }
-
-  .fullWidth-1orjjo {
-    width: 33px;
-    margin-left: 5px;
+  .horizontal-1ae9ci {
+    .fullWidth-1orjjo {
+      width: 33px;
+      margin-left: 5px;
+    }
   }
 
   .spotifyButtonLogo-3uT57D {
@@ -41,7 +19,7 @@
     position: absolute;
   }
 
-  // Fix being too close together
+  // Fix buttons being too far apart
   .horizontal-3fI3M- {
     > :not(:first-child) {
       &:not(.disabledButtonWrapper-3wH6-b) {
@@ -49,14 +27,15 @@
       }
     }
   }
+
+  // User info, mutual servers, mutual friends
+  .tabBarContainer-37hZsr {
+    border-top: none;
+  }
 }
 
-.topSectionStreaming-1Tpf5X {
-  --inverted-button-colour: var(--kds-streaming-violet);
-  background-color: var(--kds-streaming-violet);
-}
-
-.connectedAccount-36nQx7 {
+.connectedAccount-2Jb-Z0 {
+  cursor: pointer;
   border-color: black;
   background-color: var(--kds-message-hover);
 
@@ -65,13 +44,13 @@
   }
 
   .flowerStar-1GeTsn {
-    path {
+    > path {
       fill: var(--kds-reply-content);
     }
   }
 
   .childContainer-1wxZNh {
-    path {
+    > path {
       fill: black;
     }
   }
