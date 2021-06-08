@@ -1,4 +1,19 @@
-// New profiles
+.customStatus-oN4ZZY {
+  display: flex;
+
+  > .customStatusEmoji-3a2-Zo {
+    width: 100px;
+    height: 100px;
+    margin-top: 8px;
+  }
+
+  > .customStatusText-1vtUsN {
+    margin: auto; // Classic
+    max-width: 150px;
+    text-align: center;
+  }
+}
+
 .userPopout-xaxa6l {
   --text-normal: var(--header-secondary);
   box-shadow: 0 0 3px 1px var(--background-tertiary);
