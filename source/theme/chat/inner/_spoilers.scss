@@ -1,15 +1,32 @@
 #app-mount {
+  // Attachments
   .spoilerWarning-2aAZq1 {
     background-color: var(--kds-spoiler-box);
   }
 
+  // Messages
   .spoilerText-3p6IlD {
-    background-color: var(--kds-spoiler-box);
+    border-radius: 6px;
 
-    &:hover {
-      > .inlineContent-3ZjPuv {
-        opacity: 1;
+    &.hidden-HHr2R9 {
+      transition: background-color 0.25s;
+      background-color: var(--kds-spoiler-box);
+
+      &:hover {
+        background-color: var(--background-secondary-alt);
+
+        > .inlineContent-3ZjPuv {
+          opacity: 1;
+        }
       }
+    }
+
+    &[aria-expanded='true'] {
+      background-color: var(--background-secondary);
+    }
+
+    > .inlineContent-3ZjPuv {
+      padding: 2px;
     }
   }
 }

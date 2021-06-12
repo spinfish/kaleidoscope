@@ -1,31 +1,27 @@
+// There goes my sanity, thanks Discord :slight_smile:
+
 @use 'sass:map' as *;
-@use 'sass:string' as str;
 
 $status-mapping: (
-  var(--kds-dnd-colour): (
-    'hex': '#ed4245',
-    'rgb': 'rgb(237, 66, 69)',
-    'to-string': 'Do Not Disturb'
+  'dnd': (
+    'fill-includes': '359',
+    'aria-label': 'Do Not Disturb'
   ),
-  var(--kds-idle-colour): (
-    'hex': '#faa61a',
-    'rgb': 'rgb(250, 166, 26)',
-    'to-string': 'Idle'
+  'idle': (
+    'fill-includes': '38',
+    'aria-label': 'Idle'
   ),
-  var(--kds-online-colour): (
-    'hex': '#3ba55c',
-    'rgb': 'rgb(59, 165, 92)',
-    'to-string': 'Online'
+  'online': (
+    'fill-includes': '139',
+    'aria-label': 'Online'
   ),
-  var(--kds-streaming-colour): (
-    'hex': '#593695',
-    'rgb': 'rgb(89, 54, 149)',
-    'to-string': 'Streaming'
+  'streaming': (
+    'fill-includes': '262',
+    'aria-label': 'Streaming'
   ),
-  var(--kds-offline-colour): (
-    'hex': '#747f8d',
-    'rgb': 'rgb(116, 127, 141)',
-    'to-string': 'Offline'
+  'offline': (
+    'fill-includes': '214',
+    'aria-label': 'Offline'
   )
 );
 
@@ -38,15 +34,46 @@ $status-mapping: (
   --kds-invisible-colour: var(--bsi-invisible-color, rgb(66, 65, 65));
 }
 
-@each $new-colour, $inner-map in $status-mapping {
-  // Status picker and DMs
-  .status-1AY8sU[style*='#{get($inner-map, 'rgb')}'] {
-    background-color: $new-colour !important;
+// Regular and typing
+rect {
+  @each $name, $inner-map in $status-mapping {
+    &[fill*='#{get($inner-map, 'fill-includes')}'] {
+      // You ask: why the fuck are they doing this?
+      // Well if I used normal interpolation it would add
+      // spaces in between the --kds- prefix and $name
+      fill: var(--kds- + $name + -colour);
+    }
+  }
+}
+
+// Status picker and DMs
+@each $mask in keys($status-mapping) {
+  foreignObject {
+    &[mask*='#{$mask}'] {
+      .status-1AY8sU {
+        // See above as to why I perform this monstrosity
+        background-color: var(--kds- + $mask + -colour) !important;
+      }
+    }
+  }
+}
+
+// Speaking indicators
+.avatar-SmRMf2 {
+  @each $name, $inner-map in remove($status-mapping, 'offline') {
+    &[aria-label*='#{get($inner-map, 'aria-label')}'] {
+      --speaking-box-shadow-colour: #{var(--kds- + $name + -colour)};
+    }
   }
 
-  // Regular and typing
-  .pointerEvents-2zdfdO[fill*='#{get($inner-map, 'hex')}'] {
-    fill: $new-colour;
+  &[aria-label*='Invisible'] {
+    // So it matches the icon
+    --speaking-box-shadow-colour: var(--kds-offline-colour);
+  }
+
+  .avatarSpeaking-2c8-9i {
+    box-shadow: 0 0 0 2px var(--speaking-box-shadow-colour) inset,
+                0 0 0 3px var(--background-secondary) inset;
   }
 }
 
@@ -60,17 +87,11 @@ $status-mapping: (
     content: attr(aria-label);
   }
 
-  @each $inner-map in values($status-mapping) {
-    $aria-label-name: get($inner-map, 'to-string');
-
-    &[aria-label='#{$aria-label-name}'] {
+  @each $name, $inner-map in $status-mapping {
+    &[aria-label='#{get($inner-map, 'aria-label')}'] {
       &::after {
-        @if $aria-label-name == 'Do Not Disturb' {
-          color: var(--kds-dnd-colour);
-        } @else {
-          $colour-lower: str.to-lower-case($aria-label-name);
-          color: var(--kds-#{$colour-lower}-colour);
-        }
+        // :blobpain:
+        color: var(--kds- + $name + -colour);
       }
     }
   }

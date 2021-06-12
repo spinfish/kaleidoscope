@@ -9,15 +9,17 @@ $-mic-test-gradient: linear-gradient(
 }
 
 .manual-36Evg9 {
+  // Gotta do it this way otherwise specificity issues happen
+
   @at-root #app-mount & .fill-3eUagR {
     background-color: rgba(0, 0, 0, 0.45);
   }
 
-  [style*="rgb(251, 184, 72)"] { // Yellow
+  [style*='38'] { // Yellow
     background-color: var(--kds-almost-cyan) !important;
   }
 
-  [style*="rgb(87, 242, 135)"] { // Green
+  [style*='139'] { // Green
     background-color: var(--kds-radio-bar-green) !important;
   }
 }

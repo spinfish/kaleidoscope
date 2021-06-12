@@ -1,16 +1,11 @@
 .container-3auIfb {
   background-color: var(--kds-light-pink-tick-slider) !important;
 
-  &[style*='rgb(59, 165, 92)'],
-  &[style*='rgb(114, 118, 125)'] {
-    .slider-TkfMQL {
-      path {
-        fill: black;
-      }
+  path {
+    fill: black;
+  }
 
-      rect {
-        fill: var(--kds-light-grey);
-      }
-    }
+  rect {
+    fill: var(--kds-light-grey);
   }
 }

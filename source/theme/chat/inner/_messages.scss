@@ -40,6 +40,12 @@
       // and yet --background-mentioned does
       background-color: var(--kds-message-hover);
     }
+
+    // Spotify cards
+    // The actual content of the cards is impossible to customize :sadge:
+    .embedSpotify-tvxDCr {
+      border-radius: 6px;
+    }
   }
 }
 

@@ -2,35 +2,52 @@
   --text-normal: var(--header-secondary);
   background-color: var(--kds-dark-blue-popout-playing);
 
-  // Spotify related things
-  .bar-3urHkF {
-    background-color: rgba(0, 0, 0, 0.15);
+  // User info, mutual servers, mutual friends
+  .tabBarContainer-37hZsr {
+    border-bottom: none;
   }
 
+  // Get rid of ugly borders around avatars
+  .avatar-AvHqJA {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .banner-2QYc2d {
+    background-color: inherit !important;
+
+    &:not(.bannerPremium-2hSAwz) {
+      // Remove huge empty space above avatar in non-custom banner profiles
+      height: 80px;
+    }
+  }
+
+  + .noTabBar-3ZjPNR {
+    border-top: none;
+  }
+}
+
+// Activity tab
+.newProfileActivityStyles {
+  --text-normal: var(--header-secondary);
+
+  // Spotify stuff
   .horizontal-1ae9ci {
     .fullWidth-1orjjo {
       width: 33px;
       margin-left: 5px;
+    }
+
+    > &:not(:first-child) {
+      &:not(.disabledButtonWrapper-3wH6-b) {
+        margin-left: 5px;
+      }
     }
   }
 
   .spotifyButtonLogo-3uT57D {
     left: 7.7px;
     position: absolute;
-  }
-
-  // Fix buttons being too far apart
-  .horizontal-3fI3M- {
-    > :not(:first-child) {
-      &:not(.disabledButtonWrapper-3wH6-b) {
-        margin-left: 4px;
-      }
-    }
-  }
-
-  // User info, mutual servers, mutual friends
-  .tabBarContainer-37hZsr {
-    border-top: none;
   }
 }
 
@@ -50,7 +67,7 @@
   }
 
   .childContainer-1wxZNh {
-    > path {
+    path {
       fill: black;
     }
   }

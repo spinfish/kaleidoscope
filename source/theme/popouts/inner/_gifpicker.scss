@@ -15,16 +15,8 @@
       }
     }
 
-    &[style*='rgb(146, 154, 250)'] {
+    &[style*='background-color'] {
       background-color: rgb(0, 10, 45) !important;
-    }
-
-    &[style*='rgb(179, 174, 255)'] {
-      background-color: rgba(0, 13, 50) !important;
-    }
-
-    &[style*='rgb(115, 142, 245)'] {
-      background-color: rgb(16, 15, 62) !important;
     }
 
     &[style*='rgb(24, 25, 28)'] {

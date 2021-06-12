@@ -1,7 +1,7 @@
 # kaleidoscope
 A vibrant, colourful dark theme for Discord inspired by [the 2077 theme for VSCode](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme 'Thanks, Endormi!').
 
-![Main Preview](https://media.discordapp.net/attachments/666510091658330123/844840411863187506/kaleidoscope_preview.png)
+![Main Preview](https://media.discordapp.net/attachments/678012423067926539/853154569362079754/preview_one.png)
 
 ## Features
 - Customizable status colours
@@ -35,5 +35,5 @@ Couldn't have done it without yall <3
 
 ## Extra previews
 
-![Preview Two](https://media.discordapp.net/attachments/666510091658330123/844842456637898772/kaleidoscope_preview_two.png)
-![Preview Three](https://media.discordapp.net/attachments/666510091658330123/844846736669147147/kaleidoscope_preview_three.png)
+![Preview Two](https://media.discordapp.net/attachments/678012423067926539/853155792411557918/preview_two.png)
+![Preview Three](https://media.discordapp.net/attachments/678012423067926539/853155810049392640/preview_three.png)
