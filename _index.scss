@@ -1,14 +1,1 @@
-@forward 'source/root'; // Variables first
-@forward 'source/theme';
-@forward 'source/extras/_extras-import';
-// @forward 'source/extras/_extras-import';
-// @forward 'source/theme/app/app-import';
-// @forward 'source/theme/buttons/buttons-import';
-// @forward 'source/theme/chat/chat-import';
-// @forward 'source/theme/guilds/guilds-import';
-// @forward 'source/theme/modals/modals-import';
-// @forward 'source/theme/pages/pages-import';
-// @forward 'source/theme/popouts/popouts-import';
-// @forward 'source/theme/powercord/powercord-import';
-// @forward 'source/theme/settings/settings-import';
-// @forward 'source/theme/user/user-import';
+@forward 'source';

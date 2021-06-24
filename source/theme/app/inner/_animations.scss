@@ -9,3 +9,13 @@
     background-color: var(--interactive-normal);
   }
 }
+
+// E.g. when clicking on an emoji, the grey loading thing
+.popoutLoadingForeground-2mZT61 {
+  background-image: linear-gradient(
+    90deg,
+    var(--background-primary),
+    var(--background-secondary),
+    var(--background-primary)
+  );
+}

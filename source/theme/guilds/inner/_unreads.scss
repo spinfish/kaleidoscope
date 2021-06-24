@@ -1,9 +1,7 @@
 .unreadBar-3t3sYc {
   box-shadow: 0 0 0 1px var(--background-tertiary);
   background-color: var(--background-tertiary);
-
-  transition: 0.3s linear;
-  transition-property: background-color;
+  transition: 0.3s background-color linear;
 
   &:hover {
     background-color: var(--background-modifier-selected);

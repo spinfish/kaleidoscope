@@ -1,56 +1,58 @@
-.customStatus-oN4ZZY {
-  display: flex;
+#app-mount {
+  .customStatus-oN4ZZY {
+    display: flex;
+    padding-bottom: 16px;
 
-  > .customStatusEmoji-3a2-Zo {
-    width: 100px;
-    height: 100px;
-    margin-top: 8px;
-  }
+    > .emoji {
+      width: 100px;
+      height: 100px;
+      margin-top: 8px;
 
-  > .customStatusText-1vtUsN {
-    margin: auto; // Classic
-    max-width: 150px;
-    text-align: center;
+      + .customStatusText-1vtUsN {
+        margin: auto;
+        max-width: 150px;
+        text-align: center;
+      }
+    }
   }
 }
 
 .userPopout-xaxa6l {
   --text-normal: var(--header-secondary);
+  --background-floating: var(--kds-dark-blue-popout-playing);
+
   box-shadow: 0 0 3px 1px var(--background-tertiary);
 
-  > .footer-1N3bR3,
-  > .scrollerBase-289Jih {
-    background-color: var(--background-secondary);
+  .popoutBanner-19WKGg {
+    background-color: inherit !important;
   }
 
   .user-details-text {
     margin-top: 8px;
   }
-}
 
-.headerNormal-1mX3KY {
-  background-color: var(--kds-dark-blue-popout-playing);
-
-  > .popoutBanner-19WKGg {
-    background-color: inherit !important;
+  .divider-ewBQKj {
+    display: none;
   }
 
-  .activity-3v9l4T {
-    padding: 16px 16px;
+  .aboutMeSection-1Fw5Ia {
+    padding-bottom: 12px;
   }
 
-  .headerTop-2cWpdB {
-    background-color: inherit;
-    border-bottom: none;
+  > .footer-3UKYOU {
+    --background-floating: var(--background-secondary);
   }
 
-  .avatar-37jOim {
-    background-color: transparent;
-    border-color: transparent;
+  > .scrollerBase-289Jih {
+    --background-floating: var(--background-secondary);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
-  .aboutMeSection---MkQa {
-    background-color: inherit;
+  .newPopoutActivityStyles {
+    padding-right: 6px;
   }
 }
 

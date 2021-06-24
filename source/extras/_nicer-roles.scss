@@ -12,18 +12,16 @@
   z-index: 0;
 
   &:hover {
-    &:not(.addButton-pcyyf6) {
-      path {
-        fill: none; // Get rid of X
-      }
-    }
-
     .roleRemoveIcon-2-TeGW {
-      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      position: absolute;
+
+      > path {
+        fill: none;
+      }
     }
   }
 
@@ -31,25 +29,26 @@
     background-color: rgba(125, 125, 125, 0.25);
   }
 
-  &[aria-label*='Remove'] {
+  &[aria-label^='Remove'] {
+    cursor: pointer;
+
     &:hover {
       .roleCircle-3xAZ1j {
-        cursor: pointer;
         background-color: red !important;
       }
     }
   }
-}
 
-.roleCircle-3xAZ1j {
-  &::after {
-    content: '';
-    position: absolute;
-    background-color: inherit;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    opacity: 0.25;
+  .roleCircle-3xAZ1j {
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      opacity: 0.25;
+    }
   }
 }

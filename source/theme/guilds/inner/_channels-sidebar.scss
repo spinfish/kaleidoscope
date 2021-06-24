@@ -1,3 +1,17 @@
+// Badges next to server name
+.iconBackgroundTierNone-3ZkOsa {
+  --background-accent: var(--kds-dark-blue-popout-normal);
+}
+
+.guildIconContainer-2FW_iA {
+  .flowerStarContainer-3zDVtj {
+    &:not(.iconBackgroundTierNone-3ZkOsa) {
+      --brand-experiment: var(--kds-settings-smaller-header); // Partnered
+      --background-accent: rgba(var(--kds-reply-content-rgb), 0.5); // Boosted
+    }
+  }
+}
+
 // Topic when looked at from channel
 .topic-TCb_qw {
   color: var(--kds-reply-content);

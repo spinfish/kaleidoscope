@@ -25,41 +25,41 @@
     }
   }
 
-  .moreSubscribers-1cuWDE {
+  // Settings
+  .moreSubscribers-XxaiVS {
     @extend %-subscriber-element;
   }
 
-  .subscribersPopout-2CP6Ln {
+  .subscribersPopout-3tW0Y9 {
     @extend %-subscriber-element;
     grid-gap: 12px;
-
-    // Make it not cut off part of the last 2 users
-    &::after {
-      content: '';
-      margin-bottom: 4px;
-    }
+    // I'm sorry but try as I might :last-child doesn't work so
+    // I can't get it to not cut off the usernames at the bottom :(
   }
 
+  // Boost page
   .barBackground-2EEiLw {
     background-color: var(--background-tertiary);
   }
 
+  // Settings
   .background-3xPPFc {
     color: var(--background-tertiary);
   }
 
   .tierHeaderUnlocked-1n-OTI,
-  .tierHeaderUnlockedBackground-MW5XJU {
+  .tierHeaderUnlocked-3lTDnP {
     background-image: $nitro-header-gradient;
   }
 
   .tierUnlocked-25K6Kv,
-  .tierUnlocked-27DwHo {
+  .tierUnlocked-2H6ULo {
     color: rebeccapurple;
+    background: white;
   }
 
   .tierHeaderLocked-1s2JJz,
-  .tierHeaderLocked-1a2opw {
+  .tierHeaderLocked-3S508x {
     border: 1px black;
     border-style: solid solid none solid;
     border-top-left-radius: 6px;
@@ -92,22 +92,18 @@
     color: var(--kds-greyish-blue);
   }
 
-  .tierUnlocked-25K6Kv {
-    color: rebeccapurple;
-  }
-
   .tierBody-16Chc9 {
     @extend %-base-tier-body;
     background-color: var(--background-secondary-alt);
   }
 
-  .tierBody-x9kBBp {
+  .tierBody-3aUxuc {
     @extend %-base-tier-body;
     background-color: var(--background-secondary);
-  }
 
-  .perks-2Ve4tD {
-    color: var(--kds-reply-content);
+    > .perks-32J1d0 {
+      color: var(--kds-reply-content);
+    }
   }
 
   .unlocked-251xRB {

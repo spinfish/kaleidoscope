@@ -1,0 +1,36 @@
+.css-gvi9bl-control {
+  border-color: black;
+}
+
+.css-3vaxre-menu {
+  border-color: var(--background-tertiary);
+  background-color: var(--background-secondary);
+  box-shadow: var(--background-secondary) 0px 1px 5px 0px;
+}
+
+.quickSelect-3BxO0K {
+  > .quickSelectLabel-2r3iJ_ {
+    color: deeppink;
+  }
+}
+
+#app-mount {
+  .quickSelectPopoutOption-opKBx9 {
+    &:hover {
+      background-color: var(--background-primary);
+    }
+  }
+
+  .quickSelectPopout-X1hvgV {
+    background-color: var(--background-secondary-alt);
+
+    > .selected {
+      background-color: var(--background-modifier-selected);
+
+      .check-2by_h9 {
+        height: 14px;
+        background: url('/assets/7b3ff12d16d96ca77345da9450986dc7.svg') no-repeat;
+      }
+    }
+  }
+}

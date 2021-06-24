@@ -15,11 +15,11 @@
 }
 
 .sourceThumbnail-27dolk {
-  &.selected-1nOkyc {
-    box-shadow: 0 0 0 2px var(--kds-settings-smaller-header) inset;
-  }
-
   @at-root .tile-2w4k5N:hover & {
     box-shadow: 0 0 0 2px var(--kds-number) inset;
+  }
+
+  &.selected-1nOkyc {
+    box-shadow: 0 0 0 2px var(--kds-settings-smaller-header) inset;
   }
 }

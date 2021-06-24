@@ -1,3 +1,11 @@
+.body-r6_QPy {
+  > .scrollerBase-289Jih {
+    &[style*='padding-right: 0px'] {
+      background-color: var(--background-primary);
+    }
+  }
+}
+
 .topSection-y3p-_D {
   --text-normal: var(--header-secondary);
   background-color: var(--kds-dark-blue-popout-playing);
@@ -38,9 +46,9 @@
       margin-left: 5px;
     }
 
-    > &:not(:first-child) {
+    > :not(:first-child) {
       &:not(.disabledButtonWrapper-3wH6-b) {
-        margin-left: 5px;
+        margin-left: 4px;
       }
     }
   }

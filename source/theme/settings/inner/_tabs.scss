@@ -9,7 +9,7 @@
 // Logout
 .item-PXvHYJ {
   &.themed-OHr7kt {
-    &[aria-controls='logout-tab'] {
+    &[style*='359'] {
       @include special-themed-item-button(red, 0.9);
     }
   }

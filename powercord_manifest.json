@@ -1,8 +1,9 @@
 {
-    "name": "kaleidoscope",
-    "description": "A vibrant, colourful dark theme for Discord based on the 2077 VSCode theme.",
-    "version": "2.3.10",
-    "author": "mackenzie#0173",
-    "theme": "_index.scss",
-    "license": "MIT"
+  "name": "kaleidoscope",
+  "description": "A vibrant, colourful dark theme for Discord based on the 2077 VSCode theme.",
+  "version": "2.3.11",
+  "author": "mackenzie#0173",
+  "consent": "true",
+  "theme": "_index.scss",
+  "license": "MIT"
 }

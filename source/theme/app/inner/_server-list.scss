@@ -12,8 +12,20 @@
   background-color: var(--background-secondary-alt);
 }
 
+.folderIconWrapper-1_bOZe {
+  &[style*='rgba(88, 101, 242, 0.4)'] {
+    background-color: rgba(var(--kds-settings-smaller-header-rgb), 0.4) !important;
+  }
+}
+
 .expandedFolderIconWrapper-Huv7rA {
   background-color: var(--background-primary);
+
+  > svg {
+    &[style*='rgb(88, 101, 242)'] {
+      color: var(--kds-settings-smaller-header) !important;
+    }
+  }
 }
 
 .expandedFolderBackground-1cujaW {

@@ -3,8 +3,10 @@
     box-shadow: 0 2px 5px 0 var(--background-tertiary);
     background-color: var(--background-secondary-alt);
 
-    .icon-2RSfUw path {
-      fill: var(--kds-almost-cyan);
+    .icon-2RSfUw {
+      path {
+        fill: var(--kds-almost-cyan);
+      }
     }
 
     > .footer-3N9rgh {
