@@ -14,37 +14,40 @@
   }
 
   .footer-2gL1pp {
-    border-top: 1.5px solid black;
+    border-top: 1px solid black;
 
+    // Back button
     .sizeMin-1mJd1x {
       color: var(--kds-number);
     }
   }
 
+  // "Have an invite already?"
   .footerTitle-2CYZch {
     color: var(--kds-almost-cyan);
-    margin-bottom: 16px; // Fixes blurriness and eases cramp
+    margin-bottom: 16px; // Eases blurriness, dunno why
   }
 
-  // Join a Server - footerButton part is necessary
   .footerButton-ayFTfX {
     &.lookFilled-1Gx00P {
       box-shadow: 0 0 0 1px black;
       background-color: var(--kds-message-hover);
 
       &:hover {
-        color: var(--kds-mango-yellow);
-        background-color: var(--toast-box-shadow) !important; // Pain
+        @at-root #app-mount & {
+          color: var(--kds-mango-yellow);
+          background-color: var(--toast-box-shadow); 
+        }
 
         &::after,
         &::before {
-          content: 'bruh'; // Hehe
+          content: 'bruh';
         }
       }
     }
   }
 
-  // Customize your server - upload icon
+  // Customise your server
   .uploadIcon-2IFzZU {
     circle {
       fill: var(--kds-settings-smaller-header);

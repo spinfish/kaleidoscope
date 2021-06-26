@@ -30,11 +30,11 @@
   }
 
   .tabButton-1n4gNP {
-    rect {
+    > rect {
       fill: var(--kds-dark-blue-popout-playing);
     }
 
-    path[d^='M0'] {
+    > path[d^='M0'] {
       display: none;
     }
   }

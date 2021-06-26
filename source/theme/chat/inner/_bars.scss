@@ -1,5 +1,28 @@
 @use '../../../helpers/mixins' as *;
 
+#---new-messages-bar {
+  top: 8px;
+  padding: 7px;
+  border-width: 3px;
+  border-color: rebeccapurple;
+  border-top-left-radius: 3px;
+
+  > .unreadPill-2HyYtt {
+    top: -8px;
+    background-color: rebeccapurple;
+  }
+
+  .unreadPillCapStroke-7rkHbg {
+    fill: rebeccapurple;
+    color: rebeccapurple;
+  }
+
+  > .content-1o0f9g {
+    color: var(--text-normal);
+    transform: translateY(-9px);
+  }
+}
+
 .barButtonBase-2uLO1z {
   color: var(--kds-almost-cyan);
 }
@@ -17,29 +40,5 @@
 
   .barButtonBase-2uLO1z {
     color: white;
-  }
-}
-
-.isUnread-3Ef-o9 {
-  top: 8px;
-  padding: 7px;
-  border-width: 3px;
-  border-color: rebeccapurple;
-  border-top-left-radius: 3px;
-
-  > .unreadPill-2HyYtt {
-    top: -8px;
-    background-color: rebeccapurple;
-
-    path {
-      fill: rebeccapurple;
-      color: rebeccapurple;
-    }
-  }
-
-  .content-1o0f9g {
-    bottom: 8px;
-    color: var(--text-normal);
-    position: relative;
   }
 }

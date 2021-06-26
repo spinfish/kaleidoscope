@@ -50,20 +50,6 @@
   }
 }
 
-@mixin windows-min-max-button($colour) {
-  &:hover {
-    background-color: $colour;
-
-    rect {
-      stroke: white;
-    }
-  }
-
-  rect {
-    stroke: $colour;
-  }
-}
-
 @mixin special-themed-item-button($colour, $opacity, $path: false) {
   // People writing Discord's CSS must be psychopaths because they
   // have !importants IN STYLESHEET CSS WITH NO INLINE STYLES ANYWHERE

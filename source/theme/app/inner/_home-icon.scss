@@ -1,0 +1,38 @@
+@use '../../../helpers/keyframes' as *;
+@use '../../../helpers/variables' as *;
+
+// Warning: the following code is a bit hacky!
+// References: https://jsfiddle.net/tvsgoaj9/2/
+
+.tutorialContainer-2sGCg9 {
+  .homeIcon-FuNwkv {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    color: var(--kds-light-grey);
+  }
+
+  .lowerBadge-29hYVK {
+    border-radius: 50%;
+    box-shadow: 0 0 0 4.5px var(--background-secondary);
+  }
+
+  .wrapper-1BJsBx {
+    clip-path: circle(50% at center);
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: $home-icon-background center/100% no-repeat;
+      animation: rotation 10s linear infinite paused;
+    }
+  }
+
+  .selected-bZ3Lue {
+    &::before {
+      animation-play-state: running;
+    }
+  }
+}

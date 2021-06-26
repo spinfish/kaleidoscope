@@ -1,27 +1,30 @@
-@use '../../../helpers/mixins' as *;
+.winButton-iRh8-Z {
+  > svg {
+    color: var(--windows-button-colour);
+  }
 
-.winButtonClose-1HsbF- {
   &:hover {
-    background-color: var(--kds-bright-orange-red);
+    background-color: var(--windows-button-colour);
 
-    polygon {
-      fill: white;
+    > svg {
+      color: white;
     }
   }
+}
 
-  polygon {
-    fill: var(--kds-bright-orange-red);
-  }
+// Close
+.winButtonClose-1HsbF- {
+  --windows-button-colour: var(--kds-bright-orange-red);
 }
 
 .winButtonMinMax-PBQ2gm {
   // Maximize
   &:nth-child(3) {
-    @include windows-min-max-button(orange);
+    --windows-button-colour: orange;
   }
 
   // Minimize
   &:nth-child(4) { // :last-child works here too
-    @include windows-min-max-button(var(--kds-radio-bar-green));
+    --windows-button-colour: var(--kds-radio-bar-green);
   }
 }

@@ -1,10 +1,35 @@
-// Profile customization
-.profileBackgroundPreview-3BVL0Q {
-  background-color: var(--background-secondary);
+// My Account
+.accountProfileCard-1XCH88 {
+  --background-tertiary: var(--background-secondary-alt);
+
+  // I have made a severe and continous lapse in my judgement
+  > .settingsBanner-15-pZk {
+    &:not([style*='background-image']) {
+      width: 0;
+      height: 30px;
+
+      + .userInfo-iCloHO {
+        > .avatar-1uQSZT {
+          top: 9px;
+
+          ~ div {
+            transform: translateY(-15px);
+          }
+        }
+      }
+    }
+  }
 }
 
-.avatarUploaderInner-3UNxY3 {
-  background-color: var(--background-secondary-alt);
+// User Profile
+.profileBannerPreview-3_l0Wd {
+  > .popoutInfo-pKbpvG {
+    --text-normal: var(--header-secondary);
+  }
+
+  > .bannerNormal-22rPhb {
+    background: inherit !important;
+  }
 }
 
 // Overlay notifications

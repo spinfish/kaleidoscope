@@ -1,19 +1,14 @@
+// Discovery -> Partner Programme
 .checklist-3Y6Fqp,
 .checklistContainer-mFJZEJ {
   border: 1px solid black;
 
-  .checkbox-1ix_J3 {
-    border: transparent;
-
-    svg {
-      path {
-        fill: var(--background-secondary);
-      }
-    }
+  .checklistIcon-6Kez2J {
+    margin-top: 2.5px;
   }
 
-  > .separator-Hx_3SF,
-  > .separator-1COOpU {
+  > .separator-1COOpU,
+  > .separator-Hx_3SF {
     opacity: 0.9;
     background-color: black;
   }

@@ -38,7 +38,7 @@
     }
   }
 
-  // Drag and drop upload modal
+  // Section below: drag and drop upload modal
   .bgScale-1otPtc {
     background-color: var(--background-primary);
   }
@@ -48,14 +48,14 @@
   }
 
   .uploadDropModal-2kTwbc {
-    // Channel name
-    strong {
-      color: var(--interactive-active);
-    }
-
     // "Upload to"
     .title-2Vtl4y {
       color: var(--kds-category-name);
+    }
+
+    // Channel name
+    strong {
+      color: var(--interactive-active);
     }
 
     .instructions-2Du9gG {

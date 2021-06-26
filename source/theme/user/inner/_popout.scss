@@ -1,7 +1,35 @@
-#app-mount {
+// If you don't want to see horrific code just don't look at it
+
+.userPopout-xaxa6l {
+  --text-normal: var(--header-secondary);
+  --background-floating: var(--background-secondary);
+
+  box-shadow: 0 0 3px 1px var(--background-tertiary);
+
+  .popoutBanner-19WKGg {
+    background-color: inherit !important;
+  }
+
+  > .headerTop-3vNv-a,
+  > .headerNormal-3KXFBt {
+    background-color: var(--kds-dark-blue-popout-playing);
+  }
+
+  .avatar-37jOim {
+    --background-floating: var(--kds-dark-blue-popout-playing);
+    border-width: 4px;
+  }
+
+  .aboutMeSection-1Fw5Ia,
+  .bodyInnerWrapper-26fQXj,
+  > .footer-3UKYOU {
+    background-color: var(--background-secondary);
+  }
+
   .customStatus-oN4ZZY {
     display: flex;
     padding-bottom: 16px;
+    background-color: var(--kds-dark-blue-popout-playing);
 
     > .emoji {
       width: 100px;
@@ -15,37 +43,12 @@
       }
     }
   }
-}
-
-.userPopout-xaxa6l {
-  --text-normal: var(--header-secondary);
-  --background-floating: var(--kds-dark-blue-popout-playing);
-
-  box-shadow: 0 0 3px 1px var(--background-tertiary);
-
-  .popoutBanner-19WKGg {
-    background-color: inherit !important;
-  }
-
-  .user-details-text {
-    margin-top: 8px;
-  }
 
   .divider-ewBQKj {
     display: none;
   }
 
-  .aboutMeSection-1Fw5Ia {
-    padding-bottom: 12px;
-  }
-
-  > .footer-3UKYOU {
-    --background-floating: var(--background-secondary);
-  }
-
-  > .scrollerBase-289Jih {
-    --background-floating: var(--background-secondary);
-
+  .scrollerBase-289Jih {
     &::-webkit-scrollbar {
       display: none;
     }
