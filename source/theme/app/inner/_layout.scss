@@ -1,75 +1,120 @@
-@use '../../../helpers/mixins' as *;
+$-container-margin: 4px;
+$-container-radius: 10px;
 
+// SETTINGS:: Left panel -> Right panel
 .sidebarRegionScroller-3MXcoP {
-  border-radius: 10px;
+  border-top-right-radius: $-container-radius;
 }
 
-.customScroller-26gWhv,
 .contentRegionScroller-26nc1e {
-  @include layout-container;
-  background-color: var(--background-primary);
-}
-
-.chat-3bRxxu {
-  @include layout-container;
-}
-
-.panels-j1Uci_ {
-  border-radius: 10px;
-  background-color: var(--background-tertiary);
-
-  > div {
-    @include layout-container($margin: 'bottom');
-    margin-top: 5px; // There is probably a better solution for this.
-    background-color: var(--background-secondary-alt);
-    border-bottom: none; // Why do they even have these lmfao
-  }
-
-  // VC info
-  .container-1giJp5 {
-    border-bottom: none;
-  }
-}
-
-.sidebar-2K8pFh,
-.container-1D34oG,
-.container-1a3EgQ,
-.applicationStore-1pNvnv,
-.pageWrapper-1PgVDX {
-  @include layout-container($bg: true);
-}
-
-.container-3w7J-x,
-.privateChannels-1nO12o {
-  @include layout-container($margin: null);
-}
-
-.guilds-1SWlCJ {
-  margin-left: 5px;
-
-  > .tree-2wKJdG {
-    outline: none;
-  }
-
-  .scroller-1Bvpku {
-    background-color: var(--background-secondary);
-    padding-top: 7px;
-    border-radius: 10px;
-  }
-}
-
-.members-1998pB {
-  @include layout-container;
-  margin-top: 5px; // As well as
-}
-
-.membersWrap-2h-GB4 {
-  border-top-left-radius: 10px;
-  background-color: var(--background-tertiary);
+  margin-left: $-container-margin;
+  border-top-left-radius: $-container-radius;
 }
 
 .sidebarRegion-VFTUkN,
-.customContainer-1RHXqt,
-.contentTransitionWrap-3hqOEW {
+.contentRegion-3nDuYy {
   background-color: var(--background-tertiary);
+}
+
+// Fix for audit logs
+.customScroller-26gWhv {
+  margin-left: $-container-margin;
+  border-top-left-radius: $-container-radius;
+  background-color: var(--background-primary);
+}
+
+// USER AREA
+.panels-j1Uci_ {
+  background-color: var(--background-tertiary);
+
+  > div {
+    margin-bottom: $-container-margin;
+    border-radius: $-container-radius;
+    background-color: var(--background-secondary-alt);
+
+    &:first-child {
+      margin-top: $-container-margin;
+    }
+  }
+
+  // VC box -> currently playing game
+  .container-1giJp5,
+  > .activityPanel-28dQGo {
+    border-bottom: none;
+  }
+
+  // Powercord support
+  .spotify-seek-bar {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// SIDEBARS
+.sidebar-2K8pFh {
+  margin-left: $-container-margin;
+  background-color: var(--background-tertiary);
+
+  > .scrollerBase-289Jih, // Server discovery
+  > .container-3w7J-x, // Guild channels
+  > .privateChannels-1nO12o { // Private channels
+    border-radius: $-container-radius;
+    background-color: var(--background-secondary);
+  }
+}
+
+// RIGHT HAND SIDE CONTAINERS
+.container-1D34oG, // Home page
+.container-1a3EgQ, // Stage discovery
+.applicationStore-1pNvnv, // Nitro page
+.pageWrapper-1PgVDX { // Server discovery
+  margin-left: $-container-margin;
+  margin-bottom: $-container-margin;
+  border-radius: $-container-radius 0 0 $-container-radius;
+}
+
+// SERVER LIST
+.guilds-1SWlCJ {
+  margin-left: $-container-margin;
+
+  > .tree-2wKJdG {
+    outline: none; // Fix yellow line appearing
+  }
+
+  .scroller-1Bvpku {
+    margin-bottom: $-container-margin;
+    border-radius: $-container-radius;
+    padding-top: $-container-margin + 3px;
+    background-color: var(--background-primary);
+  }
+}
+
+// CHAT
+.chat-3bRxxu {
+  background-color: var(--background-tertiary);
+  margin-bottom: $-container-margin;
+  margin-left: $-container-margin + 1px;
+  margin-right: $-container-margin + 1px;
+  border-radius: $-container-radius 0 0 $-container-radius;
+
+  > .title-3qD0b- {
+    border-top-right-radius: $-container-radius;
+    border-bottom-right-radius: $-container-radius;
+  }
+
+  .chatContent-a9vAAp {
+    border-bottom-right-radius: $-container-radius;
+    background-color: var(--background-secondary);
+
+    > .messagesWrapper-1sRNjr {
+      border-top-left-radius: $-container-radius;
+    }
+  }
+}
+
+// MEMBERS
+.members-1998pB {
+  border-radius: $-container-radius - 2px;
+  margin: $-container-margin 0 0 $-container-margin; 
 }

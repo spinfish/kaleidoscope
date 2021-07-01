@@ -6,29 +6,24 @@
 
   box-shadow: 0 0 3px 1px var(--background-tertiary);
 
+  // Remove default accent colour (wtf were they thinking)
   .popoutBanner-19WKGg {
     background-color: inherit !important;
   }
 
-  > .headerTop-3vNv-a,
-  > .headerNormal-3KXFBt {
+  > .headerNormal-3KXFBt, // Bannery bit
+  > .headerTop-3vNv-a { // Where badges & username are
     background-color: var(--kds-dark-blue-popout-playing);
   }
 
   .avatar-37jOim {
-    --background-floating: var(--kds-dark-blue-popout-playing);
-    border-width: 4px;
-  }
-
-  .aboutMeSection-1Fw5Ia,
-  .bodyInnerWrapper-26fQXj,
-  > .footer-3UKYOU {
-    background-color: var(--background-secondary);
+    --background-floating: var(--kds-dark-blue-popout-playing); // Laziness
+    border-width: 4px; // Hackily shifts it around lmao
   }
 
   .customStatus-oN4ZZY {
     display: flex;
-    padding-bottom: 16px;
+    padding: 2px 0 16px 12px;
     background-color: var(--kds-dark-blue-popout-playing);
 
     > .emoji {
@@ -44,18 +39,33 @@
     }
   }
 
-  .divider-ewBQKj {
-    display: none;
+  // Because I remove the divider it makes the scroller cramped
+  .bodyInnerWrapper-26fQXj {
+    margin-top: 12px;
   }
 
-  .scrollerBase-289Jih {
+  > .scrollerBase-289Jih {
+    // Give the illusion of custom status being part of header
+    padding-left: 0;
+    padding-right: 0 !important;
+
     &::-webkit-scrollbar {
       display: none;
     }
-  }
 
-  .newPopoutActivityStyles {
-    padding-right: 6px;
+    &.scrollerSeparator-3K3Qdv {
+      box-shadow: none;
+    }
+
+    > .divider-ewBQKj {
+      display: none;
+
+      // Make everything else go back to normal
+      ~ div {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
   }
 }
 

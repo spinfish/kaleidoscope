@@ -12,6 +12,11 @@
   }
 }
 
+// Fix banner not being border-radius'd
+.animatedContainer-1NSq4T {
+  border-top-right-radius: 10px;
+}
+
 // Topic when looked at from channel
 .topic-TCb_qw {
   color: var(--kds-reply-content);

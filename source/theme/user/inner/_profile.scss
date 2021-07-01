@@ -10,6 +10,11 @@
   --text-normal: var(--header-secondary);
   background-color: var(--kds-dark-blue-popout-playing);
 
+  // Fix custom status being too close to tag
+  .nameTagWithCustomStatus-2kkfrQ {
+    margin-bottom: 6px;
+  }
+
   // User info, mutual servers, mutual friends
   .tabBarContainer-37hZsr {
     border-bottom: none;

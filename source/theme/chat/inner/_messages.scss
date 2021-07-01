@@ -33,19 +33,26 @@
       color: var(--interactive-active);
     }
   }
+}
 
-  .message-2qnXI6 {
-    &:hover {
-      // --background-message-hover doesnt work 
-      // and yet --background-mentioned does
-      background-color: var(--kds-message-hover);
+.message-2qnXI6 {
+  // Jesus God and all that is holy
+  &:hover {
+    &:not(.mentioned-xhSam7) {
+      &:not(.replying-1x3H0T) {
+        &:not(.ephemeral-1PsL1r) {
+          // --background-message-hover doesnt work 
+          // and yet --background-mentioned does
+          background-color: var(--kds-message-hover);
+        }
+      }
     }
+  }
 
-    // Spotify cards
-    // The actual content of the cards is impossible to customize :sadge:
-    .embedSpotify-tvxDCr {
-      border-radius: 6px;
-    }
+  // Spotify cards
+  // The actual content of the cards is impossible to customize :sadge:
+  .embedSpotify-tvxDCr {
+    border-radius: 6px;
   }
 }
 

@@ -17,7 +17,7 @@
 }
 
 .mediaBarWrapper-3D7r67 {
-  @include parent-and('&::after') {
+  @include parent-and('&::before, &::after') {
     background-color: deeppink;
   }
 }

@@ -68,7 +68,7 @@ rect {
 
   &[aria-label*='Invisible'] {
     // So it matches the icon
-    --speaking-box-shadow-colour: var(--kds-offline-colour);
+    --speaking-box-shadow-colour: var(--kds-invisible-colour);
   }
 
   .avatarSpeaking-2c8-9i {
