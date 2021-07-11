@@ -41,15 +41,6 @@
   }
 }
 
-@mixin layout-container($margin: 'left', $bg: false) {
-  margin-#{$margin}: 5px;
-  border-radius: 10px;
-
-  @if $bg {
-    background-color: var(--background-tertiary);
-  }
-}
-
 @mixin special-themed-item-button($colour, $opacity, $path: false) {
   // People writing Discord's CSS must be psychopaths because they
   // have !importants IN STYLESHEET CSS WITH NO INLINE STYLES ANYWHERE

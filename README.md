@@ -30,12 +30,12 @@ For a direct download, click [here](https://betterdiscord.app/Download?id=257). 
 - Drag and drop the file into your `Themes` folder
 
 ## Acknowledgements
-Huge thanks to [endormi](https://github.com/endormi) of course for inspiring me to make this, and to everyone who helped me out with CSS stuff in the Powercord server, most notably the following people:
+Huge thanks to **[endormi](https://github.com/endormi)** of course for inspiring me to make this, and to everyone who helped me out with CSS stuff in the Powercord server, most notably the following people:
 
 - **[LuckFire](https://github.com/LuckFire/)** for their incredible [Midnight Mars theme](https://github.com/LuckFire/midnight-mars) and for all the time and help they've given me :]
 - **[Doggybootsy](https://github.com/doggybootsy)** and **[void](https://github.com/voidfill)** for their useful tidbits of advice, extensive CSS knowledge and help with fixing various things :)
-- **[emma 🌺](https://github.com/ghostlydilemma)** for explaining how inline CSS has a higher specificity than sheet/embedded CSS and for always being so kind ^-^
-- **[katlyn](https://github.com/katlyn)** for telling me just how bad `!important` is and general helpful advice :>
+- **[emma 🌺](https://github.com/ghostlydilemma)** for explaining how inline CSS has a higher specificity than external CSS and for always being so kind ^-^
+- **[katlyn](https://github.com/katlyn)** for showing me just how bad `!important` is and general helpful advice :>
 
 Thank you to my mum for helping me choose the right colours and styles (she has a keen eye for that).<br>
 And of course a huge thank you to the following people for the extras:

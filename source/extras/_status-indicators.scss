@@ -35,8 +35,8 @@ $status-mapping: (
 }
 
 // Regular and typing
-rect {
-  @each $name, $inner-map in $status-mapping {
+@each $name, $inner-map in $status-mapping {
+  rect {
     &[fill*='#{get($inner-map, 'fill-includes')}'] {
       // You ask: why the fuck are they doing this?
       // Well if I used normal interpolation it would add
@@ -51,8 +51,12 @@ rect {
   foreignObject {
     &[mask*='#{$mask}'] {
       .status-1AY8sU {
-        // See above as to why I perform this monstrosity
-        background-color: var(--kds- + $mask + -colour) !important;
+        // This is to prevent this from happening when using Better Status Indicators
+        // https://cdn.discordapp.com/attachments/666510091658330123/863683246632861716/unknown.png
+        &:not([style*='rgb']) {
+          // See above as to why I perform this monstrosity
+          background-color: var(--kds- + $mask + -colour) !important;
+        }
       }
     }
   }

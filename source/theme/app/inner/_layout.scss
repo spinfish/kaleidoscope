@@ -62,6 +62,11 @@ $-container-radius: 10px;
     border-radius: $-container-radius;
     background-color: var(--background-secondary);
   }
+
+  // Guild header
+  .header-2V-4Sw {
+    border-top-right-radius: $-container-radius;
+  }
 }
 
 // RIGHT HAND SIDE CONTAINERS
@@ -103,9 +108,18 @@ $-container-radius: 10px;
     border-bottom-right-radius: $-container-radius;
   }
 
+  > .content-yTz4x3 {
+    // NSFW warning page
+    > .scrollerBase-289Jih {
+      border-bottom-right-radius: $-container-radius;
+      background-color: var(--background-primary);
+    }
+  }
+
+  // Normal
   .chatContent-a9vAAp {
     border-bottom-right-radius: $-container-radius;
-    background-color: var(--background-secondary);
+    background-color: var(--background-primary);
 
     > .messagesWrapper-1sRNjr {
       border-top-left-radius: $-container-radius;

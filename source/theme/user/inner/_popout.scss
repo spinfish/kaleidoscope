@@ -21,6 +21,12 @@
     border-width: 4px; // Hackily shifts it around lmao
   }
 
+  // Fix avatar hints not being positioned properly
+  .avatarHint-2A3RNb {
+    top: 4px;
+    left: 4px;
+  }
+
   .customStatus-oN4ZZY {
     display: flex;
     padding: 2px 0 16px 12px;
@@ -37,6 +43,10 @@
         text-align: center;
       }
     }
+  }
+
+  .aboutMeSection-1Fw5Ia {
+    margin-top: 16px;
   }
 
   // Because I remove the divider it makes the scroller cramped
