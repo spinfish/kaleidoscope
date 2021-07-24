@@ -54,10 +54,10 @@
   }
 
   .background-ujHpbY {
-    background-color: red !important;
+    background-color: var(--background-tertiary) !important;
   }
 
-  .speaking-B2MXPi {
+  .speaking-WDn8Wm {
     box-shadow: 0 0 0 2px var(--kds-radio-bar-green) inset,
                 0 0 0 3px var(--background-floating) inset;
   }
@@ -66,6 +66,10 @@
 // Streaming
 .background-ujHpbY { // Floating stream card
   background-color: var(--background-secondary-alt) !important;
+}
+
+.liveQualityIndicator-3XCjEU { // E.g. 1080p/60FPS; left of LIVE badge
+  background-color: var(--background-primary) !important;
 }
 
 #app-mount {
