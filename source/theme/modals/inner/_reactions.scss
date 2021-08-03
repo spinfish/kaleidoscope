@@ -1,11 +1,5 @@
-.focusLock-Ns3yie {
-  .root-1gCeng {
-    border: none;
-    background-color: var(--background-primary);
-    box-shadow: 0 0 5px 1px black;
-  }
-
-  .scroller-1-nKid {
+.root-1gCeng {
+  > .scroller-1-nKid {
     width: auto;
     background-color: var(--background-secondary-alt);
 
@@ -14,9 +8,19 @@
     }
   }
 
-  .reactors-Blmlhw {
+  > .reactors-Blmlhw {
     width: 85%;
     background-color: inherit;
+  }
+
+  .reactionDefault-GBA58K {
+    &:hover {
+      background-color: var(--background-modifier-hover);
+    }
+  }
+
+  .reactionSelected-1pqISm {
+    background-color: var(--background-primary);
   }
 
   .reactor-3UBcOI {

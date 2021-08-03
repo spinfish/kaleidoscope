@@ -3,6 +3,10 @@
     border-radius: 10px;
   }
 
+  > .attachedBars-tZDmyV {
+    --background-secondary: var(--background-primary); // Transparent effect
+  }
+
   // Reply container above chat bar
   .replyBar-1YLQ2F {
     border-radius: 10px;
@@ -24,6 +28,15 @@
     }
   }
 
+  // Thread prompt
+  .threadSuggestionBar-2ufK2Z {
+    border-top: none;
+    background-color: var(--channeltextarea-background);
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
   // Slash command prompt
   .pill-2pQByF {
     background-color: var(--background-primary);
@@ -34,8 +47,10 @@
       fill: var(--kds-dark-blue-popout-playing);
     }
 
-    > path[d^='M0'] {
-      display: none;
+    > path {
+      &[d^='M0'] {
+        display: none;
+      }
     }
   }
 }

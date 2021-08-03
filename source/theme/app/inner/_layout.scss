@@ -1,29 +1,53 @@
 $-container-margin: 4px;
 $-container-radius: 10px;
 
-// SETTINGS:: Left panel -> Right panel
-.sidebarRegionScroller-3MXcoP {
+// ---------------------------- Notices ---------------------------- \\
+.notice-3bPHh- {
+  margin: 0 $-container-margin $-container-margin $-container-margin; // Yes
+  border-radius: $-container-radius;
+
+  &.notice-2X5hT5 {
+    background-color: var(--kds-settings-smaller-header);
+  }
+}
+
+// ---------------------------- Scrollers ---------------------------- \\
+.auto-Ge5KZx {
+  &::-webkit-scrollbar {
+    width: 14px;
+
+    &-track {
+      background-color: transparent;
+    }
+
+    &-thumb {
+      min-height: 47.5px;
+    }
+  }
+}
+
+// ---------------------------- Settings ---------------------------- \\
+.sidebarRegionScroller-3MXcoP { // Left panel
   border-top-right-radius: $-container-radius;
 }
 
-.contentRegionScroller-26nc1e {
+.contentRegionScroller-26nc1e { // Right panel
   margin-left: $-container-margin;
   border-top-left-radius: $-container-radius;
 }
 
-.sidebarRegion-VFTUkN,
-.contentRegion-3nDuYy {
+.sidebarRegion-VFTUkN, // Left
+.contentRegion-3nDuYy { // Right
   background-color: var(--background-tertiary);
 }
 
-// Fix for audit logs
-.customScroller-26gWhv {
+.customScroller-26gWhv { // Fix for audit logs
   margin-left: $-container-margin;
   border-top-left-radius: $-container-radius;
-  background-color: var(--background-primary);
+  background-color: var(--background-accent);
 }
 
-// USER AREA
+// ---------------------------- User area ---------------------------- \\
 .panels-j1Uci_ {
   background-color: var(--background-tertiary);
 
@@ -37,21 +61,67 @@ $-container-radius: 10px;
     }
   }
 
-  // VC box -> currently playing game
   .container-1giJp5,
-  > .activityPanel-28dQGo {
+  > .activityPanel-28dQGo { // VC box -> currently playing game
     border-bottom: none;
-  }
-
-  // Powercord support
-  .spotify-seek-bar {
-    width: 220px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
-// SIDEBARS
+// ---------------------------- Powercord Spotify ---------------------------- \\
+#app-mount {
+  .powercord-spotify {
+    background-color: var(--background-tertiary);
+
+    // This is really fucking gross
+    &:not(.hover) {
+      .spotify-extra-controls {
+        + .spotify-seek {
+          margin-top: $-container-margin + 10px;
+        }
+      }
+    }
+
+    &.hover {
+      .spotify-seek {
+        &, &-bar {
+          padding-top: $-container-margin + 1px;
+        }
+      }
+    }
+
+    > .container-3baos1 {
+      border-radius: inherit;
+      background-color: var(--background-secondary-alt);
+    }
+
+    .spotify-extra-controls {
+      border-bottom-right-radius: $-container-radius;
+      border-bottom-left-radius: $-container-radius;
+      background-color: var(--background-secondary-alt);
+    }
+
+    .spotify-seek {
+      border-radius: $-container-radius;
+      margin-top: $-container-margin + 1px;
+      background-color: var(--background-secondary-alt);
+
+      &-bar {
+        transform: translateY(-5.2px);
+        margin-top: $-container-margin / 2;
+        margin-left: $-container-margin + 1.5px;
+        margin-right: $-container-margin + 1.5px;
+
+        &-cursor {
+          width: 6px;
+          height: 6px;
+          top: 70%;
+        }
+      }
+    }
+  }
+}
+
+// ---------------------------- Sidebars ---------------------------- \\
 .sidebar-2K8pFh {
   margin-left: $-container-margin;
   background-color: var(--background-tertiary);
@@ -63,23 +133,28 @@ $-container-radius: 10px;
     background-color: var(--background-secondary);
   }
 
-  // Guild header
-  .header-2V-4Sw {
+  .header-2V-4Sw { // Guild header
     border-top-right-radius: $-container-radius;
+
+    + .animatedContainer-1NSq4T { // Fix banner having squared corner
+      border-top-right-radius: $-container-radius;
+    }
   }
 }
 
-// RIGHT HAND SIDE CONTAINERS
+// ---------------------------- Right side containers ---------------------------- \\
 .container-1D34oG, // Home page
 .container-1a3EgQ, // Stage discovery
 .applicationStore-1pNvnv, // Nitro page
-.pageWrapper-1PgVDX { // Server discovery
+.pageWrapper-1PgVDX, // Server discovery
+.noChannel-3LgMRp { // No channels
   margin-left: $-container-margin;
   margin-bottom: $-container-margin;
   border-radius: $-container-radius 0 0 $-container-radius;
+  background-color: var(--background-accent); // Check this
 }
 
-// SERVER LIST
+// ---------------------------- Server list ---------------------------- \\
 .guilds-1SWlCJ {
   margin-left: $-container-margin;
 
@@ -91,43 +166,47 @@ $-container-radius: 10px;
     margin-bottom: $-container-margin;
     border-radius: $-container-radius;
     padding-top: $-container-margin + 3px;
-    background-color: var(--background-primary);
+    background-color: var(--background-accent);
   }
 }
 
-// CHAT
+// ---------------------------- Chat ---------------------------- \\
 .chat-3bRxxu {
-  background-color: var(--background-tertiary);
-  margin-bottom: $-container-margin;
-  margin-left: $-container-margin + 1px;
-  margin-right: $-container-margin + 1px;
-  border-radius: $-container-radius 0 0 $-container-radius;
+  @at-root #app-mount & { // Make up for thread container on right
+    background-color: var(--background-tertiary);
+    margin-bottom: $-container-margin;
+    margin-left: $-container-margin + 1px;
+    margin-right: $-container-margin + 1px;
+    border-radius: $-container-radius 0 0 $-container-radius;
+  }
 
   > .title-3qD0b- {
     border-top-right-radius: $-container-radius;
-    border-bottom-right-radius: $-container-radius;
   }
 
   > .content-yTz4x3 {
-    // NSFW warning page
-    > .scrollerBase-289Jih {
+    > .scrollerBase-289Jih { // NSFW warning page
       border-bottom-right-radius: $-container-radius;
-      background-color: var(--background-primary);
+      background-color: var(--background-accent);
     }
   }
 
-  // Normal
-  .chatContent-a9vAAp {
+  .chatContent-a9vAAp { // Normal
     border-bottom-right-radius: $-container-radius;
-    background-color: var(--background-primary);
+    background-color: var(--background-accent);
 
     > .messagesWrapper-1sRNjr {
       border-top-left-radius: $-container-radius;
     }
   }
+
+  + .threadSidebar-1o3BTy { // Thread in split view
+    margin-left: -1px; // Otherwise gap is too big
+    margin-bottom: $-container-margin;
+  }
 }
 
-// MEMBERS
+// ---------------------------- Member list ---------------------------- \\
 .members-1998pB {
   border-radius: $-container-radius - 2px;
   margin: $-container-margin 0 0 $-container-margin; 

@@ -22,7 +22,7 @@
 
 // Ew lol
 .search-36MZv- {
-  @include parent-and("+ [aria-label='Update Ready!']") {
+  @include parent-and("+ .iconWrapper-2OrFZ1[aria-label$='!']") {
     order: -1;
   }
 }

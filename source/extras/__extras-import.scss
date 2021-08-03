@@ -5,7 +5,6 @@
 @forward 'bigger-click-emoji';
 @forward 'custom-status-scrollbar';
 @forward 'hljs-styling' hide $targets;
-@forward 'nicer-roles';
 @forward 'reaction-emoji-hover';
 @forward 'revert' hide $default-avatar-map;
 @forward 'status-indicators' hide $status-mapping;
@@ -15,3 +14,6 @@
 @import url('https://nyri4.github.io/Discolored/main.css');
 @import url('https://mr-miner1.github.io/Better-Badges/src/compiled.css');
 @import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css');
+@import url('https://spinfish.github.io/css-snippets/snippets/filled-roles.css');
+@import url('https://spinfish.github.io/css-snippets/snippets/bsi-radialstatus-typing.css');
+@import url('https://spinfish.github.io/css-snippets/snippets/compact-status-picker.css');
