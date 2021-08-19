@@ -2,6 +2,10 @@
   .keyboardShortcutsModal-3piNz7 {
     background-color: var(--background-primary);
 
+    .divider-3573oO {
+      display: none;
+    }
+
     .content-2Add9f {
       font-style: italic;
       font-weight: bold;
@@ -38,9 +42,5 @@
       box-shadow: 0 0 0 1px black;
       background-color: var(--background-modifier-selected);
     }
-  }
-
-  .divider-3573oO {
-    display: none;
   }
 }

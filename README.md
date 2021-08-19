@@ -47,6 +47,5 @@ And of course a huge thank you to the following people for the extras:
 Couldn't have done it without yall <3
 
 ## Extra previews
-
 ![Preview Two](https://github.com/spinfish/images/blob/master/kaleidoscope/preview_2.png)
 ![Preview Three](https://github.com/spinfish/images/blob/master/kaleidoscope/preview_3.png)
