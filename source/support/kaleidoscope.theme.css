@@ -7,3 +7,4 @@
  */
 
 @import url('https://spinfish.github.io/kaleidoscope/source/support/kaleidoscope.compiled.css');
+#search-results { width: unset !important; }
